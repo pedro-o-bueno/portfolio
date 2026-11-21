@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clínica Sorriso — Agende pelo WhatsApp</title>
+<title>Clínica Sorriso, agende pelo WhatsApp</title>
 <meta name="description" content="Demonstração de um chatbot de WhatsApp para agendamento de consultas na Clínica Sorriso, Porto Alegre. Agende em menos de 1 minuto, 24 horas por dia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@700&family=Instrument+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +16,7 @@
   <div class="container header-inner">
     <a class="brand" href="#">
       <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.9-9.7-9.2C.7 8.6 2.6 5 6 5c2 0 3.4 1.1 4.2 2.4h3.6C14.6 6.1 16 5 18 5c3.4 0 5.3 3.6 3.7 6.8C19.5 16.1 12 21 12 21z"/><path d="M8 12h.01M16 12h.01"/></svg>
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7.5-4.9-9.7-9.2C.7 8.6 2.6 5 6 5c2 0 3.4 1.1 4.2 2.4h3.6C14.6 6.1 16 5 18 5c3.4 0 5.3 3.6 3.7 6.8C19.5 16.1 12 21 12 21z"/><path d="M8 12h.01M16 12h.01"/></svg>
       </span>
       <span class="brand-text">Clínica <strong>Sorriso</strong></span>
     </a>
@@ -32,8 +35,7 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow">Chatbot de agendamento para WhatsApp</span>
-        <h1>Agende sua consulta em <span class="highlight">menos de 1 minuto</span> pelo WhatsApp</h1>
+        <h1>Agende sua consulta em menos de 1 minuto pelo WhatsApp</h1>
         <p class="hero-lead">Sem ligação, sem espera, sem aplicativo novo. O assistente virtual da Clínica Sorriso atende 24 horas, confirma o horário na hora e ainda lembra você da consulta.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#demo">Testar a demonstração</a>
@@ -45,22 +47,9 @@
           <li><strong>0</strong><span>ligações perdidas</span></li>
         </ul>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="hero-card">
-          <div class="hero-card-top">
-            <span class="avatar-sm">CS</span>
-            <div>
-              <strong>Clínica Sorriso</strong>
-              <small>online agora</small>
-            </div>
-          </div>
-          <div class="hero-bubble bot">Olá! Sou a assistente virtual da Clínica Sorriso. Como posso ajudar?</div>
-          <div class="hero-bubble user">Quero agendar uma limpeza</div>
-          <div class="hero-bubble bot">Perfeito! Temos horários amanhã às 9h e às 14h. Qual prefere?</div>
-          <div class="hero-bubble user">Amanhã às 9h, por favor</div>
-          <div class="hero-bubble bot">Agendado! Limpeza, amanhã às 9h. Te vejo lá!</div>
-        </div>
-      </div>
+      <figure class="hero-figure">
+        <img src="images/chatbot-hero.jpg" alt="Demonstração do chatbot da Clínica Sorriso no WhatsApp" onerror="this.remove()">
+      </figure>
     </div>
   </section>
 
@@ -68,21 +57,19 @@
   <section id="demo" class="demo-section">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Demonstração interativa</span>
         <h2>Teste o chatbot agora mesmo</h2>
         <p>É uma simulação: toque nas respostas rápidas e veja o assistente conduzir o agendamento do início ao fim. Nenhuma mensagem é enviada de verdade.</p>
       </div>
 
       <div class="phone" id="phone">
-        <div class="phone-notch" aria-hidden="true"></div>
         <div class="chat-header">
           <span class="avatar-sm">CS</span>
           <div class="chat-header-info">
             <strong>Clínica Sorriso</strong>
-            <small id="chatStatus">online — responde na hora</small>
+            <small id="chatStatus">online</small>
           </div>
           <button class="restart-btn" id="restartBtn" type="button" title="Recomeçar a demonstração">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><polyline points="21 3 21 9 15 9"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><polyline points="21 3 21 9 15 9"/></svg>
             Recomeçar
           </button>
         </div>
@@ -106,49 +93,48 @@
   <section id="recursos" class="features">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Por que um chatbot</span>
         <h2>Atendimento que não dorme</h2>
         <p>Sua recepção continua agendando mesmo fora do horário comercial, sem contratar ninguém a mais.</p>
       </div>
       <div class="features-grid">
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </span>
           <h3>Atendimento 24 horas</h3>
           <p>O paciente agenda de madrugada, no domingo ou no feriado. Nenhuma oportunidade de agendamento se perde.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
           </span>
           <h3>Confirmação automática</h3>
           <p>Assim que o horário é escolhido, o paciente recebe a confirmação com data, hora e endereço, sem trabalho manual.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
           </span>
           <h3>Lembretes de consulta</h3>
           <p>Lembretes automáticos na véspera e no dia da consulta reduzem faltas e encaixes desperdiçados.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </span>
           <h3>Agenda sempre atualizada</h3>
           <p>Os horários ocupados saem da lista na hora. Nada de agendar duas pessoas no mesmo horário.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </span>
           <h3>Respostas para dúvidas frequentes</h3>
           <p>Valores, convênios, endereço e formas de pagamento respondidos na hora, sem sobrecarregar a recepção.</p>
         </article>
         <article class="feature-card">
           <span class="feature-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </span>
           <h3>Humano quando precisar</h3>
           <p>Se o paciente pedir, a conversa é transferida para a recepção, com todo o histórico já registrado.</p>
@@ -161,7 +147,6 @@
   <section id="planos" class="pricing">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Planos do chatbot</span>
         <h2>Um plano para cada tamanho de clínica</h2>
         <p>Valores mensais fictícios, apenas para demonstração. Sem taxa de instalação.</p>
       </div>
@@ -213,7 +198,6 @@
   <section id="faq" class="faq">
     <div class="container container-narrow">
       <div class="section-head">
-        <span class="eyebrow">Dúvidas frequentes</span>
         <h2>Perguntas e respostas</h2>
       </div>
       <div class="faq-list">
@@ -246,16 +230,16 @@
           <p>Quer levar um chatbot como este para a sua clínica? Ou prefere agendar uma consulta de verdade? Entre em contato pelos canais abaixo.</p>
           <ul class="contact-list">
             <li>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Av. Ipiranga, 1234 — Partenon, Porto Alegre / RS
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Av. Ipiranga, 1234, Partenon, Porto Alegre / RS
             </li>
             <li>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              (51) 3333-4444 — WhatsApp (51) 99999-8888
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (51) 3333-4444, WhatsApp (51) 99999-8888
             </li>
             <li>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              Segunda a sexta, das 8h às 19h · Sábado, das 8h às 13h
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Segunda a sexta, das 8h às 19h, e sábado, das 8h às 13h
             </li>
           </ul>
         </div>
@@ -276,7 +260,7 @@
 
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p><strong>Clínica Sorriso</strong> — site de demonstração fictício criado por <strong>Pedro Henrique Oliveira Bueno</strong>, desenvolvedor full-stack.</p>
+    <p><strong>Clínica Sorriso</strong>, site de demonstração fictício criado por <strong>Pedro Henrique Oliveira Bueno</strong>, desenvolvedor full-stack.</p>
     <p class="footer-note">Todos os dados desta página (endereço, telefone, preços e horários) são inventados e servem apenas para demonstração do chatbot.</p>
   </div>
 </footer>
