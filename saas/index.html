@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Fluxo, o financeiro da sua empresa em um só lugar. Controle financeiro, emissão de boletos e Pix, fluxo de caixa e relatórios automáticos para pequenas empresas.">
   <title>Fluxo, o financeiro da sua empresa em um só lugar</title>
-  <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -56,11 +54,7 @@
           <img src="images/saas-hero.jpg" alt="Prévia do painel financeiro do Fluxo">
         </figure>
       </div>
-    </section>
-
-    <!-- PAINEL -->
-    <section class="desk-band" aria-label="Prévia do painel do Fluxo">
-      <div class="container">
+      <div class="hero-product">
         <div class="mockup" aria-label="Prévia do painel do Fluxo">
           <div class="mockup-sidebar">
             <span class="mockup-logo">Fluxo</span>
@@ -128,6 +122,11 @@
         </div>
         <div class="features">
           <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 15h4"/></svg></span>
+            <h3>Integração com bancos</h3>
+            <p>Conecte suas contas e importe extratos automaticamente. A conciliação bancária deixa de ser tarefa manual.</p>
+          </article>
+          <article class="feature">
             <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg></span>
             <h3>Fluxo de caixa em tempo real</h3>
             <p>Veja o saldo e as projeções do mês atualizados na hora, sem esperar o fechamento da contabilidade.</p>
@@ -138,19 +137,14 @@
             <p>Cobre seus clientes por boleto ou Pix em poucos cliques, com baixa automática quando o pagamento entra.</p>
           </article>
           <article class="feature">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v-4M12 17V7M17 13v-3"/></svg></span>
-            <h3>Relatórios automáticos</h3>
-            <p>DRE, contas por categoria e comparativos mensais prontos para enviar ao contador, sem montar planilha.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 15h4"/></svg></span>
-            <h3>Integração com bancos</h3>
-            <p>Conecte suas contas e importe extratos automaticamente. A conciliação bancária deixa de ser tarefa manual.</p>
-          </article>
-          <article class="feature">
             <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
             <h3>Lembretes de cobrança</h3>
             <p>O Fluxo avisa seus clientes antes do vencimento e depois dele, com mensagens prontas por e-mail e WhatsApp.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v-4M12 17V7M17 13v-3"/></svg></span>
+            <h3>Relatórios automáticos</h3>
+            <p>DRE, contas por categoria e comparativos mensais prontos para enviar ao contador, sem montar planilha.</p>
           </article>
           <article class="feature">
             <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg></span>
@@ -299,7 +293,7 @@
         <form class="email-capture cta-form" id="emailFormCta" novalidate>
           <label class="sr-only" for="emailInputCta">Seu melhor e-mail profissional</label>
           <input type="email" id="emailInputCta" placeholder="Seu melhor e-mail profissional" required>
-          <button type="submit" class="btn btn-white">Criar conta grátis</button>
+          <button type="submit" class="btn btn-white">Começar a controlar</button>
         </form>
         <p class="form-msg form-msg-light" id="formMsgCta" role="status" aria-live="polite"></p>
         <p class="trust-line trust-line-light">Sem cartão de crédito. Cancele quando quiser.</p>
