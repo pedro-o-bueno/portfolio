@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VitaFit Suplementos — whey, creatina, pré-treino e mais. Suplementos originais, frete grátis acima de R$ 199 e entrega rápida para todo o Brasil.">
-  <title>VitaFit Suplementos — Loja de suplementos</title>
+  <meta name="description" content="VitaFit Suplementos, whey, creatina, pré-treino e mais. Suplementos originais, frete grátis acima de R$ 199 e entrega rápida para todo o Brasil.">
+  <title>VitaFit Suplementos: loja de suplementos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="topbar">
-    <p>Frete grátis em compras acima de <strong>R$ 199</strong> &nbsp;·&nbsp; 10% OFF no Pix &nbsp;·&nbsp; Parcele em até 12x</p>
+    <p class="topbar-inner"><span>Frete grátis em compras acima de <strong>R$ 199</strong></span><span>10% OFF no Pix</span><span>Parcele em até 12x</span></p>
   </div>
 
   <header class="header">
     <div class="container header-inner">
       <a href="#topo" class="logo" aria-label="VitaFit Suplementos — voltar ao topo">
         <span class="logo-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0b1f14" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg>
         </span>
         Vita<span>Fit</span>
       </a>
@@ -36,7 +36,7 @@
           <span class="cart-badge" id="cartCount" aria-live="polite">0</span>
         </button>
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
-          <span></span><span></span><span></span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg>
         </button>
       </div>
     </div>
@@ -47,8 +47,7 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="hero-eyebrow">Suplementação de verdade, sem enrolação</p>
-          <h1>Treine forte.<br>Recupere <span>melhor.</span></h1>
+          <h1>Treine forte.<br>Recupere melhor.</h1>
           <p class="hero-sub">Whey, creatina, pré-treino e tudo para a sua rotina de treino, com qualidade garantida, preço justo e entrega rápida para todo o Brasil.</p>
           <div class="hero-cta">
             <a href="#produtos" class="btn btn-primary">Ver produtos</a>
@@ -60,30 +59,15 @@
             <li><strong>100%</strong> produtos originais</li>
           </ul>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="hero-jar jar-a">
-            <svg viewBox="0 0 120 150" fill="none">
-              <rect x="28" y="18" width="64" height="14" rx="4" fill="#0b1f14"/>
-              <rect x="22" y="32" width="76" height="106" rx="10" fill="#123524"/>
-              <rect x="22" y="32" width="76" height="106" rx="10" stroke="#b7f542" stroke-width="2"/>
-              <rect x="30" y="58" width="60" height="52" rx="6" fill="#b7f542"/>
-              <text x="60" y="80" text-anchor="middle" font-family="Oswald, sans-serif" font-size="15" font-weight="700" fill="#0b1f14">WHEY</text>
-              <text x="60" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="#0b1f14">100% · 900g</text>
-            </svg>
-            <span class="hero-tag">Mais vendido</span>
+        <figure class="hero-figure">
+          <div class="hero-photo crop" data-slot data-alt="Suplementos VitaFit">
+            <img src="images/ecommerce-hero.jpg" alt="Suplementos VitaFit" fetchpriority="high">
+            <p class="hero-fallback" aria-hidden="true">VitaFit</p>
+            <span class="hero-tag" data-keep>Mais vendido</span>
+            <div class="hero-price-chip" data-keep><strong>R$ 149,90</strong><span>whey 900g, no Pix R$ 134,91</span></div>
           </div>
-          <div class="hero-jar jar-b">
-            <svg viewBox="0 0 120 150" fill="none">
-              <rect x="30" y="18" width="60" height="14" rx="4" fill="#0b1f14"/>
-              <rect x="24" y="32" width="72" height="106" rx="10" fill="#1d4a2f"/>
-              <rect x="24" y="32" width="72" height="106" rx="10" stroke="#ffffff" stroke-width="2" opacity="0.35"/>
-              <rect x="32" y="58" width="56" height="52" rx="6" fill="#ffffff"/>
-              <text x="60" y="80" text-anchor="middle" font-family="Oswald, sans-serif" font-size="13" font-weight="700" fill="#0b1f14">CREATINA</text>
-              <text x="60" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="#0b1f14">300g · pura</text>
-            </svg>
-          </div>
-          <div class="hero-price-chip"><strong>R$ 149,90</strong><span>whey 900g · no Pix R$ 134,91</span></div>
-        </div>
+          <figcaption>Suplementação de verdade, sem enrolação</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -91,29 +75,22 @@
     <section class="products" id="produtos">
       <div class="container">
         <div class="section-head">
-          <p class="section-eyebrow">Catálogo</p>
-          <h2>Os mais procurados</h2>
-          <p class="section-sub">Escolha seus suplementos e monte seu kit. Clique em adicionar e finalize em poucos passos.</p>
+          <h2>Catálogo</h2>
+          <p class="section-sub">Os mais procurados. Escolha seus suplementos e monte seu kit. Clique em adicionar e finalize em poucos passos.</p>
         </div>
 
         <div class="product-grid">
           <!-- 1 Whey -->
           <article class="product-card" data-id="whey-900" data-name="Whey Protein Concentrado 100% 900g" data-detail="Chocolate" data-price="149.90">
-            <div class="product-visual visual-dark">
-              <span class="badge badge-best">Mais vendido</span>
-              <span class="badge badge-discount">-21%</span>
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="28" y="18" width="64" height="14" rx="4" fill="#0b1f14"/>
-                <rect x="22" y="32" width="76" height="106" rx="10" fill="#123524"/>
-                <rect x="22" y="32" width="76" height="106" rx="10" stroke="#b7f542" stroke-width="2"/>
-                <rect x="30" y="58" width="60" height="52" rx="6" fill="#b7f542"/>
-                <text x="60" y="80" text-anchor="middle" font-family="Oswald, sans-serif" font-size="15" font-weight="700" fill="#0b1f14">WHEY</text>
-                <text x="60" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="#0b1f14">100% · 900g</text>
-              </svg>
+            <div class="product-visual crop" data-slot data-alt="Whey Protein Concentrado 100% 900g, sabor chocolate">
+              <img src="images/whey-protein.jpg" alt="Whey Protein Concentrado 100% 900g, sabor chocolate">
+              <p class="product-type" aria-hidden="true">Whey</p>
+              <span class="badge badge-best" data-keep>Mais vendido</span>
+              <span class="badge badge-discount" data-keep>-21%</span>
             </div>
             <div class="product-info">
               <h3>Whey Protein Concentrado 100% 900g</h3>
-              <p class="product-detail">Sabor chocolate · 24g de proteína por dose</p>
+              <p class="product-detail">Sabor chocolate, 24g de proteína por dose</p>
               <p class="product-rating" aria-label="Avaliação 4,9 de 5">★★★★★ <span>4,9 (312 avaliações)</span></p>
               <p class="product-price"><span class="old-price">R$ 189,90</span> <strong>R$ 149,90</strong></p>
               <p class="product-installments">ou 3x de R$ 49,97 sem juros</p>
@@ -123,21 +100,15 @@
 
           <!-- 2 Creatina -->
           <article class="product-card" data-id="creatina-300" data-name="Creatina Monohidratada 300g" data-detail="Pura, sem sabor" data-price="89.90">
-            <div class="product-visual visual-green">
-              <span class="badge badge-best">Mais vendido</span>
-              <span class="badge badge-discount">-25%</span>
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="30" y="18" width="60" height="14" rx="4" fill="#0b1f14"/>
-                <rect x="24" y="32" width="72" height="106" rx="10" fill="#1d4a2f"/>
-                <rect x="24" y="32" width="72" height="106" rx="10" stroke="#ffffff" stroke-width="2" opacity="0.35"/>
-                <rect x="32" y="58" width="56" height="52" rx="6" fill="#ffffff"/>
-                <text x="60" y="80" text-anchor="middle" font-family="Oswald, sans-serif" font-size="13" font-weight="700" fill="#0b1f14">CREATINA</text>
-                <text x="60" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="#0b1f14">300g · pura</text>
-              </svg>
+            <div class="product-visual crop" data-slot data-alt="Creatina Monohidratada 300g">
+              <img src="images/creatina.jpg" alt="Creatina Monohidratada 300g">
+              <p class="product-type" aria-hidden="true">Creatina</p>
+              <span class="badge badge-best" data-keep>Mais vendido</span>
+              <span class="badge badge-discount" data-keep>-25%</span>
             </div>
             <div class="product-info">
               <h3>Creatina Monohidratada 300g</h3>
-              <p class="product-detail">Pura, sem sabor · 100 doses de 3g</p>
+              <p class="product-detail">Pura, sem sabor, 100 doses de 3g</p>
               <p class="product-rating" aria-label="Avaliação 5,0 de 5">★★★★★ <span>5,0 (428 avaliações)</span></p>
               <p class="product-price"><span class="old-price">R$ 119,90</span> <strong>R$ 89,90</strong></p>
               <p class="product-installments">ou 2x de R$ 44,95 sem juros</p>
@@ -147,20 +118,14 @@
 
           <!-- 3 Pré-treino -->
           <article class="product-card" data-id="pre-treino-300" data-name="Pré-Treino Ignite 300g" data-detail="Frutas vermelhas" data-price="119.90">
-            <div class="product-visual visual-lime">
-              <span class="badge badge-new">Novo</span>
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="28" y="18" width="64" height="14" rx="4" fill="#0b1f14"/>
-                <rect x="22" y="32" width="76" height="106" rx="10" fill="#0b1f14"/>
-                <rect x="22" y="32" width="76" height="106" rx="10" stroke="#b7f542" stroke-width="2"/>
-                <rect x="30" y="58" width="60" height="52" rx="6" fill="#b7f542"/>
-                <text x="60" y="78" text-anchor="middle" font-family="Oswald, sans-serif" font-size="14" font-weight="700" fill="#0b1f14">IGNITE</text>
-                <text x="60" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="#0b1f14">pré-treino · 300g</text>
-              </svg>
+            <div class="product-visual crop" data-slot data-alt="Pré-Treino Ignite 300g, frutas vermelhas">
+              <img src="images/pre-treino.jpg" alt="Pré-Treino Ignite 300g, frutas vermelhas">
+              <p class="product-type" aria-hidden="true">Ignite</p>
+              <span class="badge badge-new" data-keep>Novo</span>
             </div>
             <div class="product-info">
               <h3>Pré-Treino Ignite 300g</h3>
-              <p class="product-detail">Frutas vermelhas · com cafeína e beta-alanina</p>
+              <p class="product-detail">Frutas vermelhas, com cafeína e beta-alanina</p>
               <p class="product-rating" aria-label="Avaliação 4,8 de 5">★★★★★ <span>4,8 (96 avaliações)</span></p>
               <p class="product-price"><strong>R$ 119,90</strong></p>
               <p class="product-installments">ou 3x de R$ 39,97 sem juros</p>
@@ -170,19 +135,13 @@
 
           <!-- 4 BCAA -->
           <article class="product-card" data-id="bcaa-120" data-name="BCAA 2:1:1 120 cápsulas" data-detail="Leucina, isoleucina e valina" data-price="69.90">
-            <div class="product-visual visual-light">
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="38" y="14" width="44" height="18" rx="4" fill="#0b1f14"/>
-                <rect x="30" y="32" width="60" height="106" rx="10" fill="#ffffff"/>
-                <rect x="30" y="32" width="60" height="106" rx="10" stroke="#123524" stroke-width="2"/>
-                <rect x="36" y="60" width="48" height="48" rx="6" fill="#123524"/>
-                <text x="60" y="80" text-anchor="middle" font-family="Oswald, sans-serif" font-size="13" font-weight="700" fill="#b7f542">BCAA</text>
-                <text x="60" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="600" fill="#ffffff">2:1:1 · 120 cáps</text>
-              </svg>
+            <div class="product-visual crop" data-slot data-alt="BCAA 2:1:1, 120 cápsulas">
+              <img src="images/bcaa.jpg" alt="BCAA 2:1:1, 120 cápsulas">
+              <p class="product-type" aria-hidden="true">BCAA</p>
             </div>
             <div class="product-info">
               <h3>BCAA 2:1:1 120 cápsulas</h3>
-              <p class="product-detail">Leucina, isoleucina e valina · recuperação muscular</p>
+              <p class="product-detail">Leucina, isoleucina e valina, recuperação muscular</p>
               <p class="product-rating" aria-label="Avaliação 4,7 de 5">★★★★★ <span>4,7 (154 avaliações)</span></p>
               <p class="product-price"><strong>R$ 69,90</strong></p>
               <p class="product-installments">ou 2x de R$ 34,95 sem juros</p>
@@ -192,20 +151,13 @@
 
           <!-- 5 Hipercalórico -->
           <article class="product-card" data-id="hipercalorico-3kg" data-name="Hipercalórico Mass 3kg" data-detail="Baunilha" data-price="179.90">
-            <div class="product-visual visual-dark">
+            <div class="product-visual">
+              <p class="product-type" aria-hidden="true">Mass</p>
               <span class="badge badge-discount">-18%</span>
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="26" y="18" width="68" height="14" rx="4" fill="#0b1f14"/>
-                <rect x="18" y="32" width="84" height="106" rx="10" fill="#123524"/>
-                <rect x="18" y="32" width="84" height="106" rx="10" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
-                <rect x="28" y="58" width="64" height="52" rx="6" fill="#ffffff"/>
-                <text x="60" y="78" text-anchor="middle" font-family="Oswald, sans-serif" font-size="14" font-weight="700" fill="#0b1f14">MASS</text>
-                <text x="60" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="#0b1f14">hipercalórico · 3kg</text>
-              </svg>
             </div>
             <div class="product-info">
               <h3>Hipercalórico Mass 3kg</h3>
-              <p class="product-detail">Sabor baunilha · ganho de massa e energia</p>
+              <p class="product-detail">Sabor baunilha, ganho de massa e energia</p>
               <p class="product-rating" aria-label="Avaliação 4,8 de 5">★★★★★ <span>4,8 (203 avaliações)</span></p>
               <p class="product-price"><span class="old-price">R$ 219,90</span> <strong>R$ 179,90</strong></p>
               <p class="product-installments">ou 4x de R$ 44,98 sem juros</p>
@@ -215,19 +167,14 @@
 
           <!-- 6 Barra de proteína -->
           <article class="product-card" data-id="barra-proteina-12" data-name="Barra de Proteína caixa com 12 unidades" data-detail="Chocolate com amendoim" data-price="59.90">
-            <div class="product-visual visual-green">
-              <span class="badge badge-new">Novo</span>
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="38" y="34" width="44" height="92" rx="8" fill="#0b1f14" transform="rotate(-8 60 80)"/>
-                <rect x="38" y="34" width="44" height="92" rx="8" stroke="#b7f542" stroke-width="2" transform="rotate(-8 60 80)"/>
-                <rect x="44" y="58" width="32" height="44" rx="4" fill="#b7f542" transform="rotate(-8 60 80)"/>
-                <text x="60" y="84" text-anchor="middle" font-family="Oswald, sans-serif" font-size="9" font-weight="700" fill="#0b1f14" transform="rotate(-8 60 80)">PROTEIN</text>
-                <text x="60" y="96" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="600" fill="#0b1f14" transform="rotate(-8 60 80)">BAR · 20g</text>
-              </svg>
+            <div class="product-visual crop" data-slot data-alt="Barra de Proteína, caixa com 12 unidades">
+              <img src="images/barra-proteina.jpg" alt="Barra de Proteína, caixa com 12 unidades">
+              <p class="product-type" aria-hidden="true">Protein Bar</p>
+              <span class="badge badge-new" data-keep>Novo</span>
             </div>
             <div class="product-info">
               <h3>Barra de Proteína caixa com 12 unidades</h3>
-              <p class="product-detail">Chocolate com amendoim · 20g de proteína por barra</p>
+              <p class="product-detail">Chocolate com amendoim, 20g de proteína por barra</p>
               <p class="product-rating" aria-label="Avaliação 4,6 de 5">★★★★★ <span>4,6 (87 avaliações)</span></p>
               <p class="product-price"><strong>R$ 59,90</strong></p>
               <p class="product-installments">ou 2x de R$ 29,95 sem juros</p>
@@ -237,18 +184,12 @@
 
           <!-- 7 Coqueteleira -->
           <article class="product-card" data-id="coqueteleira-700" data-name="Coqueteleira Pro 700ml" data-detail="Com compartimento para dose" data-price="39.90">
-            <div class="product-visual visual-lime">
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="42" y="16" width="36" height="16" rx="6" fill="#0b1f14"/>
-                <path d="M36 32h48l-6 76a12 12 0 0 1-12 10H54a12 12 0 0 1-12-10L36 32z" fill="#ffffff" stroke="#0b1f14" stroke-width="2"/>
-                <rect x="40" y="52" width="40" height="34" rx="5" fill="#b7f542"/>
-                <text x="60" y="73" text-anchor="middle" font-family="Oswald, sans-serif" font-size="11" font-weight="700" fill="#0b1f14">VITAFIT</text>
-                <rect x="44" y="118" width="32" height="14" rx="4" fill="#0b1f14"/>
-              </svg>
+            <div class="product-visual">
+              <p class="product-type" aria-hidden="true">Vitafit</p>
             </div>
             <div class="product-info">
               <h3>Coqueteleira Pro 700ml</h3>
-              <p class="product-detail">Com compartimento para dose · livre de BPA</p>
+              <p class="product-detail">Com compartimento para dose, livre de BPA</p>
               <p class="product-rating" aria-label="Avaliação 4,9 de 5">★★★★★ <span>4,9 (241 avaliações)</span></p>
               <p class="product-price"><strong>R$ 39,90</strong></p>
               <p class="product-installments">ou 1x de R$ 39,90 sem juros</p>
@@ -258,20 +199,14 @@
 
           <!-- 8 Multivitamínico -->
           <article class="product-card" data-id="multivitaminico-60" data-name="Multivitamínico 60 cápsulas" data-detail="21 vitaminas e minerais" data-price="49.90">
-            <div class="product-visual visual-light">
-              <span class="badge badge-discount">-23%</span>
-              <svg class="jar" viewBox="0 0 120 150" fill="none" aria-hidden="true">
-                <rect x="38" y="14" width="44" height="18" rx="4" fill="#0b1f14"/>
-                <rect x="30" y="32" width="60" height="106" rx="10" fill="#123524"/>
-                <rect x="30" y="32" width="60" height="106" rx="10" stroke="#b7f542" stroke-width="2"/>
-                <rect x="36" y="60" width="48" height="48" rx="6" fill="#b7f542"/>
-                <text x="60" y="78" text-anchor="middle" font-family="Oswald, sans-serif" font-size="10" font-weight="700" fill="#0b1f14">MULTIVIT</text>
-                <text x="60" y="94" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="600" fill="#0b1f14">60 cápsulas</text>
-              </svg>
+            <div class="product-visual crop" data-slot data-alt="Multivitamínico, 60 cápsulas">
+              <img src="images/multivitaminico.jpg" alt="Multivitamínico, 60 cápsulas">
+              <p class="product-type" aria-hidden="true">Multivitamínico</p>
+              <span class="badge badge-discount" data-keep>-23%</span>
             </div>
             <div class="product-info">
               <h3>Multivitamínico 60 cápsulas</h3>
-              <p class="product-detail">21 vitaminas e minerais · 2 meses de uso</p>
+              <p class="product-detail">21 vitaminas e minerais, 2 meses de uso</p>
               <p class="product-rating" aria-label="Avaliação 4,7 de 5">★★★★★ <span>4,7 (118 avaliações)</span></p>
               <p class="product-price"><span class="old-price">R$ 64,90</span> <strong>R$ 49,90</strong></p>
               <p class="product-installments">ou 1x de R$ 49,90 sem juros</p>
@@ -286,31 +221,39 @@
     <section class="benefits" id="beneficios">
       <div class="container benefits-grid">
         <div class="benefit">
-          <span class="benefit-icon" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-          </span>
-          <h3>Frete grátis acima de R$ 199</h3>
+          <div class="benefit-head">
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </span>
+            <h3>Frete grátis acima de R$ 199</h3>
+          </div>
           <p>Para todo o Brasil, sem valor mínimo por região. Enviamos em até 24h úteis.</p>
         </div>
         <div class="benefit">
-          <span class="benefit-icon" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          </span>
-          <h3>Pagamento 100% seguro</h3>
+          <div class="benefit-head">
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </span>
+            <h3>Pagamento 100% seguro</h3>
+          </div>
           <p>Pix, cartão ou boleto em ambiente criptografado. Seus dados protegidos do início ao fim.</p>
         </div>
         <div class="benefit">
-          <span class="benefit-icon" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </span>
-          <h3>Entrega rápida</h3>
+          <div class="benefit-head">
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </span>
+            <h3>Entrega rápida</h3>
+          </div>
           <p>Receba em 2 a 5 dias úteis nas capitais e acompanhe o pedido com código de rastreio.</p>
         </div>
         <div class="benefit">
-          <span class="benefit-icon" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </span>
-          <h3>Atendimento especializado</h3>
+          <div class="benefit-head">
+            <span class="benefit-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <h3>Atendimento especializado</h3>
+          </div>
           <p>Time que treina de verdade para ajudar você a escolher o suplemento certo para o seu objetivo.</p>
         </div>
       </div>
@@ -320,24 +263,24 @@
     <section class="testimonials" id="depoimentos">
       <div class="container">
         <div class="section-head">
-          <p class="section-eyebrow">Avaliações</p>
-          <h2>Quem treina, recomenda</h2>
+          <h2>Avaliações</h2>
+          <p class="section-sub">Quem treina, recomenda.</p>
         </div>
         <div class="testimonial-grid">
           <figure class="testimonial">
             <p class="testimonial-stars" aria-label="Avaliação 5 de 5">★★★★★</p>
             <blockquote>“Comprei o whey e a creatina para começar meu treino e chegou em 3 dias, tudo lacrado e com nota fiscal. O sabor chocolate é o melhor que já provei, não fica enjoativo.”</blockquote>
-            <figcaption><strong>Rafael Mendes</strong><span>Cliente desde 2024 · São Paulo, SP</span></figcaption>
+            <figcaption><strong>Rafael Mendes</strong><span>Cliente desde 2024</span><span>São Paulo, SP</span></figcaption>
           </figure>
           <figure class="testimonial">
             <p class="testimonial-stars" aria-label="Avaliação 5 de 5">★★★★★</p>
             <blockquote>“O pré-treino Ignite virou parte da minha rotina. Dá energia sem aquele exagero de formigamento. E o atendimento respondeu todas as minhas dúvidas antes da compra.”</blockquote>
-            <figcaption><strong>Camila Duarte</strong><span>Cliente desde 2025 · Porto Alegre, RS</span></figcaption>
+            <figcaption><strong>Camila Duarte</strong><span>Cliente desde 2025</span><span>Porto Alegre, RS</span></figcaption>
           </figure>
           <figure class="testimonial">
             <p class="testimonial-stars" aria-label="Avaliação 5 de 5">★★★★★</p>
             <blockquote>“Já é a terceira vez que compro aqui. Preço justo, frete grátis acima de 199 e o hipercalórico me ajudou a ganhar 4 kg em dois meses, com dieta e treino certinhos.”</blockquote>
-            <figcaption><strong>Thiago Almeida</strong><span>Cliente desde 2023 · Belo Horizonte, MG</span></figcaption>
+            <figcaption><strong>Thiago Almeida</strong><span>Cliente desde 2023</span><span>Belo Horizonte, MG</span></figcaption>
           </figure>
         </div>
       </div>
@@ -385,7 +328,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 VitaFit Suplementos — Loja demonstrativa. Todos os produtos, preços e depoimentos são fictícios. Demonstração de portfólio de Pedro Henrique Oliveira Bueno.</p>
+      <p>© 2026 VitaFit Suplementos. Loja demonstrativa. Todos os produtos, preços e depoimentos são fictícios. Demonstração de portfólio de Pedro Henrique Oliveira Bueno.</p>
     </div>
   </footer>
 
@@ -393,7 +336,8 @@
   <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
   <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras" aria-hidden="true">
     <div class="cart-head">
-      <h2>Seu carrinho <span id="cartHeadCount">(0 itens)</span></h2>
+      <h2>Seu carrinho</h2>
+      <span class="cart-head-count" id="cartHeadCount">(0 itens)</span>
       <button class="cart-close" id="cartClose" aria-label="Fechar carrinho">×</button>
     </div>
 
@@ -412,12 +356,12 @@
       <div class="cart-row cart-total"><span>Total</span><strong id="cartTotal">R$ 0,00</strong></div>
       <button class="btn btn-primary btn-checkout" id="checkoutBtn" type="button">Finalizar compra</button>
       <button class="btn btn-clear" id="clearCartBtn" type="button">Limpar carrinho</button>
-      <p class="cart-note">Compra simulada — nenhum pagamento real será feito.</p>
+      <p class="cart-note">Compra simulada. Nenhum pagamento real será feito.</p>
     </div>
 
     <div class="cart-success" id="cartSuccess" hidden>
       <span class="success-icon" aria-hidden="true">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0b1f14" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
       </span>
       <h3>Pedido confirmado!</h3>
       <p id="successText">Obrigado pela sua compra. Você receberá os detalhes por e-mail.</p>
@@ -429,5 +373,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="script.js"></script>
+  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
 </body>
 </html>
