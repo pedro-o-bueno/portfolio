@@ -9,12 +9,12 @@
   --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  --color-paper: oklch(96.5% 0.016 82); --color-paper-2: oklch(93.5% 0.02 80); --color-paper-3: oklch(89% 0.024 78);
-  --color-ink: oklch(17% 0.012 60); --color-ink-2: oklch(28% 0.014 60); --color-muted: oklch(49% 0.014 65);
-  --color-rule: oklch(80% 0.018 75); --color-rule-2: oklch(66% 0.02 72);
-  --color-accent: oklch(45% 0.18 262); --color-accent-ink: oklch(97% 0.012 82); --color-focus: oklch(50% 0.18 262);
-  --color-guide: oklch(55% 0.16 262 / 0.5);
-  --font-display: "Bodoni Moda", ui-serif, Georgia, serif; --font-body: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #F7F2E7; --color-paper-2: #EFE8D5; --color-paper-3: #E5DCC2;
+  --color-ink: #16233A; --color-ink-2: #26374F; --color-muted: #5A6472;
+  --color-rule: #D8CDB2; --color-rule-2: #B08D57;
+  --color-accent: #B08D57; --color-accent-deep: #755A30; --color-accent-ink: #16233A; --color-focus: #755A30;
+  --color-guide: rgb(176 141 87 / 0.5);
+  --font-display: "Bodoni Moda", Georgia, "Times New Roman", serif; --font-body: Georgia, "Times New Roman", serif;
   --font-outlier: "Geist Mono", ui-monospace, monospace;
   --radius-card: 0; --radius-pill: 0; --rule-hair: 1px;
   --shadow-card: none;
