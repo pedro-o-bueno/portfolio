@@ -1,4 +1,4 @@
-// AgendaPro — Kanban de leads (dados fictícios, demonstração de portfólio)
+// AgendaPro: Kanban de leads (dados fictícios, demonstração de portfólio)
 (function () {
   'use strict';
 
@@ -7,11 +7,11 @@
 
   var leads = [
     { id: 1, name: 'Beatriz Lima',    service: 'Progressiva + corte',        value: 320, source: 'WhatsApp',  column: 'novo' },
-    { id: 2, name: 'Aline Santos',    service: 'Pacote noiva — maquiagem',  value: 850, source: 'Instagram', column: 'novo' },
+    { id: 2, name: 'Aline Santos',    service: 'Pacote noiva, maquiagem',  value: 850, source: 'Instagram', column: 'novo' },
     { id: 3, name: 'Sofia Ribeiro',   service: 'Micropigmentação',          value: 600, source: 'Indicação', column: 'novo' },
     { id: 4, name: 'Gabriela Nunes',  service: 'Coloração + hidratação',    value: 280, source: 'WhatsApp',  column: 'atendimento' },
     { id: 5, name: 'Helena Duarte',   service: 'Limpeza de pele mensal',    value: 180, source: 'Instagram', column: 'atendimento' },
-    { id: 6, name: 'Camila Torres',   service: 'Depilação a laser — pacote', value: 1200, source: 'Google',   column: 'atendimento' },
+    { id: 6, name: 'Camila Torres',   service: 'Depilação a laser, pacote', value: 1200, source: 'Google',   column: 'atendimento' },
     { id: 7, name: 'Isabela Prado',   service: 'Escova + penteado festa',   value: 240, source: 'Indicação', column: 'concluido' },
     { id: 8, name: 'Luana Vieira',    service: 'Manicure e pedicure',       value: 90,  source: 'WhatsApp',  column: 'concluido' }
   ];
@@ -71,14 +71,14 @@
     var prevBtn = document.createElement('button');
     prevBtn.type = 'button';
     prevBtn.className = 'move-btn';
-    prevBtn.textContent = '← Voltar';
+    prevBtn.textContent = 'Voltar';
     prevBtn.disabled = colIndex === 0;
     prevBtn.setAttribute('aria-label', 'Mover ' + lead.name + ' para ' + (COLUMN_LABELS[COLUMNS[colIndex - 1]] || ''));
     prevBtn.addEventListener('click', function () { moveLead(lead.id, COLUMNS[colIndex - 1]); });
     var nextBtn = document.createElement('button');
     nextBtn.type = 'button';
     nextBtn.className = 'move-btn';
-    nextBtn.textContent = 'Avançar →';
+    nextBtn.textContent = 'Avançar';
     nextBtn.disabled = colIndex === COLUMNS.length - 1;
     nextBtn.setAttribute('aria-label', 'Mover ' + lead.name + ' para ' + (COLUMN_LABELS[COLUMNS[colIndex + 1]] || ''));
     nextBtn.addEventListener('click', function () { moveLead(lead.id, COLUMNS[colIndex + 1]); });
