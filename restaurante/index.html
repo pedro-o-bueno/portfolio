@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cantina do Zé — restaurante italiano de bairro em São Paulo. Massas frescas, receitas de família desde 1998. Reserve sua mesa.">
-  <title>Cantina do Zé — Restaurante Italiano em São Paulo</title>
+  <meta name="description" content="Cantina do Zé, restaurante italiano de bairro em São Paulo. Massas frescas, receitas de família desde 1998. Reserve sua mesa.">
+  <title>Cantina do Zé: Restaurante Italiano em São Paulo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header" id="topo">
     <div class="container header-inner">
-      <a href="#inicio" class="logo" aria-label="Cantina do Zé — voltar ao início">
+      <a href="#inicio" class="logo" aria-label="Cantina do Zé, voltar ao início">
         <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
-          <circle cx="24" cy="24" r="22" fill="#1E3D2F"/>
-          <path d="M14 30c2-8 6-12 10-12s8 4 10 12" fill="none" stroke="#FAF3E7" stroke-width="2.4" stroke-linecap="round"/>
-          <circle cx="24" cy="15" r="2.6" fill="#C1552B"/>
-          <path d="M17 34h14" stroke="#FAF3E7" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="24" cy="24" r="22" style="fill: var(--color-ink)"/>
+          <path d="M14 30c2-8 6-12 10-12s8 4 10 12" fill="none" style="stroke: var(--color-paper)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="24" cy="15" r="2.6" style="fill: var(--color-accent)"/>
+          <path d="M17 34h14" style="stroke: var(--color-paper)" stroke-width="2.4" stroke-linecap="round"/>
         </svg>
-        <span class="logo-text">Cantina <em>do Zé</em></span>
+        <span class="logo-text">Cantina do Zé</span>
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
@@ -38,51 +38,32 @@
   <main>
     <!-- HERO -->
     <section class="hero" id="inicio">
-      <div class="hero-pattern" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Cucina italiana &middot; Vila Mariana, São Paulo</p>
-          <h1>A mesa farta, o sabor da Calábria e o carinho de família.</h1>
-          <p class="hero-sub">Desde 1998 servindo massas frescas feitas na casa, molhos que cozinham por horas e aquele atendimento que faz todo mundo se sentir em casa. Venha jantar com a gente.</p>
+          <h1>A mesa farta da Calábria.</h1>
+          <p class="hero-sub">Massas frescas feitas na casa desde 1998, em Vila Mariana.</p>
           <div class="hero-actions">
             <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
             <a href="#reservas" class="btn btn-outline">Reservar mesa</a>
           </div>
-          <p class="hero-hours">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            Terça a domingo, das 11h30 às 15h e das 18h às 23h &middot; Segunda fechado
-          </p>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="plate">
-            <div class="plate-inner">
-              <svg viewBox="0 0 200 200" class="pasta-svg">
-                <circle cx="100" cy="100" r="86" fill="#E8D9B8"/>
-                <circle cx="100" cy="100" r="66" fill="#C1552B"/>
-                <circle cx="100" cy="100" r="52" fill="#E9A23B"/>
-                <path d="M62 100c10-14 26-20 38-20s28 6 38 20c-10 14-26 20-38 20s-28-6-38-20z" fill="#F4E3C2"/>
-                <circle cx="88" cy="92" r="4" fill="#1E3D2F"/>
-                <circle cx="112" cy="104" r="4" fill="#1E3D2F"/>
-                <circle cx="100" cy="112" r="3" fill="#1E3D2F"/>
-                <path d="M70 88q30-14 60 0M70 112q30 14 60 0" fill="none" stroke="#B4552D" stroke-width="3" stroke-linecap="round"/>
-              </svg>
-              <p class="plate-caption">Lasanha à Bolonhesa da casa</p>
-            </div>
+        <figure class="hero-figure">
+          <div class="photo" data-slot="hero" data-alt="O salão da Cantina do Zé">
+            <img src="images/restaurante-hero.jpg" alt="O salão da Cantina do Zé">
           </div>
-          <div class="badge">Desde 1998</div>
-        </div>
+          <figcaption>Rua Vergueiro, 1234, Vila Mariana, São Paulo.</figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- CARDÁPIO -->
     <section class="menu-section" id="cardapio">
       <div class="container">
-        <p class="eyebrow center">Nosso cardápio</p>
         <h2>O que sai da nossa cozinha</h2>
         <p class="section-intro">Massas frescas preparadas todos os dias, molhos de tomate pelado italiano e ingredientes selecionados de fornecedores do bairro.</p>
 
         <div class="menu-group">
-          <h3><span class="group-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M6 5c0 6 2 9 6 9s6-3 6-9M12 14v6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span> Entradas</h3>
+          <h3>Entradas</h3>
           <div class="dishes">
             <article class="dish">
               <div class="dish-head"><h4>Bruschetta al Pomodoro</h4><span class="price">R$ 24,90</span></div>
@@ -100,7 +81,21 @@
         </div>
 
         <div class="menu-group">
-          <h3><span class="group-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span> Pratos Principais</h3>
+          <h3>Pratos Principais</h3>
+          <div class="dish-photos">
+          <figure class="dish-figure">
+            <div class="photo" data-slot="prato-massa" data-alt="Lasanha à Bolonhesa da casa">
+              <img src="images/prato-massa.jpg" alt="Lasanha à Bolonhesa da casa">
+            </div>
+            <figcaption>Lasanha à Bolonhesa, o clássico da casa.</figcaption>
+          </figure>
+          <figure class="dish-figure">
+            <div class="photo" data-slot="prato-pizza" data-alt="Pizza Margherita da casa">
+              <img src="images/prato-pizza.jpg" alt="Pizza Margherita da casa">
+            </div>
+            <figcaption>Pizza Margherita, massa de fermentação lenta.</figcaption>
+          </figure>
+          </div>
           <div class="dishes">
             <article class="dish">
               <div class="dish-head"><h4>Lasanha à Bolonhesa</h4><span class="price">R$ 54,90</span></div>
@@ -127,7 +122,13 @@
         </div>
 
         <div class="menu-group">
-          <h3><span class="group-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c-2 4-5 6-5 10a5 5 0 0 0 10 0c0-4-3-6-5-10z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 21h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span> Sobremesas</h3>
+          <h3>Sobremesas</h3>
+          <figure class="dish-figure">
+            <div class="photo" data-slot="prato-sobremesa" data-alt="Tiramisù da casa">
+              <img src="images/prato-sobremesa.jpg" alt="Tiramisù da casa">
+            </div>
+            <figcaption>Tiramisù, receita da nonna.</figcaption>
+          </figure>
           <div class="dishes">
             <article class="dish">
               <div class="dish-head"><h4>Tiramisù</h4><span class="price">R$ 26,90</span></div>
@@ -149,33 +150,24 @@
 
     <!-- SOBRE -->
     <section class="about-section" id="sobre">
-      <div class="container about-inner">
-        <div class="about-art" aria-hidden="true">
-          <div class="about-card">
-            <p class="about-year">1998</p>
-            <p class="about-year-label">o ano em que tudo começou</p>
-            <svg viewBox="0 0 120 60" class="about-svg"><path d="M10 50 C30 10, 50 50, 70 15 S110 45, 115 20" fill="none" stroke="#C1552B" stroke-width="2.5" stroke-linecap="round"/><circle cx="10" cy="50" r="3" fill="#1E3D2F"/><circle cx="70" cy="15" r="3" fill="#1E3D2F"/><circle cx="115" cy="20" r="3" fill="#1E3D2F"/></svg>
-          </div>
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow">Nossa história</p>
-          <h2>Uma cantina de família, no coração da Vila Mariana</h2>
-          <p>A Cantina do Zé nasceu em 1998, quando Giuseppe “Zé” Romano chegou da Calábria com a mala cheia de receitas da mãe e a certeza de que comida boa se faz com tempo, manteiga e paciência. O primeiro salão tinha seis mesas, um fogão a lenha e uma fila que dobrava a esquina.</p>
+      <div class="container">
+        <h2>Uma cantina de família, no coração da Vila Mariana</h2>
+        <div class="about-cols">
+          <p class="dropcap">A Cantina do Zé nasceu em 1998, quando Giuseppe “Zé” Romano chegou da Calábria com a mala cheia de receitas da mãe e a certeza de que comida boa se faz com tempo, manteiga e paciência. O primeiro salão tinha seis mesas, um fogão a lenha e uma fila que dobrava a esquina.</p>
           <p>Hoje a casa cresceu, mas o jeito de cozinhar é o mesmo: a massa é aberta na mão todas as manhãs, o ragù ferve por horas antes de ir ao prato e o tiramisù segue a receita original da nonna, sem atalho. A segunda geração da família já está na cozinha e no salão, e a terceira aprende o ofício entre uma aula e outra.</p>
           <p>Aqui, cliente antigo tem mesa cativa, aniversário tem cantoria e ninguém sai sem um “volta sempre” do Zé. É assim há mais de 25 anos, e é assim que queremos continuar.</p>
-          <ul class="about-facts">
-            <li><strong>25+</strong> anos de história</li>
-            <li><strong>3</strong> gerações da família Romano</li>
-            <li><strong>100%</strong> massas frescas feitas na casa</li>
-          </ul>
         </div>
+        <ul class="about-facts">
+          <li><strong>25+</strong> anos de história</li>
+          <li><strong>3</strong> gerações da família Romano</li>
+          <li><strong>100%</strong> massas frescas feitas na casa</li>
+        </ul>
       </div>
     </section>
 
     <!-- DEPOIMENTOS -->
     <section class="testimonials-section" id="depoimentos">
       <div class="container">
-        <p class="eyebrow center">Depoimentos</p>
         <h2>Quem come aqui, volta sempre</h2>
         <div class="testimonials">
           <figure class="testimonial">
@@ -207,13 +199,12 @@
     <section class="reservation-section" id="reservas">
       <div class="container reservation-inner">
         <div class="contact-info">
-          <p class="eyebrow">Reservas e contato</p>
           <h2>Reserve sua mesa</h2>
           <p>Garanta seu lugar para o almoço de domingo ou o jantar em família. Para grupos acima de 10 pessoas, fale com a gente pelo telefone ou WhatsApp.</p>
           <ul class="contact-list">
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
-              <span><strong>Endereço</strong><br>Rua Vergueiro, 1234 – Vila Mariana<br>São Paulo – SP</span>
+              <span><strong>Endereço</strong><br>Rua Vergueiro, 1234, Vila Mariana<br>São Paulo, SP</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
@@ -268,7 +259,7 @@
             <p class="form-error" id="form-error" role="alert" hidden></p>
           </form>
           <div class="form-success" id="form-success" hidden>
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1E3D2F"/><path d="M8 12.5l2.5 2.5L16 9.5" fill="none" stroke="#FAF3E7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" style="fill: var(--color-ink)"/><path d="M8 12.5l2.5 2.5L16 9.5" fill="none" style="stroke: var(--color-paper)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <h3>Reserva recebida!</h3>
             <p id="success-text">Obrigado! Sua mesa está pré-reservada. Entraremos em contato para confirmar.</p>
             <button class="btn btn-outline" id="new-reservation" type="button">Fazer outra reserva</button>
@@ -281,8 +272,8 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-text">Cantina <em>do Zé</em></span>
-        <p>Cucina italiana de família desde 1998.<br>Rua Vergueiro, 1234 – Vila Mariana, São Paulo – SP</p>
+        <span class="logo-text">Cantina do Zé</span>
+        <p>Cucina italiana de família desde 1998.<br>Rua Vergueiro, 1234, Vila Mariana, São Paulo, SP</p>
       </div>
       <nav class="footer-nav" aria-label="Links do rodapé">
         <a href="#inicio">Início</a>
@@ -295,6 +286,8 @@
     </div>
   </footer>
 
+  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
   <script src="script.js"></script>
 </body>
 </html>
