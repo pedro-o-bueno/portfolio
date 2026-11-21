@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fluxo — o financeiro da sua empresa em um só lugar. Controle financeiro, emissão de boletos e Pix, fluxo de caixa e relatórios automáticos para pequenas empresas.">
+  <title>Fluxo — O financeiro da sua empresa em um só lugar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#topo" class="logo" aria-label="Fluxo — voltar ao topo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg>
+        </span>
+        Fluxo
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#recursos">Recursos</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#cta" class="btn btn-primary nav-cta">Testar grátis</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="badge">Novo: integração com Pix automático</span>
+          <h1>O financeiro da sua empresa em <span class="gradient-text">um só lugar</span></h1>
+          <p class="hero-sub">Controle de contas a pagar e a receber, emissão de boletos, fluxo de caixa e relatórios automáticos. Menos planilha, mais tempo para vender.</p>
+          <form class="email-capture" id="emailForm" novalidate>
+            <label class="sr-only" for="emailInput">Seu melhor e-mail profissional</label>
+            <input type="email" id="emailInput" placeholder="Seu melhor e-mail profissional" required>
+            <button type="submit" class="btn btn-primary">Começar grátis por 14 dias</button>
+          </form>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          <p class="trust-line">Sem cartão de crédito &bull; Cancele quando quiser</p>
+          <p class="hero-proof">Mais de <strong>12.000 pequenas empresas</strong> já organizam o financeiro com o Fluxo</p>
+        </div>
+
+        <!-- Dashboard mockup em CSS/HTML puro -->
+        <div class="mockup" aria-label="Prévia do painel do Fluxo">
+          <div class="mockup-sidebar">
+            <span class="mockup-logo">Fluxo</span>
+            <span class="mockup-link active">Visão geral</span>
+            <span class="mockup-link">Contas a receber</span>
+            <span class="mockup-link">Contas a pagar</span>
+            <span class="mockup-link">Boletos</span>
+            <span class="mockup-link">Relatórios</span>
+          </div>
+          <div class="mockup-main">
+            <div class="mockup-topbar">
+              <span class="mockup-title">Visão geral</span>
+              <span class="mockup-user">MB</span>
+            </div>
+            <div class="mockup-cards">
+              <div class="mockup-card highlight">
+                <span class="mockup-label">Saldo em conta</span>
+                <strong>R$ 48.230,00</strong>
+                <span class="mockup-delta up">+12,4% vs. mês anterior</span>
+              </div>
+              <div class="mockup-card">
+                <span class="mockup-label">Receitas (mês)</span>
+                <strong>R$ 86.400,00</strong>
+                <span class="mockup-delta up">+8,1% vs. mês anterior</span>
+              </div>
+              <div class="mockup-card">
+                <span class="mockup-label">Despesas (mês)</span>
+                <strong>R$ 38.170,00</strong>
+                <span class="mockup-delta down">&minus;3,2% vs. mês anterior</span>
+              </div>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-chart">
+                <span class="mockup-label">Fluxo de caixa — últimos 6 meses</span>
+                <div class="bars">
+                  <div class="bar" style="--h:42%"><span>Jan</span></div>
+                  <div class="bar" style="--h:58%"><span>Fev</span></div>
+                  <div class="bar" style="--h:48%"><span>Mar</span></div>
+                  <div class="bar" style="--h:70%"><span>Abr</span></div>
+                  <div class="bar" style="--h:64%"><span>Mai</span></div>
+                  <div class="bar" style="--h:92%"><span>Jun</span></div>
+                </div>
+              </div>
+              <div class="mockup-transactions">
+                <span class="mockup-label">Últimas transações</span>
+                <ul>
+                  <li><span class="tx-icon in">+</span><span class="tx-name">Venda — Loja Online</span><span class="tx-value in">+ R$ 2.450,00</span></li>
+                  <li><span class="tx-icon out">&minus;</span><span class="tx-name">Aluguel do escritório</span><span class="tx-value out">&minus; R$ 3.800,00</span></li>
+                  <li><span class="tx-icon in">+</span><span class="tx-name">Boleto #1042 — Cliente A</span><span class="tx-value in">+ R$ 1.180,00</span></li>
+                  <li><span class="tx-icon out">&minus;</span><span class="tx-name">Fornecedor — Papelaria</span><span class="tx-value out">&minus; R$ 640,00</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECURSOS -->
+    <section class="section" id="recursos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Tudo que o financeiro da sua empresa precisa</h2>
+          <p>Do primeiro boleto ao relatório do mês, o Fluxo acompanha cada real que entra e sai.</p>
+        </div>
+        <div class="features">
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg></span>
+            <h3>Fluxo de caixa em tempo real</h3>
+            <p>Veja o saldo e as projeções do mês atualizados na hora, sem esperar o fechamento da contabilidade.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01M18 12h.01"/></svg></span>
+            <h3>Emissão de boletos e Pix</h3>
+            <p>Cobre seus clientes por boleto ou Pix em poucos cliques, com baixa automática quando o pagamento entra.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15v-4M12 17V7M17 13v-3"/></svg></span>
+            <h3>Relatórios automáticos</h3>
+            <p>DRE, contas por categoria e comparativos mensais prontos para enviar ao contador, sem montar planilha.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M6 15h4"/></svg></span>
+            <h3>Integração com bancos</h3>
+            <p>Conecte suas contas e importe extratos automaticamente. A conciliação bancária deixa de ser tarefa manual.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <h3>Lembretes de cobrança</h3>
+            <p>O Fluxo avisa seus clientes antes do vencimento e depois dele, com mensagens prontas por e-mail e WhatsApp.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg></span>
+            <h3>Suporte em português</h3>
+            <p>Time brasileiro, em horário comercial, por chat e e-mail. Você fala com gente que entende a realidade do seu negócio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="section section-alt" id="planos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Planos para cada momento da sua empresa</h2>
+          <p>Comece grátis e evolua quando fizer sentido. Sem fidelidade e sem surpresa na fatura.</p>
+        </div>
+        <div class="billing-toggle" role="group" aria-label="Período de cobrança">
+          <span id="labelMensal" class="toggle-label active">Mensal</span>
+          <button class="toggle-switch" id="billingToggle" role="switch" aria-checked="false" aria-label="Alternar entre cobrança mensal e anual">
+            <span class="toggle-knob"></span>
+          </button>
+          <span id="labelAnual" class="toggle-label">Anual <em class="save-badge">&minus;20%</em></span>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <h3>Grátis</h3>
+            <p class="plan-desc">Para tirar o financeiro do papel.</p>
+            <p class="plan-price"><span class="currency">R$</span> <span class="price-value" data-monthly="0" data-annual="0">0</span><span class="period">/mês</span></p>
+            <p class="plan-note">Para sempre, sem cartão</p>
+            <ul>
+              <li>1 usuário</li>
+              <li>Contas a pagar e a receber</li>
+              <li>Fluxo de caixa básico</li>
+              <li>Até 20 boletos por mês</li>
+              <li>Suporte por e-mail</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Começar grátis</a>
+          </article>
+          <article class="plan popular">
+            <span class="popular-badge">Mais popular</span>
+            <h3>Pro</h3>
+            <p class="plan-desc">Para quem já vende todo mês e quer previsibilidade.</p>
+            <p class="plan-price"><span class="currency">R$</span> <span class="price-value" data-monthly="49,90" data-annual="39,90">49,90</span><span class="period">/mês</span></p>
+            <p class="plan-note"><span class="annual-note" hidden>no plano anual</span>Teste grátis por 14 dias</p>
+            <ul>
+              <li>Até 5 usuários</li>
+              <li>Tudo do Grátis, sem limite de boletos</li>
+              <li>Pix automático e lembretes de cobrança</li>
+              <li>Relatórios automáticos (DRE e por categoria)</li>
+              <li>Integração com bancos</li>
+              <li>Suporte prioritário por chat</li>
+            </ul>
+            <a href="#cta" class="btn btn-primary btn-block">Testar 14 dias grátis</a>
+          </article>
+          <article class="plan">
+            <h3>Empresas</h3>
+            <p class="plan-desc">Para operações com mais volume e mais gente no time.</p>
+            <p class="plan-price"><span class="currency">R$</span> <span class="price-value" data-monthly="149,90" data-annual="119,90">149,90</span><span class="period">/mês</span></p>
+            <p class="plan-note"><span class="annual-note" hidden>no plano anual</span>Teste grátis por 14 dias</p>
+            <ul>
+              <li>Usuários ilimitados</li>
+              <li>Tudo do Pro</li>
+              <li>Múltiplas empresas e filiais</li>
+              <li>Permissões por usuário</li>
+              <li>Gerente de conta dedicado</li>
+              <li>Suporte prioritário com SLA</li>
+            </ul>
+            <a href="#cta" class="btn btn-outline btn-block">Falar com vendas</a>
+          </article>
+        </div>
+        <p class="plans-footnote">Valores em reais (BRL). No plano anual, o valor é cobrado uma vez ao ano, com 20% de desconto sobre o mensal.</p>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quem usa, recomenda</h2>
+          <p>Donos de pequenas empresas que trocaram a planilha pelo Fluxo.</p>
+        </div>
+        <div class="testimonials">
+          <figure class="testimonial">
+            <blockquote>Antes eu passava o domingo fechando a planilha. Hoje abro o Fluxo no celular, vejo o que entra e o que sai, e o resto do dia é da minha família.</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">MC</span>
+              <span><strong>Mariana Costa</strong><br>Padaria Pão Dourado &bull; Campinas, SP</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>O lembrete de cobrança sozinho já pagou o plano. Meus clientes recebem o aviso no Pix antes do vencimento e a inadimplência caiu quase pela metade.</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">RS</span>
+              <span><strong>Rafael Souza</strong><br>RS Informática &bull; Belo Horizonte, MG</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>Sou eu e mais duas funcionárias no salão. O relatório do mês vai direto para o contador e eu não preciso mais explicar nada no fim do mês.</blockquote>
+            <figcaption>
+              <span class="avatar" aria-hidden="true">CA</span>
+              <span><strong>Camila Almeida</strong><br>Studio Camila Almeida &bull; Recife, PE</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container faq-container">
+        <div class="section-head">
+          <h2>Perguntas frequentes</h2>
+          <p>Não achou sua dúvida? Fale com a gente pelo chat, em horário comercial.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Preciso de cartão de crédito para testar?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Não. O teste grátis de 14 dias do plano Pro não pede cartão de crédito. Você só informa um e-mail e começa a usar na hora. Se não assinar nada ao final, sua conta volta para o plano Grátis automaticamente.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Posso cancelar quando quiser?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Sim. Não há fidelidade nem multa. Você cancela em poucos cliques dentro do próprio painel, e o plano fica ativo até o fim do período já pago. Seus dados ficam disponíveis para exportação por 90 dias após o cancelamento.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Meus dados ficam seguros?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Sim. Usamos criptografia em trânsito e em repouso, backups diários e servidores em data centers certificados. Seus dados financeiros nunca são vendidos ou compartilhados com terceiros, conforme a LGPD.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">O Fluxo emite nota fiscal?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>O Fluxo não é um emissor de nota fiscal eletrônica, mas integra com os principais emissores do mercado e registra as notas no seu fluxo de caixa automaticamente, para você não lançar nada duas vezes.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Como funciona a integração bancária?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Você conecta sua conta corrente em poucos minutos, com a autorização feita no ambiente do próprio banco (Open Finance). A partir daí o extrato é importado automaticamente e o Fluxo sugere a conciliação de cada lançamento.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" id="cta">
+      <div class="container cta-inner">
+        <h2>Pronto para organizar o financeiro da sua empresa?</h2>
+        <p>Crie sua conta em menos de 2 minutos e teste o plano Pro grátis por 14 dias.</p>
+        <form class="email-capture cta-form" id="emailFormCta" novalidate>
+          <label class="sr-only" for="emailInputCta">Seu melhor e-mail profissional</label>
+          <input type="email" id="emailInputCta" placeholder="Seu melhor e-mail profissional" required>
+          <button type="submit" class="btn btn-white">Criar conta grátis</button>
+        </form>
+        <p class="form-msg form-msg-light" id="formMsgCta" role="status" aria-live="polite"></p>
+        <p class="trust-line trust-line-light">Sem cartão de crédito &bull; Cancele quando quiser</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#topo" class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg>
+          </span>
+          Fluxo
+        </a>
+        <p>O financeiro da sua empresa em um só lugar.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <div>
+          <h4>Produto</h4>
+          <a href="#recursos">Recursos</a>
+          <a href="#planos">Planos</a>
+          <a href="#depoimentos">Depoimentos</a>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <a href="#topo">Sobre nós</a>
+          <a href="#topo">Carreiras</a>
+          <a href="#topo">Imprensa</a>
+        </div>
+        <div>
+          <h4>Suporte</h4>
+          <a href="#faq">Central de ajuda</a>
+          <a href="#faq">FAQ</a>
+          <a href="mailto:contato@fluxo.com.br">contato@fluxo.com.br</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Fluxo Tecnologia Ltda. &bull; CNPJ 12.345.678/0001-90 &bull; São Paulo, SP</p>
+      <p><a href="#topo">Termos de uso</a> &bull; <a href="#topo">Política de privacidade</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

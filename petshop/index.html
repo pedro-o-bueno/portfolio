@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pata Amiga Pet Shop & Clínica Veterinária em Porto Alegre. Banho e tosa, consulta veterinária, vacinação, hospedagem pet e muito mais cuidado para o seu melhor amigo.">
+  <title>Pata Amiga Pet Shop &amp; Clínica Veterinária | Porto Alegre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Pata Amiga - voltar ao início">
+        <span class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="40" height="40" fill="currentColor" role="img" aria-label="Pegada de patinha">
+            <ellipse cx="32" cy="42" rx="14" ry="11"/>
+            <ellipse cx="15" cy="28" rx="6" ry="8" transform="rotate(-15 15 28)"/>
+            <ellipse cx="27" cy="19" rx="6" ry="8" transform="rotate(-5 27 19)"/>
+            <ellipse cx="39" cy="19" rx="6" ry="8" transform="rotate(5 39 19)"/>
+            <ellipse cx="50" cy="28" rx="6" ry="8" transform="rotate(15 50 28)"/>
+          </svg>
+        </span>
+        <span class="logo-text">Pata <strong>Amiga</strong><small>Pet Shop &amp; Clínica Veterinária</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#agendamento" class="nav-cta">Agendamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="hero-badge">Pet shop e clínica veterinária no Centro de Porto Alegre</span>
+          <h1>Cuidado completo para o seu melhor amigo</h1>
+          <p>Banho e tosa, consultas, vacinas e muito carinho em um só lugar. Aqui, cada pet é tratado como parte da família.</p>
+          <div class="hero-actions">
+            <a href="#agendamento" class="btn btn-primary">Agendar banho e tosa</a>
+            <a href="#servicos" class="btn btn-outline">Ver serviços</a>
+          </div>
+          <ul class="hero-info">
+            <li><strong>Seg a sáb</strong> · 08h às 19h</li>
+            <li><strong>(51) 3222-8899</strong></li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-card">
+            <svg class="hero-dog" viewBox="0 0 220 180" fill="none" role="img" aria-label="Ilustração de cachorro e gato">
+              <!-- gato -->
+              <g fill="#F59E0B">
+                <path d="M150 118c0-24 10-38 26-38s26 14 26 38v22h-52v-22z"/>
+                <path d="M152 88l-6-16 16 8zM200 88l6-16-16 8z"/>
+                <circle cx="168" cy="108" r="3" fill="#FFF8F0"/>
+                <circle cx="184" cy="108" r="3" fill="#FFF8F0"/>
+              </g>
+              <!-- cachorro -->
+              <g fill="#0E7C7B">
+                <path d="M34 130c0-34 16-54 44-54s44 20 44 54v20H34v-20z"/>
+                <ellipse cx="30" cy="96" rx="12" ry="24" transform="rotate(18 30 96)"/>
+                <ellipse cx="126" cy="96" rx="12" ry="24" transform="rotate(-18 126 96)"/>
+                <circle cx="64" cy="104" r="4" fill="#FFF8F0"/>
+                <circle cx="92" cy="104" r="4" fill="#FFF8F0"/>
+                <ellipse cx="78" cy="122" rx="8" ry="6" fill="#FF8A3D"/>
+              </g>
+              <g fill="#14919B" opacity="0.55">
+                <circle cx="20" cy="30" r="7"/><circle cx="36" cy="18" r="5"/><circle cx="52" cy="28" r="5"/>
+              </g>
+            </svg>
+            <p class="hero-card-text"><strong>Thor, Luna e Mel</strong> já são clientes fiéis da Pata Amiga</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <h2 class="section-title">Nossos serviços</h2>
+        <p class="section-subtitle">Do banho semanal à consulta de rotina, tudo com profissionais que amam o que fazem.</p>
+        <div class="grid cards-3">
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="currentColor"><path d="M24 8c-2 6-8 8-8 14a8 8 0 0 0 16 0c0-6-6-8-8-14z"/><path d="M10 30a6 6 0 1 0 6 6M38 30a6 6 0 1 1-6 6" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg></span>
+            <h3>Banho e Tosa</h3>
+            <p>Banho com produtos neutros, tosa higiênica ou da raça, corte de unhas e limpeza de ouvidos.</p>
+            <p class="price">a partir de <strong>R$ 69,90</strong></p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="currentColor"><path d="M24 6v36M6 24h36" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3"/></svg></span>
+            <h3>Consulta Veterinária</h3>
+            <p>Avaliação completa de saúde, orientações de alimentação e acompanhamento do seu pet.</p>
+            <p class="price"><strong>R$ 120,00</strong></p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M30 6L14 30h10l-3 12 16-24H27l3-12z"/></svg></span>
+            <h3>Vacinação</h3>
+            <p>Vacinas nacionais e importadas, com carteirinha atualizada e lembrete da próxima dose.</p>
+            <p class="price">a partir de <strong>R$ 85,00</strong></p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="24" r="18"/><path d="M24 14v10l7 5"/></svg></span>
+            <h3>Castração</h3>
+            <p>Cirurgia segura com anestesia, exames pré-operatórios e retorno pós-cirúrgico incluído.</p>
+            <p class="price"><strong>Consulte os valores</strong></p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30v-8a6 6 0 0 1 6-6h24a6 6 0 0 1 6 6v8"/><path d="M8 30h40v8H8zM14 22v-4M34 22v-4"/></svg></span>
+            <h3>Hospedagem Pet</h3>
+            <p>Vai viajar? Seu pet fica em ambiente seguro, com passeios, brincadeiras e monitoramento.</p>
+            <p class="price"><strong>R$ 59,90</strong> / diária</p>
+          </article>
+          <article class="card service-card">
+            <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 32l6-16h16l-6 16zM28 32l6-16h8l-6 16zM12 40h24"/></svg></span>
+            <h3>Táxi Dog</h3>
+            <p>Buscamos e devolvemos o seu pet em casa, com transporte seguro e confortável.</p>
+            <p class="price"><strong>Consulte a região</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="section section-alt" id="produtos">
+      <div class="container">
+        <h2 class="section-title">Produtos em destaque</h2>
+        <p class="section-subtitle">Rações, brinquedos e acessórios selecionados com carinho para cães e gatos.</p>
+        <div class="grid cards-3">
+          <article class="card product-card">
+            <div class="product-thumb thumb-teal" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52" fill="#fff"><rect x="10" y="22" width="44" height="28" rx="8"/><path d="M22 22v-6a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v6" fill="none" stroke="#fff" stroke-width="4"/></svg></div>
+            <h3>Ração Premium 10 kg</h3>
+            <p>Alimentação completa para cães adultos de todos os portes.</p>
+            <p class="price"><strong>R$ 189,90</strong></p>
+          </article>
+          <article class="card product-card">
+            <div class="product-thumb thumb-orange" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52" fill="#fff"><circle cx="20" cy="32" r="10"/><circle cx="44" cy="32" r="10"/><rect x="20" y="26" width="24" height="12"/></svg></div>
+            <h3>Brinquedo Mordedor</h3>
+            <p>Resistente e seguro, ideal para filhotes e cães que adoram morder.</p>
+            <p class="price"><strong>R$ 34,90</strong></p>
+          </article>
+          <article class="card product-card">
+            <div class="product-thumb thumb-teal" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M14 54V30a18 18 0 0 1 36 0v24"/><path d="M14 54h36"/></svg></div>
+            <h3>Arranhador para Gatos</h3>
+            <p>Arranhador com base estável e sisal natural para o seu gato se divertir.</p>
+            <p class="price"><strong>R$ 129,90</strong></p>
+          </article>
+          <article class="card product-card">
+            <div class="product-thumb thumb-orange" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52" fill="#fff"><path d="M32 8c-3 9-12 12-12 21a12 12 0 0 0 24 0c0-9-9-12-12-21z"/></svg></div>
+            <h3>Shampoo Neutro</h3>
+            <p>Limpeza suave, sem irritar a pele. Para cães e gatos de todas as idades.</p>
+            <p class="price"><strong>R$ 42,90</strong></p>
+          </article>
+          <article class="card product-card">
+            <div class="product-thumb thumb-teal" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><path d="M10 44a12 12 0 0 1 12-12h20a12 12 0 0 1 12 12v4a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6v-4z"/><path d="M18 32V24a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v8"/></svg></div>
+            <h3>Cama Pet</h3>
+            <p>Cama macia e lavável, disponível em vários tamanhos e cores.</p>
+            <p class="price"><strong>R$ 99,90</strong></p>
+          </article>
+          <article class="card product-card">
+            <div class="product-thumb thumb-orange" aria-hidden="true"><svg viewBox="0 0 64 64" width="52" height="52" fill="#fff"><ellipse cx="32" cy="38" rx="18" ry="12"/><ellipse cx="32" cy="24" rx="10" ry="7"/></svg></div>
+            <h3>Petisco Natural</h3>
+            <p>Petisco saudável, sem corantes, perfeito para treinos e recompensas.</p>
+            <p class="price"><strong>R$ 19,90</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <h2 class="section-title">Quem confia, recomenda</h2>
+        <p class="section-subtitle">Veja o que os tutores e seus pets dizem sobre a Pata Amiga.</p>
+        <div class="grid cards-3">
+          <blockquote class="card testimonial">
+            <p class="stars" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</p>
+            <p>“O Thor ama o banho daqui! Ele entra abanando o rabo e sai cheiroso e feliz. Não levo em outro lugar.”</p>
+            <footer><strong>Mariana</strong><span>tutora do Thor, golden retriever</span></footer>
+          </blockquote>
+          <blockquote class="card testimonial">
+            <p class="stars" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</p>
+            <p>“A Luna era super medrosa no veterinário, mas a equipe aqui tem uma paciência enorme. Hoje ela vai tranquila para a consulta.”</p>
+            <footer><strong>Carlos</strong><span>tutor da Luna, gatinha siamesa</span></footer>
+          </blockquote>
+          <blockquote class="card testimonial">
+            <p class="stars" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</p>
+            <p>“Deixei a Mel hospedada durante uma viagem e recebi fotos todos os dias. Voltei tranquila e ela nem queria ir embora!”</p>
+            <footer><strong>Fernanda</strong><span>tutora da Mel, shih-tzu</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO / CONTATO -->
+    <section class="section section-alt" id="agendamento">
+      <div class="container">
+        <h2 class="section-title">Agende uma visita</h2>
+        <p class="section-subtitle">Preencha o formulário ou fale direto com a gente pelo WhatsApp.</p>
+        <div class="booking-grid">
+          <div class="contact-info">
+            <h3>Onde estamos</h3>
+            <address>
+              Rua dos Andradas, 850 – Centro<br>
+              Porto Alegre – RS
+            </address>
+            <p><strong>Telefone:</strong> <a href="tel:+555132228899">(51) 3222-8899</a></p>
+            <p><strong>Horário de funcionamento:</strong><br>Segunda a sábado, das 08h às 19h</p>
+            <a class="btn btn-whatsapp" href="https://wa.me/5551987659876" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+          <form class="booking-form" id="bookingForm" novalidate>
+            <div class="form-group">
+              <label for="tutorName">Seu nome</label>
+              <input type="text" id="tutorName" name="tutorName" placeholder="Ex.: Mariana Silva" required>
+            </div>
+            <div class="form-group">
+              <label for="petName">Nome do pet</label>
+              <input type="text" id="petName" name="petName" placeholder="Ex.: Thor" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Serviço</label>
+              <select id="service" name="service" required>
+                <option value="" selected disabled>Escolha um serviço</option>
+                <option>Banho e Tosa</option>
+                <option>Consulta Veterinária</option>
+                <option>Vacinação</option>
+                <option>Castração</option>
+                <option>Hospedagem Pet</option>
+                <option>Táxi Dog</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date">Data desejada</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Confirmar agendamento</button>
+            <p class="form-success" id="formSuccess" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>Pata Amiga</strong> — Pet Shop &amp; Clínica Veterinária</p>
+      <p>Rua dos Andradas, 850 – Centro, Porto Alegre – RS · (51) 3222-8899</p>
+      <p class="footer-note">Segunda a sábado, das 08h às 19h · © 2026 Pata Amiga. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
