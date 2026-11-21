@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fluxo — o financeiro da sua empresa em um só lugar. Controle financeiro, emissão de boletos e Pix, fluxo de caixa e relatórios automáticos para pequenas empresas.">
-  <title>Fluxo — O financeiro da sua empresa em um só lugar</title>
+  <meta name="description" content="Fluxo, o financeiro da sua empresa em um só lugar. Controle financeiro, emissão de boletos e Pix, fluxo de caixa e relatórios automáticos para pequenas empresas.">
+  <title>Fluxo, o financeiro da sua empresa em um só lugar</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
-      <a href="#topo" class="logo" aria-label="Fluxo — voltar ao topo">
+      <a href="#topo" class="logo" aria-label="Fluxo, voltar ao topo">
         <span class="logo-mark" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg>
         </span>
         Fluxo
       </a>
@@ -35,23 +37,30 @@
   <main id="topo">
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-copy">
-          <span class="badge">Novo: integração com Pix automático</span>
-          <h1>O financeiro da sua empresa em <span class="gradient-text">um só lugar</span></h1>
+          <h1>O financeiro da sua empresa em um só lugar</h1>
           <p class="hero-sub">Controle de contas a pagar e a receber, emissão de boletos, fluxo de caixa e relatórios automáticos. Menos planilha, mais tempo para vender.</p>
+          <p class="hero-note">Novo: integração com Pix automático</p>
           <form class="email-capture" id="emailForm" novalidate>
             <label class="sr-only" for="emailInput">Seu melhor e-mail profissional</label>
             <input type="email" id="emailInput" placeholder="Seu melhor e-mail profissional" required>
             <button type="submit" class="btn btn-primary">Começar grátis por 14 dias</button>
           </form>
           <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-          <p class="trust-line">Sem cartão de crédito &bull; Cancele quando quiser</p>
+          <p class="trust-line">Sem cartão de crédito. Cancele quando quiser.</p>
           <p class="hero-proof">Mais de <strong>12.000 pequenas empresas</strong> já organizam o financeiro com o Fluxo</p>
         </div>
 
-        <!-- Dashboard mockup em CSS/HTML puro -->
+        <figure class="hero-photo" data-slot="saas-hero" data-alt="Prévia do painel financeiro do Fluxo">
+          <img src="images/saas-hero.jpg" alt="Prévia do painel financeiro do Fluxo">
+        </figure>
+      </div>
+    </section>
+
+    <!-- PAINEL -->
+    <section class="desk-band" aria-label="Prévia do painel do Fluxo">
+      <div class="container">
         <div class="mockup" aria-label="Prévia do painel do Fluxo">
           <div class="mockup-sidebar">
             <span class="mockup-logo">Fluxo</span>
@@ -85,7 +94,7 @@
             </div>
             <div class="mockup-body">
               <div class="mockup-chart">
-                <span class="mockup-label">Fluxo de caixa — últimos 6 meses</span>
+                <span class="mockup-label">Fluxo de caixa dos últimos 6 meses</span>
                 <div class="bars">
                   <div class="bar" style="--h:42%"><span>Jan</span></div>
                   <div class="bar" style="--h:58%"><span>Fev</span></div>
@@ -98,10 +107,10 @@
               <div class="mockup-transactions">
                 <span class="mockup-label">Últimas transações</span>
                 <ul>
-                  <li><span class="tx-icon in">+</span><span class="tx-name">Venda — Loja Online</span><span class="tx-value in">+ R$ 2.450,00</span></li>
+                  <li><span class="tx-icon in">+</span><span class="tx-name">Venda, Loja Online</span><span class="tx-value in">+ R$ 2.450,00</span></li>
                   <li><span class="tx-icon out">&minus;</span><span class="tx-name">Aluguel do escritório</span><span class="tx-value out">&minus; R$ 3.800,00</span></li>
-                  <li><span class="tx-icon in">+</span><span class="tx-name">Boleto #1042 — Cliente A</span><span class="tx-value in">+ R$ 1.180,00</span></li>
-                  <li><span class="tx-icon out">&minus;</span><span class="tx-name">Fornecedor — Papelaria</span><span class="tx-value out">&minus; R$ 640,00</span></li>
+                  <li><span class="tx-icon in">+</span><span class="tx-name">Boleto #1042, Cliente A</span><span class="tx-value in">+ R$ 1.180,00</span></li>
+                  <li><span class="tx-icon out">&minus;</span><span class="tx-name">Fornecedor, Papelaria</span><span class="tx-value out">&minus; R$ 640,00</span></li>
                 </ul>
               </div>
             </div>
@@ -229,21 +238,21 @@
             <blockquote>Antes eu passava o domingo fechando a planilha. Hoje abro o Fluxo no celular, vejo o que entra e o que sai, e o resto do dia é da minha família.</blockquote>
             <figcaption>
               <span class="avatar" aria-hidden="true">MC</span>
-              <span><strong>Mariana Costa</strong><br>Padaria Pão Dourado &bull; Campinas, SP</span>
+              <span><strong>Mariana Costa</strong><br>Padaria Pão Dourado<br>Campinas, SP</span>
             </figcaption>
           </figure>
           <figure class="testimonial">
             <blockquote>O lembrete de cobrança sozinho já pagou o plano. Meus clientes recebem o aviso no Pix antes do vencimento e a inadimplência caiu quase pela metade.</blockquote>
             <figcaption>
               <span class="avatar" aria-hidden="true">RS</span>
-              <span><strong>Rafael Souza</strong><br>RS Informática &bull; Belo Horizonte, MG</span>
+              <span><strong>Rafael Souza</strong><br>RS Informática<br>Belo Horizonte, MG</span>
             </figcaption>
           </figure>
           <figure class="testimonial">
             <blockquote>Sou eu e mais duas funcionárias no salão. O relatório do mês vai direto para o contador e eu não preciso mais explicar nada no fim do mês.</blockquote>
             <figcaption>
               <span class="avatar" aria-hidden="true">CA</span>
-              <span><strong>Camila Almeida</strong><br>Studio Camila Almeida &bull; Recife, PE</span>
+              <span><strong>Camila Almeida</strong><br>Studio Camila Almeida<br>Recife, PE</span>
             </figcaption>
           </figure>
         </div>
@@ -293,7 +302,7 @@
           <button type="submit" class="btn btn-white">Criar conta grátis</button>
         </form>
         <p class="form-msg form-msg-light" id="formMsgCta" role="status" aria-live="polite"></p>
-        <p class="trust-line trust-line-light">Sem cartão de crédito &bull; Cancele quando quiser</p>
+        <p class="trust-line trust-line-light">Sem cartão de crédito. Cancele quando quiser.</p>
       </div>
     </section>
   </main>
@@ -303,7 +312,7 @@
       <div class="footer-brand">
         <a href="#topo" class="logo logo-light">
           <span class="logo-mark" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M14 8h7v7"/></svg>
           </span>
           Fluxo
         </a>
@@ -311,19 +320,19 @@
       </div>
       <nav class="footer-nav" aria-label="Links do rodapé">
         <div>
-          <h4>Produto</h4>
+          <h3>Produto</h3>
           <a href="#recursos">Recursos</a>
           <a href="#planos">Planos</a>
           <a href="#depoimentos">Depoimentos</a>
         </div>
         <div>
-          <h4>Empresa</h4>
+          <h3>Empresa</h3>
           <a href="#topo">Sobre nós</a>
           <a href="#topo">Carreiras</a>
           <a href="#topo">Imprensa</a>
         </div>
         <div>
-          <h4>Suporte</h4>
+          <h3>Suporte</h3>
           <a href="#faq">Central de ajuda</a>
           <a href="#faq">FAQ</a>
           <a href="mailto:contato@fluxo.com.br">contato@fluxo.com.br</a>
@@ -331,11 +340,13 @@
       </nav>
     </div>
     <div class="container footer-bottom">
-      <p>&copy; 2026 Fluxo Tecnologia Ltda. &bull; CNPJ 12.345.678/0001-90 &bull; São Paulo, SP</p>
-      <p><a href="#topo">Termos de uso</a> &bull; <a href="#topo">Política de privacidade</a></p>
+      <p>&copy; 2026 Fluxo Tecnologia Ltda.<br>CNPJ 12.345.678/0001-90<br>São Paulo, SP</p>
+      <p class="footer-legal"><a href="#topo">Termos de uso</a><a href="#topo">Política de privacidade</a></p>
     </div>
   </footer>
 
+  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
   <script src="script.js"></script>
 </body>
 </html>
