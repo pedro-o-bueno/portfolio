@@ -5,24 +5,11 @@
 @import url("./tokens.css");
 @import url("./base.css");
 
-/* Night-piste ground: the Piste night variant, declared as tokens. */
-:root {
-  color-scheme: dark;
-  --color-paper: oklch(14% 0.01 260);
-  --color-paper-2: oklch(19% 0.012 260);
-  --color-paper-3: oklch(25% 0.014 260);
-  --color-ink: oklch(98.5% 0.004 260);
-  --color-ink-2: oklch(88% 0.01 260);
-  --color-muted: oklch(72% 0.012 260);
-  --color-rule: oklch(85% 0.008 260);
-  --color-accent: oklch(56% 0.25 265);
-  --color-accent-deep: oklch(46% 0.22 266);
-  --color-accent-ink: oklch(98.5% 0.004 260);
-  --color-accent-text: oklch(74% 0.18 265);
-  --color-focus: oklch(60% 0.22 28);
-  --color-field: var(--color-accent);
-  --color-error-text: oklch(74% 0.16 27);
-}
+/* Round 3 (2026-11-21): pattern guide §3 (Equinox / Gymbox). Palette and fonts moved to
+ * tokens.css (#111111 / #F5F5F2 / #FF4D00 / #8A8A85; Anton + Inter). Class grid is the
+ * backbone of the home page; flat color only, no gradients; trial CTA made prominent. */
+
+/* ---------- Section kickers (structural labels) ---------- */
 
 body { font-size: 17px; }
 html { scroll-behavior: smooth; }
@@ -165,7 +152,7 @@ a { text-decoration: none; }
   align-items: stretch;
 }
 .hero-copy { display: flex; flex-direction: column; justify-content: center; }
-.hero h1 { font-size: clamp(3.75rem, 7.2vw, 7rem); line-height: 0.95; }
+.hero h1 { font-size: clamp(4rem, 8vw, 8rem); line-height: 0.9; }
 .hero-sub {
   color: var(--color-ink-2);
   font-size: var(--text-lead);
@@ -175,7 +162,7 @@ a { text-decoration: none; }
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 .hero-trial { margin-top: var(--space-md); color: var(--color-muted); }
-.hero-trial strong { color: var(--color-ink); }
+.hero-trial strong { color: var(--color-accent-text); }
 
 .hero-photo {
   min-height: 460px;
@@ -208,6 +195,7 @@ a { text-decoration: none; }
 .plan-card {
   position: relative;
   background: var(--color-paper);
+  color: var(--color-ink);
   border-top: var(--rule-bar) solid var(--color-rule);
   padding: var(--space-xl) var(--space-lg);
   display: flex; flex-direction: column;
@@ -247,33 +235,83 @@ a { text-decoration: none; }
 .plan-card.selected { border-top-color: var(--color-accent); box-shadow: inset 0 0 0 2px var(--color-accent); }
 .plans-footnote { color: var(--color-muted); font-size: 0.88rem; margin-top: var(--space-lg); }
 
-/* ---------- Modalities ---------- */
+/* ---------- Class grid (the backbone of the home page — Gymbox pattern) ----------
+ * Named categories as numbered rows: big Anton index, category name, description,
+ * existing tag as the schedule/label line. No invented schedules or prices. */
 .modalities-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 0.85fr);
-  gap: var(--space-lg);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-md);
 }
 .modality-card {
   background: var(--color-paper-2);
+  color: var(--color-ink);
   border-top: var(--rule-bar) solid var(--color-rule);
   padding: var(--space-lg);
-  transition: transform var(--dur-short) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  column-gap: var(--space-md);
+  transition: border-color var(--dur-micro) var(--ease-out), transform var(--dur-short) var(--ease-out);
 }
 .modality-card:hover { border-top-color: var(--color-accent); transform: translateY(-4px); }
+.modality-num {
+  grid-row: span 4;
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: clamp(2.5rem, 3vw, 3.5rem);
+  line-height: 0.9;
+  color: var(--color-accent-text);
+  font-variant-numeric: tabular-nums;
+}
 .modality-icon {
   display: flex; align-items: center; justify-content: center;
   width: 56px; height: 56px;
   background: var(--color-accent); color: var(--color-accent-ink);
   margin-bottom: var(--space-md);
 }
-.modality-card h3 { margin-bottom: var(--space-xs); }
+.modality-card h3 { margin-bottom: var(--space-xs); font-size: clamp(1.75rem, 2vw, 2.25rem); }
 .modality-card p { color: var(--color-muted); font-size: 0.95rem; margin-bottom: var(--space-md); }
 .modality-tag {
-  display: inline-block;
+  display: block;
   font-size: var(--text-sm); font-weight: 700;
-  color: var(--color-ink); background: var(--color-paper-3);
-  padding: var(--space-2xs) var(--space-sm);
+  color: var(--color-accent-text);
+  border-top: var(--rule-hair) solid var(--color-rule);
+  padding-top: var(--space-sm);
 }
+
+/* Trial offer on every tier (Crunch pattern: "Enroll … and Get 1 Week FREE"
+ * sits on each membership card). Copy reused from the page's own trial offer. */
+.plan-trial {
+  margin-top: var(--space-sm);
+  text-align: center;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-accent-text);
+}
+
+/* Class-grid footer: real published price (lowest plan already on the page)
+ * + the existing trial CTA, made prominent. */
+.modalities-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: var(--rule-bar) solid var(--color-rule);
+}
+.modalities-price {
+  font-family: var(--font-display);
+  font-weight: var(--display-weight);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+.modalities-price strong { color: var(--color-accent-text); font-weight: var(--display-weight); }
+.modalities-cta { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 
 /* ---------- Testimonials ---------- */
 .testimonials { background: var(--color-paper-2); }
@@ -284,6 +322,7 @@ a { text-decoration: none; }
 }
 .testimonial-card {
   background: var(--color-paper);
+  color: var(--color-ink);
   border-top: var(--rule-bar) solid var(--color-accent);
   padding: var(--space-lg);
   display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-lg);
@@ -339,6 +378,7 @@ a { text-decoration: none; }
   transition: border-color var(--dur-micro) var(--ease-out);
 }
 .btn:disabled, .field input:disabled, .field select:disabled { opacity: 0.5; cursor: not-allowed; }
+.field input:focus-visible, .field select:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; border-color: var(--color-focus); }
 .field input::placeholder { color: var(--color-muted); }
 .field select option { background: var(--color-paper-2); }
 .field input.invalid, .field select.invalid { border-color: var(--color-error); }
@@ -355,7 +395,7 @@ a { text-decoration: none; }
 .form-success p { color: var(--color-muted); margin: var(--space-sm) 0 var(--space-lg); }
 
 /* ---------- Footer ---------- */
-.site-footer { border-top: var(--rule-bar) solid var(--color-rule); padding: var(--space-2xl) 0 var(--space-xl); background: var(--color-paper-3); }
+.site-footer { border-top: var(--rule-bar) solid var(--color-rule); padding: var(--space-2xl) 0 var(--space-xl); background: var(--color-paper-3); color: var(--color-ink); }
 .footer-inner { display: flex; flex-wrap: wrap; gap: var(--space-xl); justify-content: space-between; align-items: flex-start; }
 .footer-brand .logo-text { font-size: 2.25rem; }
 .footer-brand p { color: var(--color-muted); font-size: 0.9rem; margin-top: var(--space-sm); }
@@ -396,6 +436,7 @@ a { text-decoration: none; }
   .main-nav a { padding: var(--space-md) var(--space-2xs); border-bottom: var(--rule-hair) solid color-mix(in oklab, var(--color-ink) 25%, transparent); }
   .main-nav a.nav-cta { margin-top: var(--space-sm); text-align: center; border-bottom: none; justify-content: center; }
   .plans-grid, .modalities-grid, .testimonials-grid { grid-template-columns: minmax(0, 1fr); }
+  .modality-card { grid-template-columns: 3.25rem minmax(0, 1fr); }
   .plan-featured { order: -1; }
   .hero-actions .btn { flex: 1; min-width: 0; padding: 0 var(--space-md); }
   .signup-form, .form-success { padding: var(--space-lg) var(--space-md); }
