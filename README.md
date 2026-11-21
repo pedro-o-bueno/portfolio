@@ -11,6 +11,10 @@ Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor f
 | `academia/` | Iron House Academia | Academia | Escuro e agressivo, preto/vermelho, tipografia condensada |
 | `petshop/` | Pata Amiga Pet Shop & Clínica Veterinária | Pet shop e veterinária | Amigável e colorido, verde-água/laranja, cantos arredondados |
 | `saas/` | Fluxo | SaaS de gestão financeira | Moderno e limpo, gradiente índigo/violeta, mockup de dashboard em CSS puro |
+| `construtora/` | Vetor Construtora | Construtora de alto padrão | Limpo e premium, branco/carvão com âmbar, tipografia grande |
+| `chatbot/` | Clínica Sorriso | Chatbot de WhatsApp p/ agendamento | Leve e moderno, verde de destaque, widget de chat simulado funcional |
+| `ecommerce/` | VitaFit Suplementos | Loja virtual de suplementos | Esportivo, verde-escuro/preto com lima, carrinho funcional em JS |
+| `dashboard/` | AgendaPro | Agenda online + CRM com Kanban | Dashboard SaaS, fundo claro, sidebar, índigo, Kanban interativo |
 
 ## Estrutura do repositório
 
@@ -22,7 +26,11 @@ portfolio/
 ├── advocacia/          # index.html, style.css, script.js
 ├── academia/           # index.html, style.css, script.js
 ├── petshop/            # index.html, style.css, script.js
-└── saas/               # index.html, style.css, script.js
+├── saas/               # index.html, style.css, script.js
+├── construtora/        # index.html, style.css, script.js
+├── chatbot/            # index.html, style.css, script.js
+├── ecommerce/          # index.html, style.css, script.js
+└── dashboard/          # index.html, style.css, script.js
 ```
 
 O `index.html` da raiz é autocontido (CSS e JS embutidos, só as fontes vêm do Google Fonts). Cada site de demonstração tem os próprios `index.html`, `style.css` e `script.js`, sem etapa de build.
@@ -32,7 +40,7 @@ O `index.html` da raiz é autocontido (CSS e JS embutidos, só as fontes vêm do
 - Textos realistas em pt-BR: pratos com preços em R$, áreas do direito, planos de academia, serviços e produtos de pet shop, planos de SaaS.
 - Sem imagens externas: só gradientes CSS, blocos coloridos e ícones/ilustrações em SVG inline.
 - Responsivo (testado mentalmente em 360 px de largura): menu mobile, colunas que empilham.
-- JS pequeno: menu mobile, rolagem suave, formulário com mensagem de sucesso (envio simulado, sem backend), accordion de FAQ no SaaS e alternância mensal/anual nos planos do SaaS.
+- JS pequeno: menu mobile, rolagem suave, formulário com mensagem de sucesso (envio simulado, sem backend), accordion de FAQ no SaaS e alternância mensal/anual nos planos do SaaS. Interativos de verdade: o chatbot da Clínica Sorriso guia um agendamento completo com respostas automáticas, o carrinho da VitaFit soma, remove e finaliza a compra (simulada), e o Kanban da AgendaPro move cards entre colunas (arrastar ou botões) e aceita novos leads pelo formulário.
 
 ## Como pré-visualizar localmente
 
@@ -54,6 +62,10 @@ Com o repositório `portfolio` na conta `pedro-o-bueno` e o Pages ativado em **S
 - Academia: https://pedro-o-bueno.github.io/portfolio/academia/
 - Pet shop: https://pedro-o-bueno.github.io/portfolio/petshop/
 - SaaS: https://pedro-o-bueno.github.io/portfolio/saas/
+- Construtora: https://pedro-o-bueno.github.io/portfolio/construtora/
+- Chatbot: https://pedro-o-bueno.github.io/portfolio/chatbot/
+- E-commerce: https://pedro-o-bueno.github.io/portfolio/ecommerce/
+- Dashboard: https://pedro-o-bueno.github.io/portfolio/dashboard/
 
 ## Contato
 

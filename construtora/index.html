@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vetor Construtora — construção de alto padrão em São Paulo. Empreendimentos residenciais e comerciais, gerenciamento de obras, projetos arquitetônicos e retrofit. 120+ empreendimentos entregues em 15 anos.">
+  <meta property="og:title" content="Vetor Construtora — Construção de alto padrão">
+  <meta property="og:description" content="Empreendimentos residenciais e comerciais de alto padrão. 120+ obras entregues, 15 anos de mercado e 98% de clientes satisfeitos.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <title>Vetor Construtora — Construção de alto padrão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Vetor Construtora — voltar ao início">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="2" y="2" width="44" height="44" rx="8" fill="#1F2430"/>
+          <path d="M12 34V14h6l6 9 6-9h6v20h-6V22l-6 8-6-8v12z" fill="#F5A623"/>
+        </svg>
+        <span class="logo-text">Vetor <em>Construtora</em></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#empreendimentos">Empreendimentos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato" class="nav-cta">Fale conosco</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 600 520" role="presentation">
+          <rect x="60" y="180" width="180" height="340" fill="#1F2430"/>
+          <rect x="260" y="90" width="180" height="430" fill="#2B3242"/>
+          <rect x="460" y="240" width="110" height="280" fill="#F5A623"/>
+          <g fill="#F5A623" opacity="0.85">
+            <rect x="84" y="204" width="28" height="28"/><rect x="128" y="204" width="28" height="28"/>
+            <rect x="84" y="248" width="28" height="28"/><rect x="128" y="248" width="28" height="28"/>
+            <rect x="84" y="292" width="28" height="28"/><rect x="128" y="292" width="28" height="28"/>
+            <rect x="84" y="336" width="28" height="28"/><rect x="128" y="336" width="28" height="28"/>
+          </g>
+          <g fill="#FFFFFF" opacity="0.75">
+            <rect x="284" y="114" width="28" height="28"/><rect x="328" y="114" width="28" height="28"/>
+            <rect x="284" y="158" width="28" height="28"/><rect x="328" y="158" width="28" height="28"/>
+            <rect x="284" y="202" width="28" height="28"/><rect x="328" y="202" width="28" height="28"/>
+            <rect x="284" y="246" width="28" height="28"/><rect x="328" y="246" width="28" height="28"/>
+            <rect x="284" y="290" width="28" height="28"/><rect x="328" y="290" width="28" height="28"/>
+          </g>
+          <rect x="60" y="180" width="180" height="8" fill="#F5A623"/>
+          <rect x="260" y="90" width="180" height="8" fill="#F5A623"/>
+          <line x1="40" y1="520" x2="600" y2="520" stroke="#1F2430" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Construção de alto padrão desde 2011</p>
+        <h1>Construímos lugares onde a vida acontece.</h1>
+        <p class="hero-sub">Empreendimentos residenciais e comerciais de alto padrão, com projeto autoral, execução rigorosa e entrega no prazo. Do terreno à chave na mão, um só parceiro.</p>
+        <div class="hero-actions">
+          <a href="#empreendimentos" class="btn btn-primary">Ver empreendimentos</a>
+          <a href="#contato" class="btn btn-outline">Fale com um especialista</a>
+        </div>
+        <dl class="hero-stats">
+          <div class="stat">
+            <dt>Empreendimentos entregues</dt>
+            <dd><strong>120+</strong></dd>
+          </div>
+          <div class="stat">
+            <dt>Anos de mercado</dt>
+            <dd><strong>15</strong></dd>
+          </div>
+          <div class="stat">
+            <dt>Clientes satisfeitos</dt>
+            <dd><strong>98%</strong></dd>
+          </div>
+          <div class="stat">
+            <dt>m² construídos</dt>
+            <dd><strong>850 mil</strong></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow">Sobre a Vetor</p>
+          <h2>Precisão de engenharia, olhar de arquiteto.</h2>
+          <p>A Vetor Construtora nasceu em São Paulo, em 2011, com a convicção de que construir bem é um ato de responsabilidade. Começamos com um pequeno edifício residencial no bairro da Mooca e, projeto a projeto, crescemos sem abrir mão do que nos trouxe até aqui: planejamento detalhado, canteiro organizado e comunicação transparente com o cliente.</p>
+          <p>Hoje atuamos em São Paulo, Rio de Janeiro, Belo Horizonte e Curitiba, com equipe própria de engenharia, arquitetura e atendimento. Cada empreendimento carrega a nossa assinatura: acabamento impecável, eficiência energética e espaços pensados para quem vai viver ou trabalhar ali por décadas.</p>
+          <ul class="values">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5l8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div><strong>Segurança em primeiro lugar</strong><span>Processos certificados e zero acidente grave em toda a nossa história.</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <div><strong>Prazo é compromisso</strong><span>97% das nossas obras foram entregues dentro do cronograma contratado.</span></div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <div><strong>Transparência total</strong><span>Relatórios mensais de obra e acesso ao andamento pelo portal do cliente.</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-card">
+            <span class="about-card-number">15</span>
+            <span class="about-card-label">anos construindo<br>com excelência</span>
+          </div>
+          <div class="about-block about-block-1"></div>
+          <div class="about-block about-block-2"></div>
+          <p class="about-caption">Edifício Aurora — Mooca, São Paulo · primeiro empreendimento Vetor, entregue em 2013</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMPREENDIMENTOS -->
+    <section class="section projects" id="empreendimentos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-eyebrow">Empreendimentos</p>
+            <h2>Projetos que marcam a paisagem — e a vida de quem mora.</h2>
+          </div>
+          <p class="section-head-text">Uma seleção de empreendimentos residenciais e comerciais em diferentes fases: do lançamento à entrega das chaves.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-thumb project-thumb-1" aria-hidden="true">
+              <svg viewBox="0 0 400 220" role="presentation"><rect width="400" height="220" fill="#1F2430"/><rect x="70" y="60" width="90" height="160" fill="#2B3242"/><rect x="180" y="30" width="90" height="190" fill="#39415A"/><rect x="290" y="90" width="60" height="130" fill="#F5A623"/><g fill="#F5A623"><rect x="86" y="76" width="18" height="18"/><rect x="120" y="76" width="18" height="18"/><rect x="86" y="108" width="18" height="18"/><rect x="120" y="108" width="18" height="18"/></g><g fill="#fff" opacity="0.8"><rect x="196" y="46" width="18" height="18"/><rect x="230" y="46" width="18" height="18"/><rect x="196" y="78" width="18" height="18"/><rect x="230" y="78" width="18" height="18"/><rect x="196" y="110" width="18" height="18"/><rect x="230" y="110" width="18" height="18"/></g></svg>
+            </div>
+            <span class="badge badge-delivered">Entregue</span>
+            <h3>Residencial Mirante Alto</h3>
+            <p class="project-city">Jardins, São Paulo — SP</p>
+            <p class="project-desc">Apartamentos de 3 suítes com vista definitiva para o parque, lazer completo e fachada em porcelanato.</p>
+            <ul class="project-meta">
+              <li><strong>142–210 m²</strong><span>área privativa</span></li>
+              <li><strong>3 suítes</strong><span>por unidade</span></li>
+              <li><strong>2–3 vagas</strong><span>garagem</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb project-thumb-2" aria-hidden="true">
+              <svg viewBox="0 0 400 220" role="presentation"><rect width="400" height="220" fill="#2B3242"/><rect x="40" y="100" width="320" height="120" fill="#1F2430"/><rect x="60" y="70" width="120" height="50" fill="#39415A"/><rect x="200" y="50" width="100" height="70" fill="#F5A623"/><g fill="#fff" opacity="0.85"><rect x="60" y="118" width="26" height="20"/><rect x="102" y="118" width="26" height="20"/><rect x="144" y="118" width="26" height="20"/><rect x="186" y="118" width="26" height="20"/><rect x="228" y="118" width="26" height="20"/><rect x="270" y="118" width="26" height="20"/><rect x="312" y="118" width="26" height="20"/></g><rect x="40" y="100" width="320" height="6" fill="#F5A623"/></svg>
+            </div>
+            <span class="badge badge-works">Em obras</span>
+            <h3>Parque das Figueiras</h3>
+            <p class="project-city">Barra da Tijuca, Rio de Janeiro — RJ</p>
+            <p class="project-desc">Condomínio-clube com 4 torres, 40% de área verde preservada e acesso direto à ciclovia da lagoa.</p>
+            <ul class="project-meta">
+              <li><strong>98–168 m²</strong><span>área privativa</span></li>
+              <li><strong>2–3 suítes</strong><span>por unidade</span></li>
+              <li><strong>Previsão 2027</strong><span>entrega</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb project-thumb-3" aria-hidden="true">
+              <svg viewBox="0 0 400 220" role="presentation"><rect width="400" height="220" fill="#1F2430"/><rect x="150" y="20" width="100" height="200" fill="#2B3242"/><rect x="60" y="90" width="70" height="130" fill="#39415A"/><rect x="270" y="90" width="70" height="130" fill="#39415A"/><rect x="150" y="20" width="100" height="10" fill="#F5A623"/><g fill="#F5A623"><rect x="166" y="44" width="18" height="18"/><rect x="200" y="44" width="18" height="18"/><rect x="166" y="76" width="18" height="18"/><rect x="200" y="76" width="18" height="18"/><rect x="166" y="108" width="18" height="18"/><rect x="200" y="108" width="18" height="18"/></g><g fill="#fff" opacity="0.8"><rect x="76" y="106" width="16" height="16"/><rect x="104" y="106" width="16" height="16"/><rect x="286" y="106" width="16" height="16"/><rect x="314" y="106" width="16" height="16"/></g></svg>
+            </div>
+            <span class="badge badge-launch">Lançamento</span>
+            <h3>Torre Lumen Corporate</h3>
+            <p class="project-city">Savassi, Belo Horizonte — MG</p>
+            <p class="project-desc">Edifício corporativo triple A com lajes flexíveis, certificação LEED Gold e terraço com vista para a serra.</p>
+            <ul class="project-meta">
+              <li><strong>480–1.200 m²</strong><span>lajes</span></li>
+              <li><strong>18 andares</strong><span>corporativos</span></li>
+              <li><strong>Previsão 2028</strong><span>entrega</span></li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb project-thumb-4" aria-hidden="true">
+              <svg viewBox="0 0 400 220" role="presentation"><rect width="400" height="220" fill="#39415A"/><rect x="50" y="70" width="300" height="150" fill="#1F2430"/><rect x="50" y="70" width="300" height="10" fill="#F5A623"/><rect x="70" y="100" width="60" height="120" fill="#2B3242"/><rect x="150" y="100" width="60" height="120" fill="#2B3242"/><rect x="230" y="100" width="60" height="120" fill="#F5A623"/><g fill="#fff" opacity="0.85"><rect x="82" y="112" width="16" height="16"/><rect x="106" y="112" width="16" height="16"/><rect x="162" y="112" width="16" height="16"/><rect x="186" y="112" width="16" height="16"/></g><circle cx="330" cy="40" r="18" fill="#F5A623"/></svg>
+            </div>
+            <span class="badge badge-delivered">Entregue</span>
+            <h3>Casa Horizonte — Loteamento</h3>
+            <p class="project-city">Batel, Curitiba — PR</p>
+            <p class="project-desc">Loteamento fechado com 86 lotes, casas de alto padrão e clube com piscina aquecida e quadra poliesportiva.</p>
+            <ul class="project-meta">
+              <li><strong>360–520 m²</strong><span>lotes</span></li>
+              <li><strong>86 lotes</strong><span>no total</span></li>
+              <li><strong>Entregue 2024</strong><span>100% vendido</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+      <div class="container">
+        <p class="section-eyebrow">O que fazemos</p>
+        <h2>Do projeto à entrega, com um único responsável: nós.</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 2v6h6M9 13h6M9 17h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Gerenciamento de obras</h3>
+            <p>Planejamento, orçamento, cronograma e fiscalização completa da obra, com relatórios mensais e portal de acompanhamento para o cliente.</p>
+          </article>
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7a4.95 4.95 0 0 0-7-7l-7 7a4.95 4.95 0 0 0 7 7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 13l-7-7M5 21l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Projetos arquitetônicos</h3>
+            <p>Arquitetura autoral para residências, edifícios e espaços comerciais, com estudos de viabilidade, maquete digital e aprovação legal.</p>
+          </article>
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-4h6v4M9 10h.01M15 10h.01M9 14h.01M15 14h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Incorporação</h3>
+            <p>Desenvolvimento completo de empreendimentos: aquisição do terreno, estudo de mercado, lançamento e venda das unidades.</p>
+          </article>
+          <article class="service-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36M21 3v6h-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h3>Retrofit e reformas</h3>
+            <p>Modernização de edifícios existentes: atualização de fachadas, eficiência energética, acessibilidade e adequação às normas atuais.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section testimonials" id="depoimentos">
+      <div class="container">
+        <p class="section-eyebrow">Depoimentos</p>
+        <h2>Quem confiou, recomenda.</h2>
+        <div class="testimonial-grid">
+          <figure class="testimonial-card">
+            <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V13.7C0 6.1 4.6 1.2 12 0l1.4 3.4C8.9 4.9 6.4 7.7 6.1 11H13v13H0zm19 0V13.7C19 6.1 23.6 1.2 31 0l1.4 3.4c-4.5 1.5-7 4.3-7.3 7.6H32v13H19z" fill="currentColor" transform="scale(0.9)"/></svg>
+            <blockquote>Compramos na planta e acompanhamos tudo pelo portal da obra. A entrega foi no prazo, sem surpresa no acabamento. Foi a compra mais tranquila que já fizemos.</blockquote>
+            <figcaption>
+              <span class="avatar avatar-1" aria-hidden="true">MR</span>
+              <span><strong>Mariana Rocha</strong><br>Moradora do Residencial Mirante Alto — São Paulo, SP</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V13.7C0 6.1 4.6 1.2 12 0l1.4 3.4C8.9 4.9 6.4 7.7 6.1 11H13v13H0zm19 0V13.7C19 6.1 23.6 1.2 31 0l1.4 3.4c-4.5 1.5-7 4.3-7.3 7.6H32v13H19z" fill="currentColor" transform="scale(0.9)"/></svg>
+            <blockquote>Contratamos a Vetor para o retrofit da nossa sede. Cumpriram o cronograma mesmo com o prédio em funcionamento e o resultado superou o projeto original.</blockquote>
+            <figcaption>
+              <span class="avatar avatar-2" aria-hidden="true">CA</span>
+              <span><strong>Carlos Almeida</strong><br>Diretor de operações, Grupo Altavia — Belo Horizonte, MG</span>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <svg class="quote-mark" viewBox="0 0 32 24" aria-hidden="true"><path d="M0 24V13.7C0 6.1 4.6 1.2 12 0l1.4 3.4C8.9 4.9 6.4 7.7 6.1 11H13v13H0zm19 0V13.7C19 6.1 23.6 1.2 31 0l1.4 3.4c-4.5 1.5-7 4.3-7.3 7.6H32v13H19z" fill="currentColor" transform="scale(0.9)"/></svg>
+            <blockquote>É a terceira vez que investimos com a Vetor. A transparência nos custos e a qualidade da entrega fazem a diferença — por isso indicamos para toda a família.</blockquote>
+            <figcaption>
+              <span class="avatar avatar-3" aria-hidden="true">FS</span>
+              <span><strong>Fernanda Siqueira</strong><br>Investidora e cliente desde 2018 — Curitiba, PR</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="section-eyebrow">Contato</p>
+          <h2>Vamos construir o seu próximo projeto?</h2>
+          <p>Conte pra gente o que você procura: um apartamento, um terreno para incorporar ou uma obra para gerenciar. Respondemos em até um dia útil.</p>
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span>Av. Faria Lima, 4509, 10º andar — Itaim Bibi, São Paulo — SP, 04538-133</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <span>(11) 3456-7890 · WhatsApp (11) 98765-4321</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M22 7l-10 6L2 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <span>contato@vetorconstrutora.com.br</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <span>Segunda a sexta, das 9h às 18h · Plantão de vendas aos sábados, das 9h às 13h</span>
+            </li>
+          </ul>
+          <a class="btn btn-whatsapp" href="https://wa.me/5511987654321?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20empreendimentos%20da%20Vetor%20Construtora." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 8.5c.3 2.5 2.5 4.7 5 5l1-1.2 1.8 1c-.3 1-1 1.7-2 1.7-3.6 0-7-3.4-7-7 0-1 .7-1.7 1.7-2l1 .8L8.5 8.5z" fill="currentColor"/></svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <h3>Envie uma mensagem</h3>
+          <p class="form-note">Preencha o formulário e nossa equipe retorna em até um dia útil.</p>
+          <label for="nome">Nome completo
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name">
+          </label>
+          <label for="email">E-mail
+            <input type="email" id="email" name="email" placeholder="voce@email.com" required autocomplete="email">
+          </label>
+          <label for="telefone">Telefone / WhatsApp
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" autocomplete="tel">
+          </label>
+          <label for="mensagem">Mensagem
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quero informações sobre..." required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+          <p class="form-success" id="form-success" role="status" hidden>Mensagem enviada com sucesso! Nossa equipe entrará em contato em até um dia útil. Obrigado pelo interesse na Vetor Construtora.</p>
+          <p class="form-error" id="form-error" role="alert" hidden>Por favor, preencha nome, e-mail válido e mensagem antes de enviar.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo" aria-label="Vetor Construtora — voltar ao início">
+          <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="2" y="2" width="44" height="44" rx="8" fill="#F5A623"/>
+            <path d="M12 34V14h6l6 9 6-9h6v20h-6V22l-6 8-6-8v12z" fill="#1F2430"/>
+          </svg>
+          <span class="logo-text">Vetor <em>Construtora</em></span>
+        </a>
+        <p>Construção de alto padrão com projeto autoral, execução rigorosa e entrega no prazo. São Paulo · Rio de Janeiro · Belo Horizonte · Curitiba.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#empreendimentos">Empreendimentos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contato</h4>
+        <p>Av. Faria Lima, 4509, 10º andar<br>Itaim Bibi — São Paulo, SP</p>
+        <p>(11) 3456-7890<br>contato@vetorconstrutora.com.br</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Vetor Construtora Ltda. — CNPJ 12.345.678/0001-90. Todos os direitos reservados.</p>
+        <p class="footer-demo">Site demonstrativo com dados fictícios, criado para fins de portfólio.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

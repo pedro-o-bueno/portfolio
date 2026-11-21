@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AgendaPro — agenda online e CRM com Kanban para salões de beleza e clínicas de estética. Agendamentos, clientes e vendas em um só painel.">
+  <title>AgendaPro — Agenda online + CRM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
+      <a href="#" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </span>
+        AgendaPro
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1"/><rect x="14" y="3" width="7" height="5" rx="1"/><rect x="14" y="12" width="7" height="9" rx="1"/><rect x="3" y="16" width="7" height="5" rx="1"/></svg>
+          Dashboard
+        </a>
+        <a href="#agenda" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agenda
+        </a>
+        <a href="#kanban" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Clientes
+        </a>
+        <a href="#kanban" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          Kanban
+        </a>
+        <a href="#" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          Configurações
+        </a>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="sidebar-business">Studio Beleza &amp; Cia</p>
+        <p class="sidebar-plan">Plano Profissional</p>
+        <a href="#kanban" class="btn btn-primary btn-block">Novo agendamento</a>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" placeholder="Buscar cliente, serviço ou agendamento..." aria-label="Buscar">
+        </div>
+        <div class="topbar-right">
+          <button class="icon-btn" aria-label="Notificações">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span class="dot" aria-hidden="true"></span>
+          </button>
+          <div class="user-chip">
+            <span class="avatar" aria-hidden="true">CR</span>
+            <span class="user-info">
+              <strong>Camila Ribeiro</strong>
+              <small>Studio Beleza &amp; Cia</small>
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="page-head">
+          <div>
+            <h1>Dashboard</h1>
+            <p class="page-sub">Sexta-feira, 21 de novembro de 2026 &middot; Bom dia, Camila. Hoje você tem 12 agendamentos.</p>
+          </div>
+          <a href="#kanban" class="btn btn-primary">+ Novo lead</a>
+        </div>
+
+        <!-- STATS -->
+        <section class="stats" aria-label="Indicadores do dia">
+          <article class="stat-card">
+            <span class="stat-label">Agendamentos hoje</span>
+            <strong class="stat-value">12</strong>
+            <span class="stat-trend up">+3 em relação a ontem</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Novos leads</span>
+            <strong class="stat-value">8</strong>
+            <span class="stat-trend up">+2 esta semana</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Taxa de conversão</span>
+            <strong class="stat-value">64%</strong>
+            <span class="stat-trend up">+6 p.p. no mês</span>
+          </article>
+          <article class="stat-card">
+            <span class="stat-label">Faturamento do mês</span>
+            <strong class="stat-value">R$ 18.450</strong>
+            <span class="stat-trend up">Meta de R$ 20.000 — 92%</span>
+          </article>
+        </section>
+
+        <!-- AGENDA DE HOJE -->
+        <section class="card" id="agenda" aria-labelledby="agenda-title">
+          <div class="card-head">
+            <h2 id="agenda-title">Agenda de hoje</h2>
+            <span class="card-meta">6 confirmados &middot; 2 pendentes</span>
+          </div>
+          <ul class="appointments">
+            <li class="appointment">
+              <span class="appt-time">08:30</span>
+              <span class="appt-avatar" style="--av:#4f46e5">MR</span>
+              <span class="appt-info"><strong>Mariana Rocha</strong><small>Escova modelada &middot; com Ana</small></span>
+              <span class="badge confirmed">Confirmado</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">09:15</span>
+              <span class="appt-avatar" style="--av:#0e7490">FS</span>
+              <span class="appt-info"><strong>Fernanda Souza</strong><small>Manicure e pedicure &middot; com Bia</small></span>
+              <span class="badge confirmed">Confirmado</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">10:00</span>
+              <span class="appt-avatar" style="--av:#b45309">JA</span>
+              <span class="appt-info"><strong>Juliana Almeida</strong><small>Coloração completa &middot; com Camila</small></span>
+              <span class="badge pending">Pendente</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">11:30</span>
+              <span class="appt-avatar" style="--av:#be185d">PC</span>
+              <span class="appt-info"><strong>Patrícia Costa</strong><small>Design de sobrancelhas &middot; com Bia</small></span>
+              <span class="badge confirmed">Confirmado</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">13:00</span>
+              <span class="appt-avatar" style="--av:#15803d">LM</span>
+              <span class="appt-info"><strong>Larissa Mendes</strong><small>Limpeza de pele &middot; com Ana</small></span>
+              <span class="badge pending">Pendente</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">14:30</span>
+              <span class="appt-avatar" style="--av:#6d28d9">RG</span>
+              <span class="appt-info"><strong>Renata Gomes</strong><small>Maquiagem para evento &middot; com Camila</small></span>
+              <span class="badge confirmed">Confirmado</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">16:00</span>
+              <span class="appt-avatar" style="--av:#0369a1">TO</span>
+              <span class="appt-info"><strong>Tatiane Oliveira</strong><small>Depilação a laser &middot; com Ana</small></span>
+              <span class="badge confirmed">Confirmado</span>
+            </li>
+            <li class="appointment">
+              <span class="appt-time">17:30</span>
+              <span class="appt-avatar" style="--av:#b91c1c">CF</span>
+              <span class="appt-info"><strong>Carla Ferreira</strong><small>Corte e hidratação &middot; com Camila</small></span>
+              <span class="badge confirmed">Confirmado</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- KANBAN -->
+        <section class="card kanban-section" id="kanban" aria-labelledby="kanban-title">
+          <div class="card-head">
+            <div>
+              <h2 id="kanban-title">Funil de clientes — Kanban</h2>
+              <p class="card-sub">Arraste os cartões entre as colunas ou use as setas. Os contadores são atualizados automaticamente.</p>
+            </div>
+          </div>
+
+          <form class="add-lead" id="addLeadForm">
+            <input type="text" id="leadName" placeholder="Nome da cliente" required maxlength="60" aria-label="Nome da cliente">
+            <input type="text" id="leadService" placeholder="Serviço de interesse" required maxlength="60" aria-label="Serviço de interesse">
+            <input type="number" id="leadValue" placeholder="Valor (R$)" min="0" step="0.01" required aria-label="Valor estimado em reais">
+            <select id="leadSource" aria-label="Origem do contato">
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Indicação">Indicação</option>
+              <option value="Google">Google</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Adicionar lead</button>
+          </form>
+          <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+
+          <div class="kanban" id="kanbanBoard">
+            <div class="kanban-col" data-col="novo">
+              <div class="kanban-col-head">
+                <span class="col-dot novo" aria-hidden="true"></span>
+                <h3>Novo</h3>
+                <span class="col-count" data-count="novo">0</span>
+              </div>
+              <div class="kanban-list" data-list="novo"></div>
+            </div>
+            <div class="kanban-col" data-col="atendimento">
+              <div class="kanban-col-head">
+                <span class="col-dot atendimento" aria-hidden="true"></span>
+                <h3>Em atendimento</h3>
+                <span class="col-count" data-count="atendimento">0</span>
+              </div>
+              <div class="kanban-list" data-list="atendimento"></div>
+            </div>
+            <div class="kanban-col" data-col="concluido">
+              <div class="kanban-col-head">
+                <span class="col-dot concluido" aria-hidden="true"></span>
+                <h3>Concluído</h3>
+                <span class="col-count" data-count="concluido">0</span>
+              </div>
+              <div class="kanban-list" data-list="concluido"></div>
+            </div>
+          </div>
+        </section>
+
+        <p class="demo-note">Demonstração fictícia criada por Pedro Henrique Oliveira Bueno — dados de clientes, valores e agendamentos são inventados para fins de portfólio.</p>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
