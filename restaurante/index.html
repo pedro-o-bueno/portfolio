@@ -7,7 +7,7 @@
   <title>Cantina do Zé: Restaurante Italiano em São Paulo</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&family=Spectral:ital,wght@0,400;0,500;1,400&family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,8 +24,9 @@
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
-        <a href="#cardapio">Cardápio</a>
         <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#galeria">Galeria</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#reservas" class="nav-cta">Reservas</a>
       </nav>
@@ -45,6 +46,7 @@
           <div class="hero-actions">
             <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
             <a href="#reservas" class="btn btn-outline">Reservar mesa</a>
+            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener" class="btn btn-outline">Chamar no WhatsApp</a>
           </div>
         </div>
         <figure class="hero-figure">
@@ -52,7 +54,29 @@
             <img src="images/restaurante-hero.jpg" alt="O salão da Cantina do Zé">
           </div>
           <figcaption>Rua Vergueiro, 1234, Vila Mariana, São Paulo.</figcaption>
+          <aside class="hours-card">
+            <p class="hours-card-title">Horário de funcionamento</p>
+            <p>Terça a domingo: 11h30 às 15h e 18h às 23h</p>
+            <p>Segunda-feira: fechado</p>
+          </aside>
         </figure>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <h2>Uma cantina de família, no coração da Vila Mariana</h2>
+        <div class="about-cols">
+          <p class="dropcap">A Cantina do Zé nasceu em 1998, quando Giuseppe “Zé” Romano chegou da Calábria com a mala cheia de receitas da mãe e a certeza de que comida boa se faz com tempo, manteiga e paciência. O primeiro salão tinha seis mesas, um fogão a lenha e uma fila que dobrava a esquina.</p>
+          <p>Hoje a casa cresceu, mas o jeito de cozinhar é o mesmo: a massa é aberta na mão todas as manhãs, o ragù ferve por horas antes de ir ao prato e o tiramisù segue a receita original da nonna, sem atalho. A segunda geração da família já está na cozinha e no salão, e a terceira aprende o ofício entre uma aula e outra.</p>
+          <p>Aqui, cliente antigo tem mesa cativa, aniversário tem cantoria e ninguém sai sem um “volta sempre” do Zé. É assim há mais de 25 anos, e é assim que queremos continuar.</p>
+        </div>
+        <ul class="about-facts">
+          <li><strong>25+</strong> anos de história</li>
+          <li><strong>3</strong> gerações da família Romano</li>
+          <li><strong>100%</strong> massas frescas feitas na casa</li>
+        </ul>
       </div>
     </section>
 
@@ -82,20 +106,6 @@
 
         <div class="menu-group">
           <h3>Pratos Principais</h3>
-          <div class="dish-photos">
-          <figure class="dish-figure">
-            <div class="photo" data-slot="prato-massa" data-alt="Lasanha à Bolonhesa da casa">
-              <img src="images/prato-massa.jpg" alt="Lasanha à Bolonhesa da casa">
-            </div>
-            <figcaption>Lasanha à Bolonhesa, o clássico da casa.</figcaption>
-          </figure>
-          <figure class="dish-figure">
-            <div class="photo" data-slot="prato-pizza" data-alt="Pizza Margherita da casa">
-              <img src="images/prato-pizza.jpg" alt="Pizza Margherita da casa">
-            </div>
-            <figcaption>Pizza Margherita, massa de fermentação lenta.</figcaption>
-          </figure>
-          </div>
           <div class="dishes">
             <article class="dish">
               <div class="dish-head"><h4>Lasanha à Bolonhesa</h4><span class="price">R$ 54,90</span></div>
@@ -123,12 +133,6 @@
 
         <div class="menu-group">
           <h3>Sobremesas</h3>
-          <figure class="dish-figure">
-            <div class="photo" data-slot="prato-sobremesa" data-alt="Tiramisù da casa">
-              <img src="images/prato-sobremesa.jpg" alt="Tiramisù da casa">
-            </div>
-            <figcaption>Tiramisù, receita da nonna.</figcaption>
-          </figure>
           <div class="dishes">
             <article class="dish">
               <div class="dish-head"><h4>Tiramisù</h4><span class="price">R$ 26,90</span></div>
@@ -148,20 +152,30 @@
       </div>
     </section>
 
-    <!-- SOBRE -->
-    <section class="about-section" id="sobre">
+    <!-- GALERIA -->
+    <section class="gallery-section" id="galeria">
       <div class="container">
-        <h2>Uma cantina de família, no coração da Vila Mariana</h2>
-        <div class="about-cols">
-          <p class="dropcap">A Cantina do Zé nasceu em 1998, quando Giuseppe “Zé” Romano chegou da Calábria com a mala cheia de receitas da mãe e a certeza de que comida boa se faz com tempo, manteiga e paciência. O primeiro salão tinha seis mesas, um fogão a lenha e uma fila que dobrava a esquina.</p>
-          <p>Hoje a casa cresceu, mas o jeito de cozinhar é o mesmo: a massa é aberta na mão todas as manhãs, o ragù ferve por horas antes de ir ao prato e o tiramisù segue a receita original da nonna, sem atalho. A segunda geração da família já está na cozinha e no salão, e a terceira aprende o ofício entre uma aula e outra.</p>
-          <p>Aqui, cliente antigo tem mesa cativa, aniversário tem cantoria e ninguém sai sem um “volta sempre” do Zé. É assim há mais de 25 anos, e é assim que queremos continuar.</p>
+        <h2>Galeria</h2>
+        <div class="gallery-grid">
+          <figure class="dish-figure">
+            <div class="photo" data-slot="prato-massa" data-alt="Lasanha à Bolonhesa da casa">
+              <img src="images/prato-massa.jpg" alt="Lasanha à Bolonhesa da casa">
+            </div>
+            <figcaption>Lasanha à Bolonhesa, o clássico da casa.</figcaption>
+          </figure>
+          <figure class="dish-figure">
+            <div class="photo" data-slot="prato-pizza" data-alt="Pizza Margherita da casa">
+              <img src="images/prato-pizza.jpg" alt="Pizza Margherita da casa">
+            </div>
+            <figcaption>Pizza Margherita, massa de fermentação lenta.</figcaption>
+          </figure>
+          <figure class="dish-figure">
+            <div class="photo" data-slot="prato-sobremesa" data-alt="Tiramisù da casa">
+              <img src="images/prato-sobremesa.jpg" alt="Tiramisù da casa">
+            </div>
+            <figcaption>Tiramisù, receita da nonna.</figcaption>
+          </figure>
         </div>
-        <ul class="about-facts">
-          <li><strong>25+</strong> anos de história</li>
-          <li><strong>3</strong> gerações da família Romano</li>
-          <li><strong>100%</strong> massas frescas feitas na casa</li>
-        </ul>
       </div>
     </section>
 
@@ -199,7 +213,7 @@
     <section class="reservation-section" id="reservas">
       <div class="container reservation-inner">
         <div class="contact-info">
-          <h2>Reserve sua mesa</h2>
+            <h2>Reserve sua mesa</h2>
           <p>Garanta seu lugar para o almoço de domingo ou o jantar em família. Para grupos acima de 10 pessoas, fale com a gente pelo telefone ou WhatsApp.</p>
           <ul class="contact-list">
             <li>
@@ -277,8 +291,9 @@
       </div>
       <nav class="footer-nav" aria-label="Links do rodapé">
         <a href="#inicio">Início</a>
-        <a href="#cardapio">Cardápio</a>
         <a href="#sobre">Sobre</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#galeria">Galeria</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#reservas">Reservas</a>
       </nav>
