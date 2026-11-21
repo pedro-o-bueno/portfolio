@@ -9,16 +9,16 @@
   --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  --color-paper: oklch(74% 0.008 80); --color-paper-2: oklch(69% 0.009 80); --color-paper-3: oklch(64% 0.01 80);
-  --color-plate: oklch(82% 0.007 80); --color-plate-ink: oklch(95% 0.006 80);
-  --color-ink: oklch(18% 0.005 270); --color-ink-2: oklch(28% 0.006 80); --color-muted: oklch(31.5% 0.008 80);
-  --color-rule: oklch(64% 0.01 80);
-  --color-accent: oklch(66% 0.21 38); --color-accent-ink: oklch(18% 0.005 270); --color-focus: oklch(42% 0.15 38);
-  --color-accent-deep: oklch(48% 0.17 38);
+  --color-paper: #EDE8E0; --color-paper-2: #E6DFD2; --color-paper-3: #D8CFBD;
+  --color-plate: #F7F3EB; --color-plate-ink: #F7F3EB;
+  --color-ink: #1C1917; --color-ink-2: #44403C; --color-muted: #6B645B;
+  --color-rule: #C4B99F;
+  --color-accent: #A16207; --color-accent-ink: #FFFDF6; --color-focus: #7A4A05;
+  --color-accent-deep: #7A4A05;
   --texture-opacity: 0.05;
   --font-display: "Oswald", ui-sans-serif, sans-serif; --font-body: "Archivo", ui-sans-serif, sans-serif;
   --font-outlier: "Archivo Narrow", ui-sans-serif, sans-serif;
-  --radius-card: 0; --radius-pill: 0; --rule-hair: 1px; --rule-bar: 3px;
+  --radius-card: 0; --radius-pill: 0; --rule-hair: 1px; --rule-bar: 2px;
   --shadow-card: 6px 6px 0 var(--color-ink);
   --tracking-display: -0.005em; --display-weight: 700;
 }
