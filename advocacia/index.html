@@ -7,7 +7,9 @@
   <title>Ferreira &amp; Almeida Advocacia | Escritório de Advocacia em Porto Alegre</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Geist:wght@400;500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -43,27 +45,29 @@
   <main>
     <!-- ============ HERO ============ -->
     <section class="hero" id="inicio">
-      <div class="hero-pattern" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Advocacia em Porto Alegre desde 2001</p>
-        <h1>25 anos defendendo direitos com rigor, ética e resultado.</h1>
-        <p class="hero-sub">Um escritório de tradição e confiança, que alia a experiência de quem já conduziu mais de 1.200 casos à atenção pessoal que cada cliente merece.</p>
-        <div class="hero-actions">
-          <a href="#contato" class="btn btn-gold">Agendar consulta</a>
-          <a href="#areas" class="btn btn-outline">Conheça nossas áreas</a>
+        <div class="hero-copy">
+          <h1>25 anos defendendo direitos com rigor, ética e resultado.</h1>
+          <p class="hero-sub">Um escritório de tradição e confiança, que alia a experiência de quem já conduziu mais de 1.200 casos à atenção pessoal que cada cliente merece.</p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-gold">Agendar consulta</a>
+            <a href="#areas" class="btn btn-outline">Conheça nossas áreas</a>
+          </div>
+          <ul class="hero-trust">
+            <li><strong>25</strong> anos de atuação</li>
+            <li><strong>+1.200</strong> casos conduzidos</li>
+            <li><strong>94%</strong> de êxito</li>
+          </ul>
         </div>
-        <ul class="hero-trust">
-          <li><strong>25</strong> anos de atuação</li>
-          <li><strong>+1.200</strong> casos conduzidos</li>
-          <li><strong>94%</strong> de êxito</li>
-        </ul>
+        <figure class="hero-photo">
+          <img src="images/advocacia-hero.jpg" alt="Ferreira e Almeida Advocacia, escritório em Porto Alegre" width="880" height="1100">
+        </figure>
       </div>
     </section>
 
     <!-- ============ ÁREAS DE ATUAÇÃO ============ -->
     <section class="section areas" id="areas">
       <div class="container">
-        <p class="section-eyebrow">O que fazemos</p>
         <h2>Áreas de Atuação</h2>
         <p class="section-intro">Atuamos com profundidade em seis áreas do Direito, sempre com estratégia clara, linguagem acessível e acompanhamento constante do andamento do seu caso.</p>
 
@@ -122,7 +126,6 @@
     <!-- ============ ADVOGADOS ============ -->
     <section class="section team" id="advogados">
       <div class="container">
-        <p class="section-eyebrow">Quem atende você</p>
         <h2>Nossos Advogados</h2>
         <p class="section-intro">Uma equipe experiente e próxima do cliente. Quem conduz o seu caso é quem conversa com você, do primeiro atendimento à decisão final.</p>
 
@@ -130,7 +133,7 @@
           <article class="lawyer-card">
             <div class="lawyer-photo lawyer-photo-1" aria-hidden="true"><span>HF</span></div>
             <h3>Dra. Helena Ferreira</h3>
-            <p class="lawyer-role">Sócia-fundadora &middot; Direito Civil e de Família</p>
+            <p class="lawyer-role">Sócia-fundadora, Direito Civil e de Família</p>
             <p class="lawyer-oab">OAB/RS 45.678</p>
             <p class="lawyer-bio">Há 25 anos à frente do escritório, Helena conduz casos de família, sucessões e disputas civis com estratégia e escuta atenta.</p>
           </article>
@@ -138,7 +141,7 @@
           <article class="lawyer-card">
             <div class="lawyer-photo lawyer-photo-2" aria-hidden="true"><span>RA</span></div>
             <h3>Dr. Ricardo Almeida</h3>
-            <p class="lawyer-role">Sócio-fundador &middot; Direito Empresarial e Tributário</p>
+            <p class="lawyer-role">Sócio-fundador, Direito Empresarial e Tributário</p>
             <p class="lawyer-oab">OAB/RS 52.301</p>
             <p class="lawyer-bio">Ricardo assessora empresas de todos os portes em contratos, planejamento tributário e contencioso, sempre com foco na segurança do negócio.</p>
           </article>
@@ -146,7 +149,7 @@
           <article class="lawyer-card">
             <div class="lawyer-photo lawyer-photo-3" aria-hidden="true"><span>CD</span></div>
             <h3>Dra. Camila Duarte</h3>
-            <p class="lawyer-role">Advogada sênior &middot; Direito Trabalhista e Previdenciário</p>
+            <p class="lawyer-role">Advogada sênior, Direito Trabalhista e Previdenciário</p>
             <p class="lawyer-oab">OAB/RS 61.842</p>
             <p class="lawyer-bio">Camila atua na defesa de trabalhadores e segurados, com ampla experiência em reclamatórias e na revisão de benefícios do INSS.</p>
           </article>
@@ -157,7 +160,6 @@
     <!-- ============ RESULTADOS / DEPOIMENTOS ============ -->
     <section class="section results" id="resultados">
       <div class="container">
-        <p class="section-eyebrow">Resultados que falam por nós</p>
         <h2>A confiança de quem já foi atendido</h2>
 
         <div class="stats-row">
@@ -200,14 +202,13 @@
     <!-- ============ CONTATO ============ -->
     <section class="section contact" id="contato">
       <div class="container">
-        <p class="section-eyebrow">Fale conosco</p>
         <h2>Agende uma consulta</h2>
         <p class="section-intro">Conte-nos o seu caso. Respondemos em até um dia útil e a primeira avaliação é sem compromisso.</p>
 
         <div class="contact-grid">
           <div class="contact-info">
             <address>
-              <p><strong>Endereço</strong><br>Av. Borges de Medeiros, 1500 &ndash; Centro Histórico<br>Porto Alegre &ndash; RS &middot; CEP 90020-023</p>
+              <p><strong>Endereço</strong><br>Av. Borges de Medeiros, 1500, Centro Histórico<br>Porto Alegre, RS, CEP 90020-023</p>
               <p><strong>Telefone</strong><br><a href="tel:+555132224455">(51) 3222-4455</a></p>
               <p><strong>E-mail</strong><br><a href="mailto:contato@ferreiraealmeida.adv.br">contato@ferreiraealmeida.adv.br</a></p>
               <p><strong>Horário de atendimento</strong><br>Segunda a sexta, das 9h às 18h</p>
@@ -273,8 +274,9 @@
         <a href="#contato">Contato</a>
       </nav>
       <div class="footer-contact">
-        <p>Av. Borges de Medeiros, 1500 &ndash; Centro Histórico, Porto Alegre &ndash; RS</p>
-        <p>(51) 3222-4455 &middot; contato@ferreiraealmeida.adv.br</p>
+        <p>Av. Borges de Medeiros, 1500, Centro Histórico, Porto Alegre, RS</p>
+        <p>(51) 3222-4455</p>
+        <p>contato@ferreiraealmeida.adv.br</p>
       </div>
     </div>
     <p class="footer-legal">&copy; 2026 Ferreira &amp; Almeida Advocacia. Todos os direitos reservados. OAB/RS 45.678.</p>
