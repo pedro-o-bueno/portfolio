@@ -51,9 +51,10 @@ header {
 .hero-name { display: block; }
 .hero-name .lime-dot { color: var(--color-accent); }
 .hero-role {
-  display: block; margin-top: var(--space-md);
-  font-family: var(--font-body); font-size: var(--text-sm); font-weight: 600;
-  color: var(--color-secondary);
+  display: block; margin-top: var(--space-lg);
+  font-family: var(--font-body); font-size: var(--text-lg); font-weight: 600;
+  letter-spacing: 0; line-height: 1.4;
+  color: var(--color-accent);
 }
 .hero .lead {
   margin: var(--space-lg) 0 var(--space-xl);
