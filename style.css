@@ -221,3 +221,54 @@ footer a:hover { text-decoration: underline; text-decoration-color: var(--color-
   .card-head { flex-direction: row; align-items: baseline; gap: var(--space-sm); }
   .contact-box { padding: var(--space-lg) var(--space-md); }
 }
+
+/* Efeitos "Noite" (2026-11-22, pedido do Pedro): fundo com textura, glitch no nome, cursor de terminal. Sem gradiente, sem texto novo, só o que já está na página. */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 999; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+}
+.hero {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cpath d='M56 0H0V56' fill='none' stroke='%23F2EFE9' stroke-opacity='0.05'/%3E%3C/svg%3E");
+}
+.hero-name { position: relative; }
+.hero-name::before, .hero-name::after {
+  content: attr(data-text); position: absolute; left: 0; top: 0; width: 100%;
+  pointer-events: none; opacity: 0;
+}
+.hero-name::before { color: var(--color-accent); animation: glitch-a 4.5s infinite; }
+.hero-name::after { color: var(--color-secondary); animation: glitch-b 4.5s infinite; }
+@keyframes glitch-a {
+  0%, 86% { opacity: 0; clip-path: inset(0 0 0 0); transform: none; }
+  88% { opacity: 0.85; clip-path: inset(12% 0 62% 0); transform: translate(-4px, 2px); }
+  90% { opacity: 0.85; clip-path: inset(58% 0 8% 0); transform: translate(4px, -2px); }
+  92% { opacity: 0.85; clip-path: inset(28% 0 42% 0); transform: translate(-3px, 1px); }
+  94%, 100% { opacity: 0; clip-path: inset(0 0 0 0); transform: none; }
+}
+@keyframes glitch-b {
+  0%, 88% { opacity: 0; clip-path: inset(0 0 0 0); transform: none; }
+  89% { opacity: 0.85; clip-path: inset(48% 0 22% 0); transform: translate(4px, 1px); }
+  91% { opacity: 0.85; clip-path: inset(8% 0 72% 0); transform: translate(-4px, -1px); }
+  93% { opacity: 0.85; clip-path: inset(66% 0 4% 0); transform: translate(3px, 2px); }
+  95%, 100% { opacity: 0; clip-path: inset(0 0 0 0); transform: none; }
+}
+.hero-role::after {
+  content: ""; display: inline-block; width: 0.55em; height: 1em; margin-left: 0.3em;
+  color: var(--color-accent); background: currentColor; vertical-align: text-bottom;
+  animation: blink 1.1s steps(1) infinite;
+}
+@keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.terminal {
+  margin-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-rule);
+  padding-top: var(--space-md);
+  font-family: var(--font-mono); font-size: var(--text-sm); color: var(--color-muted);
+}
+.terminal p { margin: 0; }
+.terminal p + p { margin-top: var(--space-2xs); }
+.term-prompt { color: var(--color-accent); }
+.term-out { color: var(--color-ink-2); }
+.term-cursor {
+  display: inline-block; width: 0.55em; height: 1em; margin-left: 0.3em;
+  background: var(--color-accent); vertical-align: text-bottom;
+  animation: blink 1.1s steps(1) infinite;
+}
