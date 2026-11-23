@@ -1,21 +1,22 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
   --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
   --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-xl: 1.5625rem; --text-2xl: 1.953rem; --text-3xl: 2.441rem;
   --text-display-s: clamp(2.25rem, 4vw + 0.5rem, 3.75rem); --text-display: clamp(2.75rem, 5vw + 1rem, 5.25rem);
   --text-section: clamp(2rem, 2.5vw + 1rem, 3.5rem); --text-title: clamp(1.25rem, 0.75vw + 0.875rem, 1.625rem); --text-lead: clamp(1.125rem, 0.35vw + 1rem, 1.375rem);
+  --text-figure: clamp(3.25rem, 6vw + 0.5rem, 5.5rem);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in: cubic-bezier(0.7, 0, 0.84, 0); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
-  --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
+  --color-error: oklch(68% 0.19 27); --color-success: oklch(68% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  /* Round 3 (pattern guide, advocacia row): ivory paper, navy ink, brass only in rules and details, body text #3A3A3A. Flat colors only. */
-  --color-paper: #F7F4EE; --color-paper-2: #EFE9DC; --color-paper-3: #E6DDCB;
-  --color-ink: #16233A; --color-ink-2: #2A3B57; --color-muted: #3A3A3A;
-  --color-rule: #DCD2C0; --color-rule-2: #C4B49C;
-  --color-accent: #B08D57; --color-accent-ink: #16233A; --color-focus: #16233A;
+  /* Round 4 "Escritório escuro" (user direction, 23/11): deep navy ground, ivory ink, brass kept from round 3 as the signal on dark. Flat colors only. */
+  --color-paper: #0C1828; --color-paper-2: #0A1420; --color-paper-3: #122539;
+  --color-ink: #F1EAD9; --color-ink-2: #D9D1BE; --color-muted: #9DABB8;
+  --color-rule: #26374E; --color-rule-2: #3A4F6B;
+  --color-accent: #B08D57; --color-accent-ink: #0C1828; --color-accent-bright: #C9A468; --color-focus: #C9A468;
   --color-guide: rgb(176 141 87 / 0.5);
-  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif; --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif; --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-outlier: "Inter", ui-sans-serif, system-ui, sans-serif;
   --radius-card: 0; --radius-pill: 0; --rule-hair: 1px;
   --shadow-card: none;
