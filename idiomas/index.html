@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Falaí, escola de inglês online para adultos. Aulas de 5 minutos com o Téo, o tucano, quiz de nível em 2 minutos e 7 dias grátis, sem cartão.">
+  <title>Falaí, inglês de verdade, cinco minutos por dia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#topo" class="logo" aria-label="Falaí, voltar ao topo">
+        <span class="logo-mark" aria-hidden="true">F</span>
+        Falaí
+      </a>
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#metodo">O método</a>
+        <a href="#niveis">Níveis</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Quem fez</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quiz" class="btn btn-primary nav-cta">Começar grátis</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Inglês de verdade, <span class="hero-accent">cinco minutos</span> por dia.</h1>
+          <p class="hero-sub">Aulas de 5 minutos e um quiz que descobre o seu nível.</p>
+          <p class="hero-actions">
+            <a href="#quiz" class="btn btn-primary">Começar grátis</a>
+            <a href="#planos" class="btn btn-outline">Ver planos</a>
+          </p>
+          <p class="hero-proof">7 dias grátis, sem cartão. Aulas de 5 minutos, do A1 ao C1.</p>
+        </div>
+        <div class="hero-visual">
+          <figure class="ph ph-mascot" data-slot="mascote-hero" data-alt="Téo, o tucano, acenando, ilustração flat"><img src="images/mascote-hero.jpg" alt="Téo, o tucano, acenando, ilustração flat" width="880" height="880">
+          </figure>
+          <div class="lesson-chip" aria-label="Exemplo de lição">
+            <p class="lesson-chip-head"><span>Lição 12: No café</span><span>5 min</span></p>
+            <p class="lesson-chip-line">“Hi, I’d like a coffee, please.”</p>
+            <p class="lesson-chip-xp"><span class="xp-bar"><span style="width: 60%"></span></span><span>+20 XP</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ DE NÍVEL -->
+    <section class="quiz-band" id="quiz">
+      <div class="container quiz-inner">
+        <div class="quiz-head">
+          <h2>Descubra o seu nível em 2 minutos.</h2>
+          <p>Sete perguntas, nenhuma pegadinha. No fim, o Téo te coloca no nível certo e monta a sua primeira semana.</p>
+        </div>
+        <div class="quiz-layout">
+          <div class="quiz-card" id="quizCard">
+            <div class="quiz-intro" id="quizIntro">
+              <p class="quiz-intro-big">7 perguntas.</p>
+              <p>Vocabulário, gramática e compreensão. Sem nota, sem julgamento, só o seu ponto de partida.</p>
+              <button type="button" class="btn btn-primary" id="quizStart">Fazer o quiz</button>
+            </div>
+            <div class="quiz-stage" id="quizStage" hidden>
+              <p class="quiz-progress" id="quizProgress">Pergunta 1 de 7</p>
+              <div class="quiz-bar" aria-hidden="true"><span id="quizBarFill" style="transform: scaleX(0)"></span></div>
+              <h3 class="quiz-question" id="quizQuestion"></h3>
+              <div class="quiz-options" id="quizOptions" role="group" aria-label="Opções de resposta"></div>
+              <p class="quiz-feedback" id="quizFeedback" role="status" aria-live="polite"></p>
+              <button type="button" class="btn btn-primary quiz-next" id="quizNext" hidden>Próxima</button>
+            </div>
+            <div class="quiz-result" id="quizResult" hidden>
+              <p class="quiz-result-level" id="quizResultLevel"></p>
+              <h3 id="quizResultTitle"></h3>
+              <p id="quizResultText"></p>
+              <p class="quiz-result-score" id="quizResultScore"></p>
+              <p class="quiz-result-actions">
+                <a href="#planos" class="btn btn-primary" id="quizResultCta">Começar grátis</a>
+                <button type="button" class="btn btn-outline" id="quizRetry">Refazer o quiz</button>
+              </p>
+            </div>
+            <noscript>
+              <div class="quiz-noscript">
+                <p>Sem JavaScript, o quiz aparece aqui como lista. Responda e confira o gabarito no fim.</p>
+                <ol>
+                  <li>How do you say “bom dia” in English? a) Good morning b) Good night c) Good bye d) Good luck</li>
+                  <li>Choose the correct sentence: a) She go to work every day. b) She goes to work every day. c) She going to work every day. d) She gone to work every day.</li>
+                  <li>What does “I’m starving” mean? a) Estou com muito sono. b) Estou com muita fome. c) Estou com muita sede. d) Estou com muito frio.</li>
+                  <li>Complete: “If I ___ more time, I would travel more.” a) have b) had c) has d) having</li>
+                  <li>What does “embarrassed” mean? a) envergonhado b) animado c) entediado d) orgulhoso</li>
+                  <li>Choose the correct sentence: a) I wish I can speak French. b) I wish I could speak French. c) I wish I will speak French. d) I wish I speaking French.</li>
+                  <li>What does “to hit the nail on the head” mean? a) Acertar em cheio. b) Bater na cabeça de alguém. c) Ficar com dor de cabeça. d) Pregar um prego na parede.</li>
+                </ol>
+                <details>
+                  <summary>Ver gabarito</summary>
+                  <p>1) a, 2) b, 3) b, 4) b, 5) a, 6) b, 7) a. De 0 a 1 acerto: A1. De 2 a 3: A2. De 4 a 5: B1. 6: B2. 7: C1.</p>
+                </details>
+              </div>
+            </noscript>
+          </div>
+          <figure class="ph ph-mascot-fone" data-slot="mascote-fone" data-alt="Téo, o tucano, com fone de ouvido, dando joinha, ilustração flat"><img src="images/mascote-fone.jpg" alt="Téo, o tucano, com fone de ouvido, dando joinha, ilustração flat" width="640" height="640">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- O MÉTODO -->
+    <section class="section" id="metodo">
+      <div class="container">
+        <div class="section-head section-head-split">
+          <h2>Cinco minutos. Uma situação real. Todo dia.</h2>
+          <p>Nada de lista de verbo para decorar. Cada lição é uma situação que você vive: pedir um café, marcar uma consulta, apresentar-se numa reunião.</p>
+        </div>
+        <div class="method-grid">
+          <article class="lesson-card" aria-label="Exemplo de lição da Falaí">
+            <p class="lesson-card-head"><span>Lição 12: No café</span><span>5 min</span></p>
+            <div class="lesson-dialogue">
+              <p><span class="speaker">Você</span> Hi, I’d like a coffee, please.</p>
+              <p><span class="speaker">Barista</span> Sure. To go or for here?</p>
+              <p><span class="speaker">Você</span> To go, please.</p>
+            </div>
+            <p class="lesson-card-tip">O Téo explica: “to go” é para levar. “For here” é para tomar no lugar.</p>
+            <p class="lesson-card-progress"><span class="xp-bar xp-bar-dark"><span style="width: 60%"></span></span><span>3 de 5 frases, +20 XP</span></p>
+          </article>
+          <figure class="ph ph-mascot-study" data-slot="mascote-estudando" data-alt="Téo, o tucano, estudando com um livro, ilustração flat"><img src="images/mascote-estudando.jpg" alt="Téo, o tucano, estudando com um livro, ilustração flat" width="720" height="720">
+          </figure>
+        </div>
+        <ol class="method-list">
+          <li class="method-item">
+            <p class="method-num num" aria-hidden="true">01</p>
+            <div>
+              <h3>Uma situação por lição</h3>
+              <p>42 situações do dia a dia, do café da manhã à reunião com o chefe. Você aprende a frase pronta e depois monta a sua.</p>
+            </div>
+          </li>
+          <li class="method-item">
+            <p class="method-num num" aria-hidden="true">02</p>
+            <div>
+              <h3>O Téo te acompanha</h3>
+              <p>Ele explica o erro na hora, comemora a sua sequência de dias e te lembra, sem bronca, quando você some.</p>
+            </div>
+          </li>
+          <li class="method-item">
+            <p class="method-num num" aria-hidden="true">03</p>
+            <div>
+              <h3>Jogo, não lição</h3>
+              <p>XP por acerto, troféus por conquista e uma sequência de dias para manter. Os troféus têm nome: Café sem Legenda, Primeira Semana, 30 Dias Seguidos.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- NÍVEIS CEFR -->
+    <section class="section section-levels" id="niveis">
+      <div class="container">
+        <div class="section-head">
+          <h2>Do A1 ao C1, sem pular etapa.</h2>
+          <p>Cada nível tem um objetivo concreto. Você só avança quando consegue usar o inglês, não quando decora a regra.</p>
+        </div>
+        <ol class="levels-road">
+          <li class="level level-a1">
+            <p class="level-badge num" aria-hidden="true">A1</p>
+            <div class="level-body">
+              <h3>Iniciante</h3>
+              <p class="level-can">Você consegue: apresentar-se e pedir um café.</p>
+              <p class="level-example">“Hi, I’m Ana. I’d like a coffee, please.”</p>
+            </div>
+          </li>
+          <li class="level level-a2">
+            <p class="level-badge num" aria-hidden="true">A2</p>
+            <div class="level-body">
+              <h3>Básico</h3>
+              <p class="level-can">Você consegue: marcar uma consulta e pedir informações.</p>
+              <p class="level-example">“Could you tell me what time the store opens?”</p>
+            </div>
+          </li>
+          <li class="level level-b1">
+            <p class="level-badge num" aria-hidden="true">B1</p>
+            <div class="level-body">
+              <h3>Intermediário</h3>
+              <p class="level-can">Você consegue: contar o fim de semana e dar a sua opinião.</p>
+              <p class="level-example">“I think working from home is better because…”</p>
+            </div>
+          </li>
+          <li class="level level-b2">
+            <p class="level-badge num" aria-hidden="true">B2</p>
+            <div class="level-body">
+              <h3>Intermediário avançado</h3>
+              <p class="level-can">Você consegue: participar de uma reunião e defender um ponto de vista.</p>
+              <p class="level-example">“I’d argue that the deadline is realistic if we…”</p>
+            </div>
+          </li>
+          <li class="level level-c1">
+            <p class="level-badge num" aria-hidden="true">C1</p>
+            <div class="level-body">
+              <h3>Avançado</h3>
+              <p class="level-can">Você consegue: negociar, ironizar e entender piada em inglês.</p>
+              <p class="level-example">“Let’s cut to the chase: the numbers don’t add up.”</p>
+            </div>
+          </li>
+        </ol>
+        <p class="levels-note">O quiz te coloca no nível certo. Dá para começar no meio, se você já souber alguma coisa. <a href="#quiz">Fazer o quiz</a></p>
+      </div>
+    </section>
+
+    <!-- 7 DIAS GRÁTIS -->
+    <section class="free-band" id="gratis">
+      <div class="container free-inner">
+        <div class="free-copy">
+          <h2><span class="free-big num">7 dias</span> grátis.</h2>
+          <p class="free-sub">Sem cartão. Sem pegadinha.</p>
+          <ul class="free-list">
+            <li>Acesso a todos os níveis, do A1 ao C1</li>
+            <li>Todas as 42 situações, sem travar nada</li>
+            <li>Cancele em 1 clique, sem falar com ninguém</li>
+          </ul>
+          <p><a href="#cadastro" class="btn btn-primary">Começar grátis</a></p>
+        </div>
+        <figure class="ph ph-mascot-party" data-slot="mascote-comemorando" data-alt="Téo, o tucano, comemorando com um troféu, ilustração flat"><img src="images/mascote-comemorando.jpg" alt="Téo, o tucano, comemorando com um troféu, ilustração flat" width="720" height="720">
+        </figure>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="section" id="planos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Depois dos 7 dias, você escolhe.</h2>
+          <p>Os 7 dias grátis valem para o Plus. Sem cartão, nada é cobrado sem você pedir.</p>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <h3>Falaí Grátis</h3>
+            <p class="plan-price"><span class="currency">R$</span> 0 <span class="plan-period">para sempre</span></p>
+            <ul>
+              <li>1 lição por dia</li>
+              <li>Quiz de nível, sempre que quiser</li>
+              <li>Sequência de dias e troféus</li>
+            </ul>
+            <a href="#cadastro" class="btn btn-outline">Começar grátis</a>
+          </article>
+          <article class="plan plan-plus">
+            <h3>Falaí Plus</h3>
+            <p class="plan-price"><span class="currency">R$</span> 49 <span class="plan-period">por mês</span></p>
+            <ul>
+              <li>Lições ilimitadas, todos os dias</li>
+              <li>Todas as 42 situações, do A1 ao C1</li>
+              <li>Modo offline e sem anúncios</li>
+              <li>Certificado por nível concluído</li>
+            </ul>
+            <a href="#cadastro" class="btn btn-primary">Começar grátis</a>
+            <p class="plan-note">7 dias grátis no Plus. Cancele quando quiser.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="section section-testimonials" id="depoimentos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quem começou do zero, conta.</h2>
+          <p>Três alunos, três cidades, três níveis diferentes. Todos com a mesma rotina: 5 minutos por dia.</p>
+        </div>
+        <div class="testimonials">
+          <figure class="testimonial testimonial-featured">
+            <figure class="ph ph-portrait" data-slot="retrato-mariana" data-alt="Retrato de Mariana Costa, foto realista"><img src="images/retrato-mariana.jpg" alt="Retrato de Mariana Costa, foto realista" width="480" height="480">
+            </figure>
+            <div class="testimonial-body">
+              <blockquote>Pedi um café em Londres sem ensaiar antes. O Téo comemorou mais que eu.</blockquote>
+              <figcaption><strong>Mariana Costa</strong><span>São Paulo, SP, do A2 ao B1 em 4 meses</span></figcaption>
+            </div>
+          </figure>
+          <figure class="testimonial">
+            <figure class="ph ph-portrait" data-slot="retrato-rafael" data-alt="Retrato de Rafael Almeida, foto realista"><img src="images/retrato-rafael.jpg" alt="Retrato de Rafael Almeida, foto realista" width="480" height="480">
+            </figure>
+            <blockquote>Apresentei um projeto em inglês na reunião. Travei uma vez, respirei e continuei. Ninguém percebeu.</blockquote>
+            <figcaption><strong>Rafael Almeida</strong><span>Recife, PE, do B1 ao B2</span></figcaption>
+          </figure>
+          <figure class="testimonial">
+            <figure class="ph ph-portrait" data-slot="retrato-juliana" data-alt="Retrato de Juliana Ferreira, foto realista"><img src="images/retrato-juliana.jpg" alt="Retrato de Juliana Ferreira, foto realista" width="480" height="480">
+            </figure>
+            <blockquote>Eu achava que inglês era para quem não tinha tempo. Faço uma lição no ônibus, todo dia.</blockquote>
+            <figcaption><strong>Juliana Ferreira</strong><span>Porto Alegre, RS, do A1 ao A2</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container faq-container">
+        <div class="section-head">
+          <h2>Perguntas frequentes</h2>
+          <p>Não achou sua dúvida? Escreva para contato@falai.com.br.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Preciso saber alguma coisa de inglês para começar?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Não. O quiz descobre o seu nível, mesmo que seja zero. A primeira lição do A1 é “Hi, I’m Ana.”</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Como funciona o quiz de nível?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>São 7 perguntas e 2 minutos. Ele testa vocabulário, gramática e compreensão, e te coloca no nível certo. Dá para refazer quando quiser.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">O que acontece depois dos 7 dias grátis?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Você escolhe: continua no Plus por R$ 49 por mês ou fica no plano grátis, com 1 lição por dia. Nada é cobrado sem você pedir.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Posso cancelar quando quiser?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Sim, em 1 clique, sem falar com ninguém. O acesso continua até o fim do mês pago.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Tem certificado?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Sim, um por nível concluído, com as habilidades que você demonstrou. Dá para baixar e compartilhar.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Serve para inglês do trabalho?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Sim. As situações incluem reunião, apresentação, e-mail e entrevista. O B2 e o C1 são focados em usar o inglês no trabalho.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta" id="cadastro">
+      <div class="container cta-inner">
+        <h2>Comece hoje. O Téo já está esperando.</h2>
+        <p>Deixe seu e-mail e receba o link para começar os 7 dias grátis.</p>
+        <form class="email-capture cta-form" id="emailForm" novalidate>
+          <label class="sr-only" for="emailInput">Seu melhor e-mail</label>
+          <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
+          <button type="submit" class="btn btn-primary">Começar grátis</button>
+        </form>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#topo" class="logo logo-light">
+          <span class="logo-mark" aria-hidden="true">F</span>
+          Falaí
+        </a>
+        <p>Inglês de verdade, cinco minutos por dia.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <div>
+          <h3>O método</h3>
+          <a href="#metodo">Como funciona</a>
+          <a href="#niveis">Níveis</a>
+          <a href="#quiz">Quiz de nível</a>
+        </div>
+        <div>
+          <h3>Ajuda</h3>
+          <a href="#faq">FAQ</a>
+          <a href="#planos">Planos</a>
+          <a href="mailto:contato@falai.com.br">contato@falai.com.br</a>
+        </div>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p class="demo-notice">Site demonstrativo com dados fictícios, criado para fins de portfólio.</p>
+      <p class="footer-legal"><a href="#topo">Termos de uso</a><a href="#topo">Política de privacidade</a></p>
+    </div>
+  </footer>
+
+  <div class="sticky-bar" id="stickyBar" hidden>
+    <p class="sticky-text"><strong>7 dias grátis</strong> <span>sem cartão</span></p>
+    <a href="#quiz" class="btn btn-primary">Começar grátis</a>
+  </div>
+
+  <script src="script.js"></script>
+  <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
