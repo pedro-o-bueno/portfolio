@@ -530,6 +530,7 @@ h3 {
   }
 
   .header-inner {
+    flex-wrap: wrap;
     min-height: 68px;
   }
 
