@@ -1,56 +1,35 @@
-const menuButton = document.querySelector("#menu-toggle");
-const mainNav = document.querySelector("#main-nav");
+// Aprimoramento progressivo: a trilha do percurso acompanha a leitura.
+// Sem JavaScript, ou com movimento reduzido, a trilha fica completa e estática.
+(function () {
+  const list = document.querySelector(".route-list");
+  if (!list || !window.matchMedia) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-if (menuButton && mainNav) {
-  document.documentElement.classList.add("menu-ready");
+  const steps = Array.from(list.querySelectorAll(".route-step"));
+  const root = document.documentElement;
+  let queued = false;
 
-  const closeMenu = (returnFocus = false) => {
-    mainNav.classList.remove("is-open");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Abrir menu");
-    if (returnFocus) menuButton.focus();
+  const update = () => {
+    queued = false;
+    const rect = list.getBoundingClientRect();
+    const mid = window.innerHeight * 0.55;
+    const progress = Math.min(Math.max((mid - rect.top) / rect.height, 0), 1);
+    list.style.setProperty("--progress", (progress * 100).toFixed(1) + "%");
+
+    steps.forEach((step) => {
+      const marker = step.querySelector(".step-index").getBoundingClientRect();
+      step.classList.toggle("is-reached", marker.top + marker.height / 2 <= mid);
+    });
   };
 
-  menuButton.addEventListener("click", () => {
-    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-    if (isOpen) {
-      closeMenu();
-      return;
-    }
+  const queue = () => {
+    if (queued) return;
+    queued = true;
+    window.requestAnimationFrame(update);
+  };
 
-    mainNav.classList.add("is-open");
-    menuButton.setAttribute("aria-expanded", "true");
-    menuButton.setAttribute("aria-label", "Fechar menu");
-  });
-
-  mainNav.addEventListener("click", (event) => {
-    const link = event.target.closest("a");
-    if (!link) return;
-
-    closeMenu();
-
-    const target = link.hash ? document.querySelector(link.hash) : null;
-    if (!target) return;
-
-    const focusTarget = target.matches("h1, h2, h3, figure")
-      ? target
-      : target.querySelector("h1, h2, h3");
-    if (!focusTarget) return;
-
-    event.preventDefault();
-    window.history.pushState(null, "", link.hash);
-    target.scrollIntoView({ block: "start", behavior: "auto" });
-    focusTarget.tabIndex = -1;
-    focusTarget.focus({ preventScroll: true });
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && menuButton.getAttribute("aria-expanded") === "true") {
-      closeMenu(true);
-    }
-  });
-
-  window.addEventListener("resize", () => {
-    if (window.matchMedia("(min-width: 901px)").matches) closeMenu();
-  });
-}
+  root.classList.add("trail-live");
+  window.addEventListener("scroll", queue, { passive: true });
+  window.addEventListener("resize", queue);
+  update();
+})();
