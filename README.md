@@ -16,7 +16,7 @@ Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor f
 | `ecommerce/` | VitaFit Suplementos | Loja virtual de suplementos | Esportivo, verde-escuro/preto com lima, carrinho funcional em JS |
 | `dashboard/` | AgendaPro | Agenda online + CRM com Kanban | Dashboard SaaS, fundo claro, sidebar, índigo, Kanban interativo |
 | `idiomas/` | Falaí | Escola de idiomas | Leve e ilustrado, com quiz de nível demonstrativo |
-| `rastro/` | Rastro | Conceito fictício de SaaS para freelancers | Editorial, papel/índigo/coral, slot VSL estático |
+| `rastro/` | Rastro | Painel conceitual fictício para freelancers | Editorial, papel/índigo/coral, painel estático e slot VSL 16:9 |
 
 ## Estrutura do repositório
 
@@ -45,7 +45,7 @@ O `index.html` da raiz é autocontido (CSS e JS embutidos; as fontes vêm do Goo
 - Onze experiências estáticas em pt-BR, cada uma com conteúdo e visual próprios. Textos, produtos, pessoas, avaliações, preços, métricas e contatos das demonstrações são exemplos fictícios.
 - Os estilos e scripts ficam nos projetos correspondentes; não há backend nem etapa de build. Há imagens locais, gradientes CSS e ilustrações em SVG.
 - As interações são locais e demonstrativas: formulários não enviam dados, e ações não reservam horários, matriculam pessoas, criam contas, registram pedidos nem cobram pagamentos.
-- Rastro é uma landing de produto fictício; o espaço para VSL é estático e não há cadastro, formulário ou software funcional.
+- Rastro é uma landing de produto fictício; o painel ilustrativo é estático, o espaço para VSL mantém 16:9 e não há cadastro, formulário ou software funcional.
 - O chatbot conduz uma conversa de agendamento simulada; o carrinho da VitaFit permite adicionar, remover e alterar itens antes do checkout demonstrativo; o Kanban da AgendaPro move cartões e aceita novos leads apenas na página atual; o quiz Falaí mostra uma classificação de exemplo.
 
 ## Como pré-visualizar localmente

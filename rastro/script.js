@@ -51,6 +51,6 @@ if (menuButton && mainNav) {
   });
 
   window.addEventListener("resize", () => {
-    if (window.matchMedia("(min-width: 768px)").matches) closeMenu();
+    if (window.matchMedia("(min-width: 901px)").matches) closeMenu();
   });
 }
