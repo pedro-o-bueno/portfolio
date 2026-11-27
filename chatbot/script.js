@@ -26,7 +26,7 @@
   function addMessage(text, who) {
     var div = document.createElement("div");
     div.className = "msg " + who;
-    div.innerHTML = text;
+    div.textContent = text;
     chatBody.appendChild(div);
     scrollDown();
     return div;
@@ -36,16 +36,18 @@
     var div = document.createElement("div");
     div.className = "msg bot typing";
     div.id = "typingIndicator";
-    div.innerHTML = "<span></span><span></span><span></span>";
+    for (var i = 0; i < 3; i += 1) {
+      div.appendChild(document.createElement("span"));
+    }
     chatBody.appendChild(div);
     scrollDown();
-    if (chatStatus) chatStatus.textContent = "digitando...";
+    if (chatStatus) chatStatus.textContent = "Simulação em andamento";
   }
 
   function hideTyping() {
     var t = document.getElementById("typingIndicator");
     if (t) t.remove();
-    if (chatStatus) chatStatus.textContent = "online — responde na hora";
+    if (chatStatus) chatStatus.textContent = "Demonstração interativa";
   }
 
   // Bot sends a message after a short "typing" delay, then runs next()
@@ -62,7 +64,7 @@
   }
 
   function setQuickReplies(options) {
-    quickReplies.innerHTML = "";
+    quickReplies.replaceChildren();
     options.forEach(function (opt) {
       var btn = document.createElement("button");
       btn.type = "button";
@@ -94,7 +96,7 @@
 
   function stepService() {
     botSay(
-      "Olá! Sou a assistente virtual da Clínica Sorriso. Qual serviço você quer agendar?",
+      "Olá! Esta é uma simulação da Clínica Sorriso. Qual serviço de exemplo você quer escolher?",
       function () {
         setQuickReplies(
           SERVICES.map(function (s) {
@@ -114,9 +116,9 @@
 
   function stepDay() {
     botSay(
-      "Ótima escolha! Para qual dia você prefere a sua <strong>" +
+      "Ótima escolha! Para qual dia você prefere a simulação de " +
         state.service +
-        "</strong>?",
+        "?",
       function () {
         setQuickReplies(
           DAYS.map(function (d) {
@@ -136,7 +138,7 @@
 
   function stepTime() {
     botSay(
-      "Temos estes horários disponíveis " +
+      "Escolha um horário de exemplo " +
         (state.day === "Hoje" ? "para hoje" : "para " + state.day.toLowerCase()) +
         ". Qual funciona melhor para você?",
       function () {
@@ -157,25 +159,22 @@
   }
 
   function stepName() {
-    botSay("Perfeito! Só falta o seu nome para confirmar o agendamento.", function () {
+    botSay("Perfeito! Digite um nome fictício para concluir a simulação.", function () {
       showNameField();
     });
   }
 
   function stepConfirm() {
     var summary =
-      "<strong>Consulta confirmada!</strong>" +
-      '<span class="summary-line">Serviço: ' + state.service + "</span>" +
-      '<span class="summary-line">Dia: ' + state.day + "</span>" +
-      '<span class="summary-line">Horário: ' + state.time + "</span>" +
-      '<span class="summary-line">Paciente: ' + state.name + "</span>" +
-      '<span class="summary-line">Local: ' + CLINIC_ADDRESS + "</span>";
+      "Resumo da simulação: serviço " + state.service +
+      "; dia " + state.day +
+      "; horário " + state.time +
+      "; nome fictício " + state.name +
+      "; local de exemplo " + CLINIC_ADDRESS + ".";
 
     botSay(summary, function () {
       botSay(
-        "Te enviaremos um lembrete na véspera e no dia da consulta. Obrigado, " +
-          state.name +
-          "! Qualquer coisa, é só chamar por aqui.",
+        "Simulação concluída: nenhum horário foi reservado, nenhuma mensagem ou lembrete será enviado.",
         function () {
           setQuickReplies([
             {
@@ -205,7 +204,7 @@
   function startDemo() {
     state = { service: null, day: null, time: null, name: null };
     busy = false;
-    chatBody.innerHTML = "";
+    chatBody.replaceChildren();
     hideNameField();
     setQuickReplies([]);
     stepService();
@@ -226,6 +225,8 @@
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
+      formSuccess.textContent =
+        "Simulação concluída: nenhuma mensagem foi enviada e nenhum dado foi compartilhado.";
       formSuccess.hidden = false;
       contactForm.reset();
       formSuccess.scrollIntoView({ behavior: "smooth", block: "nearest" });

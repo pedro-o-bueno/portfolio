@@ -57,11 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* 4. Barra fixa inferior — aparece só depois de rolar (escondida sem JS) */
   var stickyBar = document.getElementById('stickyBar');
+  var quizFlowActive = false;
+  var toggleStickyBar = function () {
+    if (stickyBar) {
+      stickyBar.classList.toggle('show', window.scrollY > 600 && !quizFlowActive);
+    }
+  };
   if (stickyBar) {
     stickyBar.hidden = false;
-    var toggleStickyBar = function () {
-      stickyBar.classList.toggle('show', window.scrollY > 600);
-    };
     window.addEventListener('scroll', toggleStickyBar, { passive: true });
     toggleStickyBar();
   }
@@ -77,14 +80,14 @@ document.addEventListener('DOMContentLoaded', function () {
       var email = input.value.trim();
 
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        msg.textContent = 'Informe um e-mail válido para continuar.';
+        msg.textContent = 'Informe um e-mail fictício válido para concluir a simulação.';
         msg.classList.add('error');
         input.focus();
         return;
       }
 
       msg.classList.remove('error');
-      msg.textContent = 'Inscrição registrada! Enviamos o link de acesso para ' + email + '.';
+      msg.textContent = 'Simulação concluída: nenhuma conta ou matrícula foi criada e nenhum e-mail foi enviado.';
       form.reset();
     });
 
@@ -141,11 +144,11 @@ document.addEventListener('DOMContentLoaded', function () {
   ];
 
   var LEVELS = [
-    { min: 0, max: 1, code: 'A1', name: 'Iniciante', text: 'Você está começando. A primeira lição é “Hi, I’m Ana.” Em duas semanas, você pede um café sem ensaiar.' },
-    { min: 2, max: 3, code: 'A2', name: 'Básico', text: 'Você já se vira no básico. Vamos destravar as frases do dia a dia: pedir informações, marcar uma consulta.' },
-    { min: 4, max: 5, code: 'B1', name: 'Intermediário', text: 'Você já conversa. Agora é ganhar fluência: contar histórias, dar opinião, entender série sem legenda.' },
-    { min: 6, max: 6, code: 'B2', name: 'Intermediário avançado', text: 'Você já usa o inglês. Vamos afiar: reunião, apresentação, argumento.' },
-    { min: 7, max: 7, code: 'C1', name: 'Avançado', text: 'Você já é avançado. O C1 é nuance: ironia, negociação, piada.' }
+    { min: 0, max: 1, code: 'A1', name: 'Iniciante', text: 'Faixa de exemplo para respostas iniciais. Explore frases básicas como “Hi, I’m Ana.”' },
+    { min: 2, max: 3, code: 'A2', name: 'Básico', text: 'Faixa de exemplo para respostas básicas. O conteúdo demonstrativo inclui situações do dia a dia.' },
+    { min: 4, max: 5, code: 'B1', name: 'Intermediário', text: 'Faixa de exemplo intermediária. Explore diálogos, vocabulário e compreensão.' },
+    { min: 6, max: 6, code: 'B2', name: 'Intermediário avançado', text: 'Faixa de exemplo para respostas avançadas. Explore situações de reunião e apresentação.' },
+    { min: 7, max: 7, code: 'C1', name: 'Avançado', text: 'Faixa de exemplo avançada. Este resultado não representa uma avaliação oficial.' }
   ];
 
   var quizIntro = document.getElementById('quizIntro');
@@ -199,6 +202,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         quizOptions.appendChild(btn);
       });
+      var firstOption = quizOptions.querySelector('.quiz-option');
+      if (firstOption) { firstOption.focus(); }
     };
 
     var showResult = function () {
@@ -209,15 +214,21 @@ document.addEventListener('DOMContentLoaded', function () {
       quizStage.hidden = true;
       quizResult.hidden = false;
       document.getElementById('quizResultLevel').textContent = level.code;
-      document.getElementById('quizResultTitle').textContent = 'Seu nível é ' + level.code + ', ' + level.name + '.';
+      document.getElementById('quizResultTitle').textContent = 'Resultado demonstrativo: ' + level.code + ', ' + level.name + '.';
       document.getElementById('quizResultText').textContent = level.text;
       document.getElementById('quizResultScore').textContent = 'Você acertou ' + score + ' de ' + QUESTIONS.length + '.';
-      document.getElementById('quizResultCta').textContent = 'Começar grátis no nível ' + level.code;
+      document.getElementById('quizResultCta').textContent = 'Ver planos de exemplo';
+      document.getElementById('quizResultTitle').focus();
     };
 
     quizStart.addEventListener('click', function () {
       current = 0;
       score = 0;
+      quizFlowActive = true;
+      if (stickyBar) {
+        stickyBar.classList.remove('show');
+        stickyBar.hidden = true;
+      }
       quizIntro.hidden = true;
       quizResult.hidden = true;
       quizStage.hidden = false;
@@ -239,6 +250,12 @@ document.addEventListener('DOMContentLoaded', function () {
       quizResult.hidden = true;
       quizStage.hidden = true;
       quizIntro.hidden = false;
+      quizFlowActive = false;
+      if (stickyBar) {
+        stickyBar.hidden = false;
+        toggleStickyBar();
+      }
+      quizStart.focus();
     });
   }
 });

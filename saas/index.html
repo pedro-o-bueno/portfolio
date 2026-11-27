@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fluxo, o financeiro da sua empresa em um só lugar. Controle financeiro, emissão de boletos e Pix, fluxo de caixa e relatórios automáticos para pequenas empresas.">
-  <title>Fluxo, o financeiro da sua empresa em um só lugar</title>
+  <meta name="description" content="Demonstração de uma landing page de SaaS financeiro. Produto, métricas, depoimentos, nomes, planos e funcionalidades são ilustrativos; não há contas, integrações ou transações reais.">
+  <title>Fluxo, demonstração de SaaS financeiro</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
   <header class="header">
@@ -24,7 +25,7 @@
         <a href="#planos">Planos</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#faq">FAQ</a>
-        <a href="#cta" class="btn btn-primary nav-cta">Testar grátis</a>
+        <a href="#planos" class="btn btn-primary nav-cta">Ver planos de exemplo</a>
       </nav>
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -39,15 +40,16 @@
         <div class="hero-copy">
           <h1>O financeiro da sua empresa em um só lugar</h1>
           <p class="hero-sub">Controle de contas a pagar e a receber, emissão de boletos, fluxo de caixa e relatórios automáticos. Menos planilha, mais tempo para vender.</p>
-          <p class="hero-note">Novo: integração com Pix automático</p>
+          <p class="hero-note">Prévia demonstrativa do painel</p>
+          <p class="demo-notice" role="note">Demonstração: produto, dados, métricas, depoimentos, nomes, resultados, planos e funcionalidades são ilustrativos. Não há backend, integrações ou transações reais; o formulário não cria conta nem envia e-mail.</p>
           <form class="email-capture" id="emailForm" novalidate>
-            <label class="sr-only" for="emailInput">Seu melhor e-mail profissional</label>
-            <input type="email" id="emailInput" placeholder="Seu melhor e-mail profissional" required>
-            <button type="submit" class="btn btn-primary">Começar grátis por 14 dias</button>
+            <label class="sr-only" for="emailInput">E-mail fictício para a simulação</label>
+            <input type="email" id="emailInput" placeholder="exemplo@email.test" autocomplete="off" required>
+            <button type="submit" class="btn btn-primary">Simular cadastro</button>
           </form>
           <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-          <p class="trust-line">Sem cartão de crédito. Cancele quando quiser.</p>
-          <p class="hero-proof">Mais de <strong>12.000 pequenas empresas</strong> já organizam o financeiro com o Fluxo</p>
+          <p class="trust-line">Nenhuma conta é criada e nenhuma cobrança é realizada.</p>
+          <p class="hero-proof">Prévia ilustrativa de contas a pagar, contas a receber e fluxo de caixa.</p>
         </div>
 
         <figure class="hero-photo" data-slot="saas-hero" data-alt="Prévia do painel financeiro do Fluxo">
@@ -160,7 +162,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Planos para cada momento da sua empresa</h2>
-          <p>Comece grátis e evolua quando fizer sentido. Sem fidelidade e sem surpresa na fatura.</p>
+          <p>Planos e condições de exemplo. Esta demonstração não cria assinaturas nem cobra pagamentos.</p>
         </div>
         <div class="billing-toggle" role="group" aria-label="Período de cobrança">
           <span id="labelMensal" class="toggle-label active">Mensal</span>
@@ -174,7 +176,7 @@
             <h3>Grátis</h3>
             <p class="plan-desc">Para tirar o financeiro do papel.</p>
             <p class="plan-price"><span class="currency">R$</span> <span class="price-value" data-monthly="0" data-annual="0">0</span><span class="period">/mês</span></p>
-            <p class="plan-note">Para sempre, sem cartão</p>
+            <p class="plan-note">Condição ilustrativa</p>
             <ul>
               <li>1 usuário</li>
               <li>Contas a pagar e a receber</li>
@@ -182,14 +184,14 @@
               <li>Até 20 boletos por mês</li>
               <li>Suporte por e-mail</li>
             </ul>
-            <a href="#cta" class="btn btn-outline btn-block">Começar grátis</a>
+            <a href="#cta" class="btn btn-outline btn-block">Ver plano de exemplo</a>
           </article>
           <article class="plan popular">
             <span class="popular-badge">Mais popular</span>
             <h3>Pro</h3>
             <p class="plan-desc">Para quem já vende todo mês e quer previsibilidade.</p>
             <p class="plan-price"><span class="currency">R$</span> <span class="price-value" data-monthly="49,90" data-annual="39,90">49,90</span><span class="period">/mês</span></p>
-            <p class="plan-note"><span class="annual-note" hidden>no plano anual</span>Teste grátis por 14 dias</p>
+            <p class="plan-note"><span class="annual-note" hidden>no plano anual</span>Exemplo: teste por 14 dias</p>
             <ul>
               <li>Até 5 usuários</li>
               <li>Tudo do Grátis, sem limite de boletos</li>
@@ -198,13 +200,13 @@
               <li>Integração com bancos</li>
               <li>Suporte prioritário por chat</li>
             </ul>
-            <a href="#cta" class="btn btn-primary btn-block">Testar 14 dias grátis</a>
+            <a href="#cta" class="btn btn-primary btn-block">Explorar plano de exemplo</a>
           </article>
           <article class="plan">
             <h3>Empresas</h3>
             <p class="plan-desc">Para operações com mais volume e mais gente no time.</p>
             <p class="plan-price"><span class="currency">R$</span> <span class="price-value" data-monthly="149,90" data-annual="119,90">149,90</span><span class="period">/mês</span></p>
-            <p class="plan-note"><span class="annual-note" hidden>no plano anual</span>Teste grátis por 14 dias</p>
+            <p class="plan-note"><span class="annual-note" hidden>no plano anual</span>Exemplo: teste por 14 dias</p>
             <ul>
               <li>Usuários ilimitados</li>
               <li>Tudo do Pro</li>
@@ -227,6 +229,7 @@
           <h2>Quem usa, recomenda</h2>
           <p>Donos de pequenas empresas que trocaram a planilha pelo Fluxo.</p>
         </div>
+        <p class="demo-notice" role="note">Depoimentos, nomes, empresas e resultados são fictícios e não representam clientes reais.</p>
         <div class="testimonials">
           <figure class="testimonial">
             <blockquote>Antes eu passava o domingo fechando a planilha. Hoje abro o Fluxo no celular, vejo o que entra e o que sai, e o resto do dia é da minha família.</blockquote>
@@ -258,28 +261,28 @@
       <div class="container faq-container">
         <div class="section-head">
           <h2>Perguntas frequentes</h2>
-          <p>Não achou sua dúvida? Fale com a gente pelo chat, em horário comercial.</p>
+          <p>Explore as perguntas e respostas de exemplo; esta página não recebe mensagens.</p>
         </div>
         <div class="faq-list">
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Preciso de cartão de crédito para testar?<span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Não. O teste grátis de 14 dias do plano Pro não pede cartão de crédito. Você só informa um e-mail e começa a usar na hora. Se não assinar nada ao final, sua conta volta para o plano Grátis automaticamente.</p></div>
+            <button class="faq-question" aria-expanded="false">Há teste grátis nesta demonstração?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Não há teste grátis real nesta demonstração. Os prazos e condições exibidos nos planos são exemplos; nenhum cadastro, cartão ou pagamento é solicitado.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">Posso cancelar quando quiser?<span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Sim. Não há fidelidade nem multa. Você cancela em poucos cliques dentro do próprio painel, e o plano fica ativo até o fim do período já pago. Seus dados ficam disponíveis para exportação por 90 dias após o cancelamento.</p></div>
+            <div class="faq-answer"><p>Esta demonstração não cria assinaturas nem cobra pagamentos. As condições de cancelamento exibidas são apenas ilustrativas.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">Meus dados ficam seguros?<span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Sim. Usamos criptografia em trânsito e em repouso, backups diários e servidores em data centers certificados. Seus dados financeiros nunca são vendidos ou compartilhados com terceiros, conforme a LGPD.</p></div>
+            <div class="faq-answer"><p>Esta demonstração não possui backend e não coleta nem armazena dados. Recursos de segurança, criptografia e privacidade dependeriam de implementação e verificação próprias.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">O Fluxo emite nota fiscal?<span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>O Fluxo não é um emissor de nota fiscal eletrônica, mas integra com os principais emissores do mercado e registra as notas no seu fluxo de caixa automaticamente, para você não lançar nada duas vezes.</p></div>
+            <div class="faq-answer"><p>Esta demonstração não emite nem sincroniza notas fiscais. O conteúdo é ilustrativo e não há integrações ativas.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">Como funciona a integração bancária?<span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Você conecta sua conta corrente em poucos minutos, com a autorização feita no ambiente do próprio banco (Open Finance). A partir daí o extrato é importado automaticamente e o Fluxo sugere a conciliação de cada lançamento.</p></div>
+            <div class="faq-answer"><p>Esta demonstração não conecta contas, usa Open Finance nem importa extratos. O conteúdo sobre integração bancária é apenas ilustrativo.</p></div>
           </div>
         </div>
       </div>
@@ -289,11 +292,11 @@
     <section class="cta" id="cta">
       <div class="container cta-inner">
         <h2>Pronto para organizar o financeiro da sua empresa?</h2>
-        <p>Crie sua conta em menos de 2 minutos e teste o plano Pro grátis por 14 dias.</p>
+        <p>Explore os planos ilustrativos e teste o formulário demonstrativo. Nenhuma conta será criada.</p>
         <form class="email-capture cta-form" id="emailFormCta" novalidate>
-          <label class="sr-only" for="emailInputCta">Seu melhor e-mail profissional</label>
-          <input type="email" id="emailInputCta" placeholder="Seu melhor e-mail profissional" required>
-          <button type="submit" class="btn btn-white">Começar a controlar</button>
+          <label class="sr-only" for="emailInputCta">E-mail fictício para a simulação</label>
+          <input type="email" id="emailInputCta" placeholder="exemplo@email.test" autocomplete="off" required>
+          <button type="submit" class="btn btn-white">Simular cadastro</button>
         </form>
         <p class="form-msg form-msg-light" id="formMsgCta" role="status" aria-live="polite"></p>
         <p class="trust-line trust-line-light">Sem cartão de crédito. Cancele quando quiser.</p>
@@ -329,7 +332,7 @@
           <h3>Suporte</h3>
           <a href="#faq">Central de ajuda</a>
           <a href="#faq">FAQ</a>
-          <a href="mailto:contato@fluxo.com.br">contato@fluxo.com.br</a>
+          <span>contato@fluxo.com.br (dado ilustrativo)</span>
         </div>
       </nav>
     </div>

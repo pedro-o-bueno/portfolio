@@ -15,7 +15,7 @@
 <header>
   <div class="container nav">
     <a class="logo" href="#">pedro<span>.</span>bueno</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
     <ul class="nav-links" id="navLinks">
@@ -24,7 +24,7 @@
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
-    <a class="nav-cta" href="#contato">Contratar</a>
+    <a class="nav-cta" href="#contato">Conversar sobre um projeto</a>
   </div>
 </header>
 
@@ -32,48 +32,29 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
-        <h1><span class="hero-name" data-text="Pedro Henrique Oliveira Bueno">Pedro Henrique Oliveira Bueno</span><span class="hero-role">Desenvolvedor Full-Stack</span></h1>
-        <p class="lead">Construo sites, landing pages e sistemas web rápidos e modernos para o seu negócio sair do papel e começar a vender.</p>
+        <h1><span class="hero-name" data-text="Sites, lojas e sistemas web">Sites, lojas e sistemas web</span><span class="hero-role">para o seu negócio.</span></h1>
+        <p class="lead">Explore demonstrações por nicho e veja como serviços, produtos e fluxos podem ganhar forma na web.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/pedro-o-bueno" target="_blank" rel="noopener">Ver GitHub</a>
-          <a class="btn btn-ghost" href="mailto:phobueno@gmail.com">phobueno@gmail.com</a>
+          <a class="btn btn-primary" href="#projetos">Ver demonstrações</a>
+          <a class="btn btn-ghost" href="#contato">Falar sobre um projeto</a>
         </div>
-        <p class="availability"><span class="avail-mark" aria-hidden="true"></span>Disponível para novos projetos</p>
       </div>
       <figure class="hero-photo crop" data-slot="hub-hero">
         <img src="images/hub-hero.jpg" alt="Mesa de trabalho de desenvolvedor com notebook exibindo código">
       </figure>
     </div>
-    <div class="hero-stats">
-      <div><strong>5+</strong><span>anos de experiência em TI</span></div>
-      <div><strong>4</strong><span>empresas no currículo</span></div>
-      <div><strong>9</strong><span>sites de demonstração</span></div>
-    </div>
     <div class="terminal">
       <p><span class="term-prompt">pedro@portfolio:~$</span> ./status.sh</p>
-      <p class="term-out">9 sites | 5+ anos | disponível para novos projetos<span class="term-cursor" aria-hidden="true"></span></p>
+      <p class="term-out">11 demonstrações | páginas estáticas | fluxos locais<span class="term-cursor" aria-hidden="true"></span></p>
     </div>
   </div>
 </section>
 
 <main class="content container">
-  <section id="experiencia">
-    <div class="section-head">
-      <h2><span class="sec-num">01.</span> Experiência</h2>
-    </div>
-    <ul class="timeline">
-      <li><strong>Nursepro, UFCSPA</strong><span>Desenvolvedor Full-Stack, desde nov/2025</span></li>
-      <li><strong>Dell Technologies</strong><span>Senior Support Analyst, 2023 a 2025</span></li>
-      <li><strong>SAP Labs LATAM</strong><span>Software Developer, 2021 a 2022</span></li>
-      <li><strong>Bueno Tecnologia, projeto Bayer</strong><span>Software Developer / Data Engineer, 2021 a 2022</span></li>
-      <li><strong>TelessaúdeRS, UFRGS</strong><span>Software Developer &amp; Support, 2020 a 2021</span></li>
-    </ul>
-  </section>
-
   <section id="projetos">
     <div class="section-head">
-      <h2><span class="sec-num">02.</span> Sites de demonstração</h2>
-      <p>Nove sites completos, cada um em um nicho e com um estilo diferente, para mostrar o que eu posso fazer pelo seu negócio. Clique e explore.</p>
+      <h2><span class="sec-num">01.</span> Demonstrações</h2>
+      <p>Onze experiências demonstrativas, cada uma com identidade própria. Conteúdos são exemplos; formulários não enviam dados e interações não fazem reservas, matrículas, cadastros ou cobranças.</p>
     </div>
     <div class="project-list">
 
@@ -81,9 +62,9 @@
         <div class="card-head"><span class="card-index">01</span><span class="niche">Restaurante</span></div>
         <div class="card-body">
           <h3>Cantina do Zé</h3>
-          <p>Restaurante italiano com cardápio completo e preços, área de reservas e botão de WhatsApp. Visual quente e elegante, com tipografia serifada.</p>
+          <p>Restaurante italiano com cardápio de exemplo, fluxo de reserva demonstrativo e contatos ilustrativos. Visual quente e elegante, com tipografia serifada.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./restaurante/">Ver site</a>
+          <a class="card-link" href="./restaurante/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -91,9 +72,9 @@
         <div class="card-head"><span class="card-index">02</span><span class="niche">Advocacia</span></div>
         <div class="card-body">
           <h3>Ferreira &amp; Almeida Advocacia</h3>
-          <p>Site institucional para escritório de advocacia: áreas de atuação, equipe com OAB, resultados e formulário de contato. Estilo sóbrio e clássico.</p>
+          <p>Site institucional demonstrativo para escritório de advocacia: áreas de atuação, equipe, resultados e formulário de contato ilustrativos. Estilo sóbrio e clássico.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./advocacia/">Ver site</a>
+          <a class="card-link" href="./advocacia/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -101,9 +82,9 @@
         <div class="card-head"><span class="card-index">03</span><span class="niche">Academia</span></div>
         <div class="card-body">
           <h3>Iron House Academia</h3>
-          <p>Site para academia com planos e preços, modalidades de treino e matrícula integrada ao formulário. Visual escuro, forte e direto.</p>
+          <p>Site demonstrativo para academia com planos, preços e modalidades de exemplo; o formulário não realiza matrícula. Visual escuro, forte e direto.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./academia/">Ver site</a>
+          <a class="card-link" href="./academia/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -111,9 +92,9 @@
         <div class="card-head"><span class="card-index">04</span><span class="niche">Pet shop</span></div>
         <div class="card-body">
           <h3>Pata Amiga Pet Shop</h3>
-          <p>Pet shop e clínica veterinária: serviços, produtos com preços, depoimentos de tutores e agendamento. Estilo amigável, colorido e leve.</p>
+          <p>Pet shop e clínica veterinária demonstrativos, com serviços, produtos e fluxo de agendamento ilustrativos. Estilo amigável, colorido e leve.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./petshop/">Ver site</a>
+          <a class="card-link" href="./petshop/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -121,9 +102,9 @@
         <div class="card-head"><span class="card-index">05</span><span class="niche">SaaS</span></div>
         <div class="card-body">
           <h3>Fluxo</h3>
-          <p>Landing page de SaaS de gestão financeira com mockup de dashboard em CSS puro, planos mensal/anual, FAQ e captura de e-mail. Moderna e limpa.</p>
+          <p>Landing page de SaaS de gestão financeira com mockup de dashboard em CSS puro, planos, FAQ e formulário demonstrativos; não cria conta nem envia e-mail. Moderna e limpa.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./saas/">Ver site</a>
+          <a class="card-link" href="./saas/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -131,9 +112,9 @@
         <div class="card-head"><span class="card-index">06</span><span class="niche">Construtora</span></div>
         <div class="card-body">
           <h3>Vetor Construtora</h3>
-          <p>Site institucional para construtora de alto padrão: empreendimentos, serviços, depoimentos e contato. Visual limpo e premium, branco/carvão com âmbar.</p>
+          <p>Site institucional demonstrativo para construtora de alto padrão: empreendimentos, serviços e contatos ilustrativos. Visual limpo e premium, branco/carvão com âmbar.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./construtora/">Ver site</a>
+          <a class="card-link" href="./construtora/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -143,7 +124,7 @@
           <h3>Clínica Sorriso</h3>
           <p>Demonstração de chatbot de WhatsApp para agendamento de consultas: chat simulado funcional, planos e FAQ. Visual leve e moderno, com verde de destaque.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./chatbot/">Ver site</a>
+          <a class="card-link" href="./chatbot/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -151,9 +132,9 @@
         <div class="card-head"><span class="card-index">08</span><span class="niche">E-commerce</span></div>
         <div class="card-body">
           <h3>VitaFit Suplementos</h3>
-          <p>Loja virtual de suplementos com 8 produtos e carrinho funcional: drawer, quantidades, frete grátis progressivo e checkout simulado. Esportiva, verde-escura com lima.</p>
+          <p>Loja virtual demonstrativa com carrinho local, frete ilustrativo e checkout simulado, sem cobrança. Esportiva, verde-escura com lima.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./ecommerce/">Ver site</a>
+          <a class="card-link" href="./ecommerce/">Abrir demonstração</a>
         </div>
       </article>
 
@@ -161,13 +142,46 @@
         <div class="card-head"><span class="card-index">09</span><span class="niche">Sistema web</span></div>
         <div class="card-body">
           <h3>AgendaPro</h3>
-          <p>Sistema de agenda online e CRM com Kanban interativo: arraste cards entre colunas, adicione leads e acompanhe a agenda do dia. Estilo dashboard SaaS.</p>
+          <p>Sistema demonstrativo de agenda e CRM com Kanban interativo: mova cartões e adicione leads locais, sem criar registros reais. Estilo dashboard SaaS.</p>
           <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <a class="card-link" href="./dashboard/">Ver site</a>
+          <a class="card-link" href="./dashboard/">Abrir demonstração</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span class="card-index">10</span><span class="niche">Idiomas</span></div>
+        <div class="card-body">
+          <h3>Falaí</h3>
+          <p>Escola de idiomas demonstrativa com quiz interativo de nível, conteúdo de exemplo e uma identidade ilustrada pelo mascote Téo.</p>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="card-link" href="./idiomas/">Abrir demonstração</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><span class="card-index">11</span><span class="niche">Landing page · SaaS</span></div>
+        <div class="card-body">
+          <h3>Rastro</h3>
+          <p>Painel conceitual não funcional para freelancers, com quatro áreas estáticas e espaço 16:9 reservado para VSL.</p>
+          <div class="tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a class="card-link" href="./rastro/">Abrir demonstração</a>
         </div>
       </article>
 
     </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="section-head">
+      <h2><span class="sec-num">02.</span> Experiência</h2>
+    </div>
+    <ul class="timeline">
+      <li><strong>Nursepro, UFCSPA</strong><span>Desenvolvedor Full-Stack, desde nov/2025</span></li>
+      <li><strong>Dell Technologies</strong><span>Senior Support Analyst, 2023 a 2025</span></li>
+      <li><strong>SAP Labs LATAM</strong><span>Software Developer, 2021 a 2022</span></li>
+      <li><strong>Bueno Tecnologia, projeto Bayer</strong><span>Software Developer / Data Engineer, 2021 a 2022</span></li>
+      <li><strong>TelessaúdeRS, UFRGS</strong><span>Software Developer &amp; Support, 2020 a 2021</span></li>
+    </ul>
   </section>
 
   <section class="about" id="sobre">
@@ -210,8 +224,8 @@
     </div>
     <div class="contact-box crop" id="contato">
       <div>
-        <h3>Vamos tirar o seu projeto do papel?</h3>
-        <p>Me chame por e-mail ou pelos meus perfis de freela e receba um orçamento sem compromisso.</p>
+        <h3>Tem um projeto em mente?</h3>
+        <p>Conte o objetivo e escolha um canal para conversar sobre escopo e orçamento.</p>
       </div>
       <div class="contact-links">
         <a href="mailto:phobueno@gmail.com">E-mail</a>
@@ -232,11 +246,22 @@
 <script>
   var btn = document.getElementById('menuBtn');
   var links = document.getElementById('navLinks');
+  function setMenuOpen(isOpen) {
+    links.classList.toggle('open', isOpen);
+    btn.setAttribute('aria-expanded', String(isOpen));
+    btn.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+  }
   btn.addEventListener('click', function () {
-    links.classList.toggle('open');
+    setMenuOpen(!links.classList.contains('open'));
   });
   links.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') links.classList.remove('open');
+    if (e.target.closest('a')) setMenuOpen(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && links.classList.contains('open')) {
+      setMenuOpen(false);
+      btn.focus();
+    }
   });
 </script>
 <script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };

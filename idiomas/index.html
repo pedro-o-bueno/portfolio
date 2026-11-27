@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Falaí, escola de inglês online para adultos. Aulas de 5 minutos com o Téo, o tucano, quiz de nível em 2 minutos e 7 dias grátis, sem cartão.">
-  <title>Falaí, inglês de verdade, cinco minutos por dia</title>
+  <meta name="description" content="Demonstração de uma plataforma de inglês para adultos, com aulas e quiz de nível ilustrativos. Não há período de teste, matrícula ou criação de conta.">
+  <title>Falaí, demonstração de plataforma de inglês</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
   <header class="header">
@@ -23,7 +24,7 @@
         <a href="#planos">Planos</a>
         <a href="#depoimentos">Quem fez</a>
         <a href="#faq">FAQ</a>
-        <a href="#quiz" class="btn btn-primary nav-cta">Começar grátis</a>
+        <a href="#quiz" class="btn btn-primary nav-cta">Fazer quiz demonstrativo</a>
       </nav>
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -38,11 +39,12 @@
         <div class="hero-copy">
           <h1>Inglês de verdade, <span class="hero-accent">cinco minutos</span> por dia.</h1>
           <p class="hero-sub">Aulas de 5 minutos e um quiz que descobre o seu nível.</p>
+          <p class="demo-notice" role="note">Demonstração: aulas, depoimentos, preços e condições são ilustrativos. O quiz não avalia oficialmente, não matricula nem cria conta.</p>
           <p class="hero-actions">
-            <a href="#quiz" class="btn btn-primary">Começar grátis</a>
-            <a href="#planos" class="btn btn-outline">Ver planos</a>
+            <a href="#quiz" class="btn btn-primary">Explorar quiz demonstrativo</a>
+            <a href="#planos" class="btn btn-outline">Ver planos de exemplo</a>
           </p>
-          <p class="hero-proof">7 dias grátis, sem cartão. Aulas de 5 minutos, do A1 ao C1.</p>
+          <p class="hero-proof">Quiz e conteúdo de exemplo, do A1 ao C1. Sem cadastro ou matrícula.</p>
         </div>
         <div class="hero-visual">
           <figure class="ph ph-mascot" data-slot="mascote-hero" data-alt="Téo, o tucano, acenando, ilustração flat"><img src="images/mascote-hero.jpg" alt="Téo, o tucano, acenando, ilustração flat" width="880" height="880">
@@ -60,14 +62,14 @@
     <section class="quiz-band" id="quiz">
       <div class="container quiz-inner">
         <div class="quiz-head">
-          <h2>Descubra o seu nível em 2 minutos.</h2>
-          <p>Sete perguntas, nenhuma pegadinha. No fim, o Téo te coloca no nível certo e monta a sua primeira semana.</p>
+          <h2>Explore o quiz demonstrativo.</h2>
+          <p>Sete perguntas de exemplo e uma classificação simulada com base nas respostas.</p>
         </div>
         <div class="quiz-layout">
           <div class="quiz-card" id="quizCard">
             <div class="quiz-intro" id="quizIntro">
               <p class="quiz-intro-big">7 perguntas.</p>
-              <p>Vocabulário, gramática e compreensão. Sem nota, sem julgamento, só o seu ponto de partida.</p>
+              <p>Vocabulário, gramática e compreensão em uma atividade de demonstração, sem avaliação oficial.</p>
               <button type="button" class="btn btn-primary" id="quizStart">Fazer o quiz</button>
             </div>
             <div class="quiz-stage" id="quizStage" hidden>
@@ -80,11 +82,11 @@
             </div>
             <div class="quiz-result" id="quizResult" hidden>
               <p class="quiz-result-level" id="quizResultLevel"></p>
-              <h3 id="quizResultTitle"></h3>
+              <h3 id="quizResultTitle" tabindex="-1"></h3>
               <p id="quizResultText"></p>
               <p class="quiz-result-score" id="quizResultScore"></p>
               <p class="quiz-result-actions">
-                <a href="#planos" class="btn btn-primary" id="quizResultCta">Começar grátis</a>
+                <a href="#planos" class="btn btn-primary" id="quizResultCta">Ver planos de exemplo</a>
                 <button type="button" class="btn btn-outline" id="quizRetry">Refazer o quiz</button>
               </p>
             </div>
@@ -217,14 +219,14 @@
     <section class="free-band" id="gratis">
       <div class="container free-inner">
         <div class="free-copy">
-          <h2><span class="free-big num">7 dias</span> grátis.</h2>
-          <p class="free-sub">Sem cartão. Sem pegadinha.</p>
+          <h2>Exemplo de oferta: <span class="free-big num">7 dias</span>.</h2>
+          <p class="free-sub">Condições ilustrativas; este protótipo não oferece período de teste.</p>
           <ul class="free-list">
             <li>Acesso a todos os níveis, do A1 ao C1</li>
             <li>Todas as 42 situações, sem travar nada</li>
             <li>Cancele em 1 clique, sem falar com ninguém</li>
           </ul>
-          <p><a href="#cadastro" class="btn btn-primary">Começar grátis</a></p>
+          <p><a href="#cadastro" class="btn btn-primary">Explorar quiz demonstrativo</a></p>
         </div>
         <figure class="ph ph-mascot-party" data-slot="mascote-comemorando" data-alt="Téo, o tucano, comemorando com um troféu, ilustração flat"><img src="images/mascote-comemorando.jpg" alt="Téo, o tucano, comemorando com um troféu, ilustração flat" width="720" height="720">
         </figure>
@@ -235,8 +237,8 @@
     <section class="section" id="planos">
       <div class="container">
         <div class="section-head">
-          <h2>Depois dos 7 dias, você escolhe.</h2>
-          <p>Os 7 dias grátis valem para o Plus. Sem cartão, nada é cobrado sem você pedir.</p>
+          <h2>Planos de exemplo</h2>
+          <p>Preços, acesso e condições são ilustrativos. Não há assinatura, cadastro ou cobrança nesta demonstração.</p>
         </div>
         <div class="plans">
           <article class="plan">
@@ -247,7 +249,7 @@
               <li>Quiz de nível, sempre que quiser</li>
               <li>Sequência de dias e troféus</li>
             </ul>
-            <a href="#cadastro" class="btn btn-outline">Começar grátis</a>
+            <a href="#cadastro" class="btn btn-outline">Ver plano de exemplo</a>
           </article>
           <article class="plan plan-plus">
             <h3>Falaí Plus</h3>
@@ -258,8 +260,8 @@
               <li>Modo offline e sem anúncios</li>
               <li>Certificado por nível concluído</li>
             </ul>
-            <a href="#cadastro" class="btn btn-primary">Começar grátis</a>
-            <p class="plan-note">7 dias grátis no Plus. Cancele quando quiser.</p>
+            <a href="#cadastro" class="btn btn-primary">Ver plano de exemplo</a>
+            <p class="plan-note">Oferta ilustrativa; nenhuma assinatura será criada.</p>
           </article>
         </div>
       </div>
@@ -302,7 +304,7 @@
       <div class="container faq-container">
         <div class="section-head">
           <h2>Perguntas frequentes</h2>
-          <p>Não achou sua dúvida? Escreva para contato@falai.com.br.</p>
+          <p>Esta demonstração não recebe mensagens. Explore as perguntas e respostas de exemplo abaixo.</p>
         </div>
         <div class="faq-list">
           <div class="faq-item">
@@ -314,8 +316,8 @@
             <div class="faq-answer"><p>São 7 perguntas e 2 minutos. Ele testa vocabulário, gramática e compreensão, e te coloca no nível certo. Dá para refazer quando quiser.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">O que acontece depois dos 7 dias grátis?<span class="faq-icon" aria-hidden="true">+</span></button>
-            <div class="faq-answer"><p>Você escolhe: continua no Plus por R$ 49 por mês ou fica no plano grátis, com 1 lição por dia. Nada é cobrado sem você pedir.</p></div>
+            <button class="faq-question" aria-expanded="false">Esta demonstração oferece período de teste?<span class="faq-icon" aria-hidden="true">+</span></button>
+            <div class="faq-answer"><p>Não. Este protótipo não oferece teste grátis, não cria assinatura nem cobra pagamentos. As condições exibidas são apenas exemplos.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">Posso cancelar quando quiser?<span class="faq-icon" aria-hidden="true">+</span></button>
@@ -336,12 +338,13 @@
     <!-- CTA FINAL -->
     <section class="cta" id="cadastro">
       <div class="container cta-inner">
-        <h2>Comece hoje. O Téo já está esperando.</h2>
-        <p>Deixe seu e-mail e receba o link para começar os 7 dias grátis.</p>
+        <h2>Explore o quiz e os planos de exemplo.</h2>
+        <p>Use apenas um e-mail fictício; esta interação não cria conta nem envia mensagens.</p>
+        <p class="demo-notice" role="note">Cadastro demonstrativo: nenhum dado é enviado, nenhuma conta é criada e nenhuma matrícula é feita.</p>
         <form class="email-capture cta-form" id="emailForm" novalidate>
-          <label class="sr-only" for="emailInput">Seu melhor e-mail</label>
-          <input type="email" id="emailInput" placeholder="Seu melhor e-mail" required>
-          <button type="submit" class="btn btn-primary">Começar grátis</button>
+          <label class="sr-only" for="emailInput">E-mail fictício para a simulação</label>
+          <input type="email" id="emailInput" placeholder="exemplo@email.test" autocomplete="off" required>
+          <button type="submit" class="btn btn-primary">Simular cadastro</button>
         </form>
         <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
       </div>
@@ -368,7 +371,7 @@
           <h3>Ajuda</h3>
           <a href="#faq">FAQ</a>
           <a href="#planos">Planos</a>
-          <a href="mailto:contato@falai.com.br">contato@falai.com.br</a>
+          <span>contato@falai.com.br (dado ilustrativo)</span>
         </div>
       </nav>
     </div>
@@ -379,8 +382,8 @@
   </footer>
 
   <div class="sticky-bar" id="stickyBar" hidden>
-    <p class="sticky-text"><strong>7 dias grátis</strong> <span>sem cartão</span></p>
-    <a href="#quiz" class="btn btn-primary">Começar grátis</a>
+    <p class="sticky-text"><strong>Planos de exemplo</strong> <span>sem cadastro</span></p>
+    <a href="#quiz" class="btn btn-primary">Fazer quiz demonstrativo</a>
   </div>
 
   <script src="script.js"></script>

@@ -2,7 +2,7 @@
 
 Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor full-stack. A página inicial do repositório é um hub com apresentação, projetos, experiência e contato, e cada pasta traz um site de demonstração completo, em um nicho e com um estilo visual diferente.
 
-## Sites de demonstração
+## Sites de demonstração (11)
 
 | Pasta | Site | Nicho | Estilo |
 |---|---|---|---|
@@ -15,6 +15,8 @@ Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor f
 | `chatbot/` | Clínica Sorriso | Chatbot de WhatsApp p/ agendamento | Leve e moderno, verde de destaque, widget de chat simulado funcional |
 | `ecommerce/` | VitaFit Suplementos | Loja virtual de suplementos | Esportivo, verde-escuro/preto com lima, carrinho funcional em JS |
 | `dashboard/` | AgendaPro | Agenda online + CRM com Kanban | Dashboard SaaS, fundo claro, sidebar, índigo, Kanban interativo |
+| `idiomas/` | Falaí | Escola de idiomas | Leve e ilustrado, com quiz de nível demonstrativo |
+| `rastro/` | Rastro | Painel conceitual fictício para freelancers | Editorial, papel/índigo/coral, painel estático e slot VSL 16:9 |
 
 ## Estrutura do repositório
 
@@ -22,6 +24,7 @@ Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor f
 portfolio/
 ├── index.html          # Hub do portfólio (página inicial do GitHub Pages)
 ├── README.md
+├── demo.css            # Aviso compartilhado de demonstração; não padroniza os temas
 ├── restaurante/        # index.html, style.css, script.js
 ├── advocacia/          # index.html, style.css, script.js
 ├── academia/           # index.html, style.css, script.js
@@ -30,17 +33,20 @@ portfolio/
 ├── construtora/        # index.html, style.css, script.js
 ├── chatbot/            # index.html, style.css, script.js
 ├── ecommerce/          # index.html, style.css, script.js
-└── dashboard/          # index.html, style.css, script.js
+├── dashboard/          # index.html, style.css, script.js
+├── idiomas/            # index.html, style.css, script.js
+└── rastro/             # landing conceitual com espaço estático para VSL
 ```
 
-O `index.html` da raiz é autocontido (CSS e JS embutidos, só as fontes vêm do Google Fonts). Cada site de demonstração tem os próprios `index.html`, `style.css` e `script.js`, sem etapa de build.
+O `index.html` da raiz é autocontido (CSS e JS embutidos; as fontes vêm do Google Fonts). Cada demonstração mantém sua própria identidade visual e não exige etapa de build. O `demo.css` fornece apenas o aviso visual de que as interações são demonstrativas.
 
 ## O que cada site tem
 
-- Textos realistas em pt-BR: pratos com preços em R$, áreas do direito, planos de academia, serviços e produtos de pet shop, planos de SaaS.
-- Sem imagens externas: só gradientes CSS, blocos coloridos e ícones/ilustrações em SVG inline.
-- Responsivo (testado mentalmente em 360 px de largura): menu mobile, colunas que empilham.
-- JS pequeno: menu mobile, rolagem suave, formulário com mensagem de sucesso (envio simulado, sem backend), accordion de FAQ no SaaS e alternância mensal/anual nos planos do SaaS. Interativos de verdade: o chatbot da Clínica Sorriso guia um agendamento completo com respostas automáticas, o carrinho da VitaFit soma, remove e finaliza a compra (simulada), e o Kanban da AgendaPro move cards entre colunas (arrastar ou botões) e aceita novos leads pelo formulário.
+- Onze experiências estáticas em pt-BR, cada uma com conteúdo e visual próprios. Textos, produtos, pessoas, avaliações, preços, métricas e contatos das demonstrações são exemplos fictícios.
+- Os estilos e scripts ficam nos projetos correspondentes; não há backend nem etapa de build. Há imagens locais, gradientes CSS e ilustrações em SVG.
+- As interações são locais e demonstrativas: formulários não enviam dados, e ações não reservam horários, matriculam pessoas, criam contas, registram pedidos nem cobram pagamentos.
+- Rastro é uma landing de produto fictício; o painel ilustrativo é estático, o espaço para VSL mantém 16:9 e não há cadastro, formulário ou software funcional.
+- O chatbot conduz uma conversa de agendamento simulada; o carrinho da VitaFit permite adicionar, remover e alterar itens antes do checkout demonstrativo; o Kanban da AgendaPro move cartões e aceita novos leads apenas na página atual; o quiz Falaí mostra uma classificação de exemplo.
 
 ## Como pré-visualizar localmente
 
@@ -66,6 +72,8 @@ Com o repositório `portfolio` na conta `pedro-o-bueno` e o Pages ativado em **S
 - Chatbot: https://pedro-o-bueno.github.io/portfolio/chatbot/
 - E-commerce: https://pedro-o-bueno.github.io/portfolio/ecommerce/
 - Dashboard: https://pedro-o-bueno.github.io/portfolio/dashboard/
+- Idiomas: https://pedro-o-bueno.github.io/portfolio/idiomas/
+- Rastro: https://pedro-o-bueno.github.io/portfolio/rastro/
 
 ## Contato
 
@@ -76,6 +84,6 @@ Com o repositório `portfolio` na conta `pedro-o-bueno` e o Pages ativado em **S
 
 ## Atenção
 
-- Os dados dos sites de demonstração são fictícios: nomes de empresas, endereços, telefones, WhatsApp e OABs foram inventados para demonstração. Antes de usar um site como referência real para um cliente, troque os dados pelos dados verdadeiros dele.
-- Os formulários são simulados: mostram uma mensagem de sucesso, mas não enviam nada para lugar nenhum.
+- Os dados dos sites de demonstração são fictícios: nomes, endereços, telefones, contatos, OABs, preços, depoimentos e indicadores são apenas exemplos. Antes de usar um site como referência real para um cliente, substitua-os por informações verificadas.
+- Formulários e ações são simulados e não enviam dados para lugar nenhum. Não use informações reais, especialmente dados pessoais ou sensíveis.
 - As fontes vêm do Google Fonts via `<link>`; sem internet as fontes caem para as alternativas do sistema, mas o layout continua funcionando.
