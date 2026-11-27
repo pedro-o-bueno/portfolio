@@ -2,7 +2,7 @@
 
 Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor full-stack. A página inicial do repositório é um hub com apresentação, projetos, experiência e contato, e cada pasta traz um site de demonstração completo, em um nicho e com um estilo visual diferente.
 
-## Sites de demonstração (10)
+## Sites de demonstração (11)
 
 | Pasta | Site | Nicho | Estilo |
 |---|---|---|---|
@@ -16,6 +16,7 @@ Repositório de portfólio de **Pedro Henrique Oliveira Bueno**, desenvolvedor f
 | `ecommerce/` | VitaFit Suplementos | Loja virtual de suplementos | Esportivo, verde-escuro/preto com lima, carrinho funcional em JS |
 | `dashboard/` | AgendaPro | Agenda online + CRM com Kanban | Dashboard SaaS, fundo claro, sidebar, índigo, Kanban interativo |
 | `idiomas/` | Falaí | Escola de idiomas | Leve e ilustrado, com quiz de nível demonstrativo |
+| `rastro/` | Rastro | Conceito fictício de SaaS para freelancers | Editorial, papel/índigo/coral, slot VSL estático |
 
 ## Estrutura do repositório
 
@@ -33,16 +34,18 @@ portfolio/
 ├── chatbot/            # index.html, style.css, script.js
 ├── ecommerce/          # index.html, style.css, script.js
 ├── dashboard/          # index.html, style.css, script.js
-└── idiomas/            # index.html, style.css, script.js
+├── idiomas/            # index.html, style.css, script.js
+└── rastro/             # landing conceitual com espaço estático para VSL
 ```
 
 O `index.html` da raiz é autocontido (CSS e JS embutidos; as fontes vêm do Google Fonts). Cada demonstração mantém sua própria identidade visual e não exige etapa de build. O `demo.css` fornece apenas o aviso visual de que as interações são demonstrativas.
 
 ## O que cada site tem
 
-- Dez experiências estáticas em pt-BR, cada uma com conteúdo e visual próprios. Textos, produtos, pessoas, avaliações, preços, métricas e contatos das demonstrações são exemplos fictícios.
+- Onze experiências estáticas em pt-BR, cada uma com conteúdo e visual próprios. Textos, produtos, pessoas, avaliações, preços, métricas e contatos das demonstrações são exemplos fictícios.
 - Os estilos e scripts ficam nos projetos correspondentes; não há backend nem etapa de build. Há imagens locais, gradientes CSS e ilustrações em SVG.
 - As interações são locais e demonstrativas: formulários não enviam dados, e ações não reservam horários, matriculam pessoas, criam contas, registram pedidos nem cobram pagamentos.
+- Rastro é uma landing de produto fictício; o espaço para VSL é estático e não há cadastro, formulário ou software funcional.
 - O chatbot conduz uma conversa de agendamento simulada; o carrinho da VitaFit permite adicionar, remover e alterar itens antes do checkout demonstrativo; o Kanban da AgendaPro move cartões e aceita novos leads apenas na página atual; o quiz Falaí mostra uma classificação de exemplo.
 
 ## Como pré-visualizar localmente
@@ -70,6 +73,7 @@ Com o repositório `portfolio` na conta `pedro-o-bueno` e o Pages ativado em **S
 - E-commerce: https://pedro-o-bueno.github.io/portfolio/ecommerce/
 - Dashboard: https://pedro-o-bueno.github.io/portfolio/dashboard/
 - Idiomas: https://pedro-o-bueno.github.io/portfolio/idiomas/
+- Rastro: https://pedro-o-bueno.github.io/portfolio/rastro/
 
 ## Contato
 
