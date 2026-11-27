@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
 
@@ -37,10 +38,10 @@
           <li><a href="#resultados">Resultados</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-        <a href="#contato" class="btn btn-gold btn-nav">Agendar consulta</a>
-        <a href="https://wa.me/5551998765432" class="btn btn-header-whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <a href="#contato" class="btn btn-gold btn-nav">Contato demonstrativo</a>
+        <a href="#contato" class="btn btn-header-whatsapp" aria-label="Ir ao formulário demonstrativo">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-          <span class="btn-label">WhatsApp</span>
+          <span class="btn-label">Contato</span>
         </a>
       </nav>
     </div>
@@ -53,8 +54,9 @@
         <div class="hero-copy">
           <h1>25 anos defendendo direitos com rigor, ética e resultado.</h1>
           <p class="hero-sub">Um escritório de tradição e confiança, que alia a experiência de quem já conduziu mais de 1.200 casos à atenção pessoal que cada cliente merece.</p>
+          <p class="demo-notice" role="note">Demonstração: equipe, OAB, resultados, endereço e contatos são ilustrativos. Não informe dados pessoais nem detalhes de um caso; use apenas exemplos fictícios.</p>
           <div class="hero-actions">
-            <a href="#contato" class="btn btn-gold">Agendar consulta</a>
+            <a href="#contato" class="btn btn-gold">Contato demonstrativo</a>
             <a href="#areas" class="btn btn-outline">Conheça nossas áreas</a>
           </div>
           <ul class="hero-trust">
@@ -214,28 +216,29 @@
           <div class="contact-info">
             <address>
               <p><strong>Endereço</strong><br>Av. Borges de Medeiros, 1500, Centro Histórico<br>Porto Alegre, RS, CEP 90020-023</p>
-              <p><strong>Telefone</strong><br><a href="tel:+555132224455">(51) 3222-4455</a></p>
-              <p><strong>E-mail</strong><br><a href="mailto:contato@ferreiraealmeida.adv.br">contato@ferreiraealmeida.adv.br</a></p>
+              <p><strong>Telefone demonstrativo</strong><br>(51) 3222-4455</p>
+              <p><strong>E-mail demonstrativo</strong><br>contato@ferreiraealmeida.adv.br</p>
               <p><strong>Horário de atendimento</strong><br>Segunda a sexta, das 9h às 18h</p>
             </address>
-            <a class="btn btn-whatsapp" href="https://wa.me/5551998765432" target="_blank" rel="noopener">
+            <a class="btn btn-whatsapp" href="#contato">
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.2-.8l.4-.5c.1-.2.1-.4 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 2.9 4.5 4 .6.3 1.1.4 1.5.6.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
-              Falar no WhatsApp
+              Contato demonstrativo
             </a>
           </div>
 
+          <p class="demo-notice" role="note">Não inclua dados reais, documentos ou detalhes confidenciais. O formulário é uma simulação e não encaminha mensagens.</p>
           <form class="contact-form" id="contactForm" novalidate>
             <div class="form-row">
-              <label for="nome">Nome completo</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+              <label for="nome">Nome fictício</label>
+              <input type="text" id="nome" name="nome" placeholder="Ex.: Joana Silva" required>
             </div>
             <div class="form-row">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              <label for="email">E-mail fictício</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@email.test" required>
             </div>
             <div class="form-row">
-              <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(51) 99999-9999" required>
+              <label for="telefone">Telefone fictício</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
             </div>
             <div class="form-row">
               <label for="area">Área de interesse</label>
@@ -251,12 +254,12 @@
               </select>
             </div>
             <div class="form-row">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva brevemente o seu caso" required></textarea>
+              <label for="mensagem">Mensagem fictícia</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva apenas um exemplo inventado, sem dados de um caso" required></textarea>
             </div>
-            <button type="submit" class="btn btn-gold btn-submit">Enviar mensagem</button>
+            <button type="submit" class="btn btn-gold btn-submit">Simular contato</button>
             <p class="form-success" id="formSuccess" role="status" hidden>
-              Mensagem enviada com sucesso! Obrigado pelo contato. Nossa equipe retornará em até um dia útil.
+              Simulação concluída: nenhuma mensagem foi enviada ou encaminhada.
             </p>
           </form>
         </div>

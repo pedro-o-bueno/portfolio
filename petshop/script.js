@@ -75,18 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      var tutor = document.getElementById("tutorName").value.trim();
-      var pet = document.getElementById("petName").value.trim();
-      var service = document.getElementById("service").value;
-      var dateValue = dateInput ? dateInput.value : "";
-      var dateText = dateValue
-        ? new Date(dateValue + "T12:00:00").toLocaleDateString("pt-BR")
-        : "";
-
       successBox.textContent =
-        "Obrigado, " + tutor + "! O agendamento de " + service +
-        " para " + pet + (dateText ? " no dia " + dateText : "") +
-        " foi registrado. Vamos confirmar pelo WhatsApp em breve.";
+        "Simulação concluída: nenhum horário foi reservado e ninguém será contatado.";
       successBox.hidden = false;
       successBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
       form.reset();

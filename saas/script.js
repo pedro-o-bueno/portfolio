@@ -93,14 +93,14 @@ document.addEventListener('DOMContentLoaded', function () {
       var email = input.value.trim();
 
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        msg.textContent = 'Informe um e-mail válido para continuar.';
+        msg.textContent = 'Informe um e-mail fictício válido para concluir a simulação.';
         msg.classList.add('error');
         input.focus();
         return;
       }
 
       msg.classList.remove('error');
-      msg.textContent = 'Conta criada com sucesso! Enviamos um link de acesso para ' + email + '.';
+      msg.textContent = 'Simulação concluída: nenhuma conta foi criada e nenhum e-mail foi enviado.';
       form.reset();
     });
 

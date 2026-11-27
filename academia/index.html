@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
   <header class="site-header" id="siteHeader">
@@ -40,8 +41,9 @@
           <div class="hero-copy">
             <h1>Treine forte.<br><span>Viva forte.</span></h1>
             <p class="hero-sub">Musculação, cross training, lutas e aulas coletivas com estrutura completa, professores certificados e um ambiente que empurra você para o próximo nível. Sem enrolação, sem fila de aparelho, sem desculpa.</p>
+            <p class="demo-notice" role="note">Site demonstrativo: planos, valores, equipe, horários e condições são ilustrativos. Use dados fictícios; o formulário não matricula nem envia informações.</p>
             <div class="hero-actions">
-              <a href="#matricula" class="btn btn-primary">Comece agora</a>
+              <a href="#matricula" class="btn btn-primary">Simular interesse</a>
               <a href="#planos" class="btn btn-outline">Ver planos</a>
             </div>
             <p class="hero-trial">Primeiros <strong>7 dias grátis</strong>, sem fidelidade obrigatória no plano mensal.</p>
@@ -236,23 +238,23 @@
             </li>
             <li>
               <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span><a href="tel:+555133332211">(51) 3333-2211</a><br><small>Recepção, seg a sex, 05h às 23h</small></span>
+              <span>Telefone demonstrativo: (51) 3333-2211<br><small>Horário ilustrativo</small></span>
             </li>
             <li>
               <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               <span>Segunda a sexta: 05h às 23h<br>Sábado: 07h às 19h, domingo: 08h às 12h</span>
             </li>
           </ul>
-          <a class="btn btn-whatsapp" href="https://wa.me/5551987651234" target="_blank" rel="noopener">
+          <a class="btn btn-whatsapp" href="#matricula">
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-            Chamar no WhatsApp
+            Simular interesse
           </a>
         </div>
 
         <div class="signup-form-wrap">
           <form class="signup-form" id="signupForm" novalidate>
-            <h3>Garanta seus 7 dias grátis</h3>
-            <p class="form-sub">Leva menos de 1 minuto.</p>
+            <h3>Simule seu interesse</h3>
+            <p class="form-sub">Use apenas informações fictícias. Nada será enviado.</p>
             <div class="field">
               <label for="nome">Nome completo</label>
               <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
@@ -282,15 +284,15 @@
               </select>
             </div>
             <p class="form-error" id="formError" role="alert" hidden>Preencha todos os campos para continuar.</p>
-            <button type="submit" class="btn btn-primary btn-block">Quero meus 7 dias grátis</button>
-            <p class="form-privacy">Ao enviar, você concorda em ser contatado pela Iron House sobre sua matrícula. Não compartilhamos seus dados.</p>
+            <button type="submit" class="btn btn-primary btn-block">Simular interesse</button>
+            <p class="form-privacy">Esta demonstração não cria matrícula, não agenda avaliação e não envia dados.</p>
           </form>
-          <div class="form-success" id="formSuccess" hidden>
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
             <div class="success-icon" aria-hidden="true">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
             </div>
-            <h3>Matrícula iniciada com sucesso!</h3>
-            <p id="successText">Obrigado! Nossa equipe vai entrar em contato em até 1 dia útil para agendar sua avaliação física e liberar seus 7 dias grátis.</p>
+            <h3>Simulação concluída</h3>
+            <p id="successText">Nenhuma matrícula foi feita, ninguém será contatado e nenhuma avaliação foi agendada.</p>
             <button type="button" class="btn btn-outline" id="resetForm">Fazer outra inscrição</button>
           </div>
         </div>

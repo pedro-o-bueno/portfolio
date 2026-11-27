@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="tokens.css">
   <link rel="stylesheet" href="base.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
   <header class="site-header" id="topo">
@@ -35,7 +36,7 @@
         <a href="#empreendimentos">Empreendimentos</a>
         <a href="#servicos">Serviços</a>
         <a href="#depoimentos">Depoimentos</a>
-        <a href="#contato" class="nav-cta">Fale conosco</a>
+        <a href="#contato" class="nav-cta">Contato demonstrativo</a>
       </nav>
     </div>
   </header>
@@ -48,9 +49,10 @@
           <p class="hero-note">Construção de alto padrão desde 2011</p>
           <h1>Construímos lugares onde a vida acontece.</h1>
           <p class="hero-sub">Empreendimentos residenciais e comerciais de alto padrão, com projeto autoral, execução rigorosa e entrega no prazo. Do terreno à chave na mão, um só parceiro.</p>
+          <p class="demo-notice" role="note">Demonstração: empreendimentos, resultados, imagens, depoimentos e contatos são ilustrativos. O formulário não envia mensagens nem agenda visitas.</p>
           <div class="hero-actions">
-            <a href="#empreendimentos" class="btn btn-primary">Ver empreendimentos</a>
-            <a href="#contato" class="btn btn-outline">Fale com um especialista</a>
+            <a href="#empreendimentos" class="btn btn-primary">Explorar projetos demonstrativos</a>
+            <a href="#contato" class="btn btn-outline">Simular contato</a>
           </div>
         </div>
         <figure class="hero-photo" data-slot="construtora-hero">
@@ -276,14 +278,14 @@
               <span>Segunda a sexta, das 9h às 18h<br>Plantão de vendas aos sábados, das 9h às 13h</span>
             </li>
           </ul>
-          <a class="btn btn-whatsapp" href="https://wa.me/5511987654321?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20empreendimentos%20da%20Vetor%20Construtora." target="_blank" rel="noopener">
+          <a class="btn btn-whatsapp" href="#contato">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 8.5c.3 2.5 2.5 4.7 5 5l1-1.2 1.8 1c-.3 1-1 1.7-2 1.7-3.6 0-7-3.4-7-7 0-1 .7-1.7 1.7-2l1 .8L8.5 8.5z" fill="currentColor"/></svg>
-            Chamar no WhatsApp
+            Simular contato
           </a>
         </div>
         <form class="contact-form" id="contact-form" novalidate>
           <h3>Envie uma mensagem</h3>
-          <p class="form-note">Preencha o formulário e nossa equipe retorna em até um dia útil.</p>
+          <p class="form-note">Use dados fictícios. Este formulário não envia mensagens nem agenda uma visita.</p>
           <label for="nome">Nome completo
             <input type="text" id="nome" name="nome" placeholder="Seu nome" required autocomplete="name">
           </label>
@@ -296,8 +298,8 @@
           <label for="mensagem">Mensagem
             <textarea id="mensagem" name="mensagem" rows="5" placeholder="Quero informações sobre..." required></textarea>
           </label>
-          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
-          <p class="form-success" id="form-success" role="status" hidden>Mensagem enviada com sucesso! Nossa equipe entrará em contato em até um dia útil. Obrigado pelo interesse na Vetor Construtora.</p>
+          <button type="submit" class="btn btn-primary btn-block">Simular contato</button>
+          <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>Simulação concluída: nenhuma mensagem foi enviada e nenhuma visita foi agendada.</p>
           <p class="form-error" id="form-error" role="alert" hidden>Por favor, preencha nome, e-mail válido e mensagem antes de enviar.</p>
         </form>
       </div>

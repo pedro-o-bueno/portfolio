@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Archivo:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
   <header class="site-header" id="topo">
@@ -43,10 +44,10 @@
         <div class="hero-copy">
           <h1>A mesa farta da Calábria.</h1>
           <p class="hero-sub">Massas frescas feitas na casa desde 1998, em Vila Mariana.</p>
+          <p class="demo-notice" role="note">Demonstração: cardápio, preços, endereço e contatos são ilustrativos. A reserva não é enviada nem confirmada.</p>
           <div class="hero-actions">
             <a href="#cardapio" class="btn btn-primary">Ver cardápio</a>
-            <a href="#reservas" class="btn btn-outline">Reservar mesa</a>
-            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener" class="btn btn-outline">Chamar no WhatsApp</a>
+            <a href="#reservas" class="btn btn-outline">Simular reserva</a>
           </div>
         </div>
         <figure class="hero-figure">
@@ -222,22 +223,22 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-              <span><strong>Telefone</strong><br><a href="tel:+551134567890">(11) 3456-7890</a></span>
+              <span><strong>Telefone demonstrativo</strong><br>(11) 3456-7890</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
               <span><strong>Horário de funcionamento</strong><br>Terça a domingo: 11h30 às 15h e 18h às 23h<br>Segunda-feira: fechado</span>
             </li>
           </ul>
-          <a class="btn btn-whatsapp" href="https://wa.me/5511987654321" target="_blank" rel="noopener">
+          <a class="btn btn-whatsapp" href="#reservas">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3zm0 16.4a7.4 7.4 0 0 1-3.8-1L7.9 18l-.4-.3a7.4 7.4 0 1 1 8.5 0l-.3.4-.3.3A7.4 7.4 0 0 1 12 19.4zM8.9 9.2c-.2 0-.5.1-.6.4-.3.6-.4 1.3-.1 2.3.4 1.3 1.5 2.6 2.6 3.3 1 .6 1.8.7 2.4.5.5-.2.9-.6 1-1.1.1-.4 0-.7-.2-.9l-.9-.9c-.2-.2-.5-.2-.7 0l-.5.5c-.2.2-.4.2-.7.1-.5-.3-1-.7-1.4-1.1-.3-.3-.5-.6-.6-.9-.1-.3 0-.5.2-.6l.5-.5c.2-.2.2-.5 0-.7l-.9-.9c-.1-.2-.3-.2-.5-.2z" fill="currentColor"/></svg>
-            Chamar no WhatsApp
+            Ver reserva demonstrativa
           </a>
         </div>
         <div class="form-card">
           <form id="reservation-form" novalidate>
             <h3>Faça sua reserva</h3>
-            <p class="form-note">Preencha os dados abaixo e confirmaremos sua reserva.</p>
+            <p class="form-note">Use dados fictícios. Este formulário não envia a solicitação nem reserva uma mesa.</p>
             <div class="field">
               <label for="nome">Nome completo</label>
               <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
@@ -269,13 +270,13 @@
                 <option value="10+">Mais de 10 pessoas</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary btn-full">Confirmar reserva</button>
+            <button type="submit" class="btn btn-primary btn-full">Simular reserva</button>
             <p class="form-error" id="form-error" role="alert" hidden></p>
           </form>
-          <div class="form-success" id="form-success" hidden>
+          <div class="form-success" id="form-success" role="status" aria-live="polite" hidden>
             <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" style="fill: var(--color-ink)"/><path d="M8 12.5l2.5 2.5L16 9.5" fill="none" style="stroke: var(--color-paper)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <h3>Reserva recebida!</h3>
-            <p id="success-text">Obrigado! Sua mesa está pré-reservada. Entraremos em contato para confirmar.</p>
+            <h3>Simulação concluída</h3>
+            <p id="success-text">Nenhuma reserva foi feita e ninguém será contatado.</p>
             <button class="btn btn-outline" id="new-reservation" type="button">Fazer outra reserva</button>
           </div>
         </div>

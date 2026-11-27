@@ -106,11 +106,10 @@
       }
       errorBox.hidden = true;
 
-      var firstName = nome.value.trim().split(" ")[0];
       var planLabel = planSelect.options[planSelect.selectedIndex].text;
       successText.textContent =
-        "Obrigado, " + firstName + "! Recebemos seu interesse no plano " +
-        planSelect.value + " (" + planLabel + "). Nossa equipe vai entrar em contato em até 1 dia útil para agendar sua avaliação física e liberar seus 7 dias grátis.";
+        "Plano selecionado para esta simulação: " + planLabel +
+        ". Nenhuma matrícula foi feita, ninguém será contatado e nenhum dado foi enviado.";
 
       form.hidden = true;
       successBox.hidden = false;
@@ -137,6 +136,7 @@
         card.classList.remove("selected");
       });
       form.scrollIntoView({ behavior: "smooth", block: "center" });
+      form.querySelector("input").focus();
     });
   }
 })();

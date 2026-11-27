@@ -1,0 +1,15 @@
+.demo-notice {
+  display: block;
+  margin: var(--space-md, 1rem) 0;
+  padding: var(--space-sm, 0.75rem) var(--space-md, 1rem);
+  border-inline-start: 4px solid var(--color-accent, currentColor);
+  border-radius: var(--radius-card, 0);
+  background: var(--color-paper-2, transparent);
+  color: var(--color-ink, inherit);
+  font-size: var(--text-sm, 0.875rem);
+  line-height: 1.55;
+}
+
+.demo-notice strong {
+  font-weight: 700;
+}

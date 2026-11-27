@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../demo.css">
 </head>
 <body>
   <header class="header">
@@ -24,7 +25,7 @@
         <a href="#planos">Planos</a>
         <a href="#depoimentos">Depoimentos</a>
         <a href="#faq">FAQ</a>
-        <a href="#cta" class="btn btn-primary nav-cta">Testar grátis</a>
+        <a href="#planos" class="btn btn-primary nav-cta">Ver planos de exemplo</a>
       </nav>
       <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -39,14 +40,15 @@
         <div class="hero-copy">
           <h1>O financeiro da sua empresa em um só lugar</h1>
           <p class="hero-sub">Controle de contas a pagar e a receber, emissão de boletos, fluxo de caixa e relatórios automáticos. Menos planilha, mais tempo para vender.</p>
-          <p class="hero-note">Novo: integração com Pix automático</p>
+          <p class="hero-note">Prévia demonstrativa do painel</p>
+          <p class="demo-notice" role="note">Demonstração: produto, dados, métricas, planos e funcionalidades são ilustrativos. O formulário não cria conta nem envia e-mail.</p>
           <form class="email-capture" id="emailForm" novalidate>
-            <label class="sr-only" for="emailInput">Seu melhor e-mail profissional</label>
-            <input type="email" id="emailInput" placeholder="Seu melhor e-mail profissional" required>
-            <button type="submit" class="btn btn-primary">Começar grátis por 14 dias</button>
+            <label class="sr-only" for="emailInput">E-mail fictício para a simulação</label>
+            <input type="email" id="emailInput" placeholder="exemplo@email.test" autocomplete="off" required>
+            <button type="submit" class="btn btn-primary">Simular cadastro</button>
           </form>
           <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-          <p class="trust-line">Sem cartão de crédito. Cancele quando quiser.</p>
+          <p class="trust-line">Nenhuma conta é criada e nenhuma cobrança é realizada.</p>
           <p class="hero-proof">Mais de <strong>12.000 pequenas empresas</strong> já organizam o financeiro com o Fluxo</p>
         </div>
 
@@ -182,7 +184,7 @@
               <li>Até 20 boletos por mês</li>
               <li>Suporte por e-mail</li>
             </ul>
-            <a href="#cta" class="btn btn-outline btn-block">Começar grátis</a>
+            <a href="#cta" class="btn btn-outline btn-block">Ver plano de exemplo</a>
           </article>
           <article class="plan popular">
             <span class="popular-badge">Mais popular</span>
@@ -198,7 +200,7 @@
               <li>Integração com bancos</li>
               <li>Suporte prioritário por chat</li>
             </ul>
-            <a href="#cta" class="btn btn-primary btn-block">Testar 14 dias grátis</a>
+            <a href="#cta" class="btn btn-primary btn-block">Explorar plano de exemplo</a>
           </article>
           <article class="plan">
             <h3>Empresas</h3>
@@ -289,11 +291,11 @@
     <section class="cta" id="cta">
       <div class="container cta-inner">
         <h2>Pronto para organizar o financeiro da sua empresa?</h2>
-        <p>Crie sua conta em menos de 2 minutos e teste o plano Pro grátis por 14 dias.</p>
+        <p>Explore os planos ilustrativos e teste o formulário demonstrativo. Nenhuma conta será criada.</p>
         <form class="email-capture cta-form" id="emailFormCta" novalidate>
-          <label class="sr-only" for="emailInputCta">Seu melhor e-mail profissional</label>
-          <input type="email" id="emailInputCta" placeholder="Seu melhor e-mail profissional" required>
-          <button type="submit" class="btn btn-white">Começar a controlar</button>
+          <label class="sr-only" for="emailInputCta">E-mail fictício para a simulação</label>
+          <input type="email" id="emailInputCta" placeholder="exemplo@email.test" autocomplete="off" required>
+          <button type="submit" class="btn btn-white">Simular cadastro</button>
         </form>
         <p class="form-msg form-msg-light" id="formMsgCta" role="status" aria-live="polite"></p>
         <p class="trust-line trust-line-light">Sem cartão de crédito. Cancele quando quiser.</p>
@@ -329,7 +331,7 @@
           <h3>Suporte</h3>
           <a href="#faq">Central de ajuda</a>
           <a href="#faq">FAQ</a>
-          <a href="mailto:contato@fluxo.com.br">contato@fluxo.com.br</a>
+          <span>contato@fluxo.com.br (dado ilustrativo)</span>
         </div>
       </nav>
     </div>

@@ -65,17 +65,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     errorBox.hidden = true;
 
-    var dataFormatada = new Date(data + 'T12:00:00').toLocaleDateString('pt-BR', {
-      day: '2-digit',
-      month: '2-digit',
-      year: 'numeric'
-    });
-    var pessoasLabel = pessoas === '10+' ? 'mais de 10 pessoas' : pessoas + (pessoas === '1' ? ' pessoa' : ' pessoas');
-
     successText.textContent =
-      'Obrigado, ' + nome + '! Sua mesa para ' + pessoasLabel +
-      ' está pré-reservada para ' + dataFormatada + ' às ' + hora +
-      '. Entraremos em contato para confirmar. Até já!';
+      'Simulação concluída: nenhuma mesa foi reservada e ninguém será contatado.';
 
     form.hidden = true;
     successBox.hidden = false;
@@ -86,5 +77,6 @@ document.addEventListener('DOMContentLoaded', function () {
     form.reset();
     successBox.hidden = true;
     form.hidden = false;
+    form.querySelector('input').focus();
   });
 });
