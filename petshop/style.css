@@ -503,7 +503,7 @@ h3 { font-size: var(--text-title); line-height: 1.2; }
   .booking-grid { grid-template-columns: minmax(0, 1fr); }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   .menu-toggle { display: flex; }
 
   .main-nav {
@@ -524,7 +524,9 @@ h3 { font-size: var(--text-title); line-height: 1.2; }
   .main-nav.open { display: flex; }
   .main-nav a { text-align: center; }
   .main-nav a.nav-cta { margin-left: 0; }
+}
 
+@media (max-width: 640px) {
   .cards-3 { grid-template-columns: minmax(0, 1fr); }
   .service-photos { grid-template-columns: minmax(0, 1fr); }
   .section { padding: var(--space-2xl) 0; }

@@ -57,11 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* 4. Barra fixa inferior — aparece só depois de rolar (escondida sem JS) */
   var stickyBar = document.getElementById('stickyBar');
+  var quizFlowActive = false;
+  var toggleStickyBar = function () {
+    if (stickyBar) {
+      stickyBar.classList.toggle('show', window.scrollY > 600 && !quizFlowActive);
+    }
+  };
   if (stickyBar) {
     stickyBar.hidden = false;
-    var toggleStickyBar = function () {
-      stickyBar.classList.toggle('show', window.scrollY > 600);
-    };
     window.addEventListener('scroll', toggleStickyBar, { passive: true });
     toggleStickyBar();
   }
@@ -221,6 +224,11 @@ document.addEventListener('DOMContentLoaded', function () {
     quizStart.addEventListener('click', function () {
       current = 0;
       score = 0;
+      quizFlowActive = true;
+      if (stickyBar) {
+        stickyBar.classList.remove('show');
+        stickyBar.hidden = true;
+      }
       quizIntro.hidden = true;
       quizResult.hidden = true;
       quizStage.hidden = false;
@@ -242,6 +250,11 @@ document.addEventListener('DOMContentLoaded', function () {
       quizResult.hidden = true;
       quizStage.hidden = true;
       quizIntro.hidden = false;
+      quizFlowActive = false;
+      if (stickyBar) {
+        stickyBar.hidden = false;
+        toggleStickyBar();
+      }
       quizStart.focus();
     });
   }
